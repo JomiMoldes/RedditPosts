@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol PostProtocol {
+public protocol PostProtocol: Codable {
     
     var id: String { get }
     var thumbnail: String { get }

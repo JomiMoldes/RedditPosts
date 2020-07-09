@@ -9,7 +9,7 @@
 import Foundation
 import ModelsInterfaces
 
-public struct Post: PostProtocol, Codable {
+public struct Post: PostProtocol {
     public var id: String
     public var title: String
     public var thumbnail: String
