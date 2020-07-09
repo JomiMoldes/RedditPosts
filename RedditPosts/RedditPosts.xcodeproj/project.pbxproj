@@ -37,6 +37,17 @@
 		488B300524B7BF8E004905AA /* ServicesInterfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FF224B79C78004905AA /* ServicesInterfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		488B301024B7C0A5004905AA /* ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B300F24B7C0A5004905AA /* ServicesTests.swift */; };
 		488B301224B7C0A5004905AA /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FE124B79C6D004905AA /* Services.framework */; };
+		488B302624B7C5C4004905AA /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B301D24B7C5C3004905AA /* Utils.framework */; };
+		488B302D24B7C5C4004905AA /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B302C24B7C5C4004905AA /* UtilsTests.swift */; };
+		488B302F24B7C5C4004905AA /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 488B301F24B7C5C4004905AA /* Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		488B303224B7C5C4004905AA /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B301D24B7C5C3004905AA /* Utils.framework */; };
+		488B303324B7C5C4004905AA /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488B301D24B7C5C3004905AA /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		488B305124B7C5F5004905AA /* UtilsInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 488B304124B7C5F5004905AA /* UtilsInterfaces.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		488B305424B7C5F5004905AA /* UtilsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */; };
+		488B305524B7C5F5004905AA /* UtilsInterfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		488B305D24B7C623004905AA /* DecodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B305C24B7C623004905AA /* DecodableHelper.swift */; };
+		488B305F24B7C649004905AA /* DecodableHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B305E24B7C649004905AA /* DecodableHelperProtocol.swift */; };
+		488B306024B7C762004905AA /* UtilsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +121,41 @@
 			remoteGlobalIDString = 488B2FE024B79C6D004905AA;
 			remoteInfo = Services;
 		};
+		488B302724B7C5C4004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B301C24B7C5C3004905AA;
+			remoteInfo = Utils;
+		};
+		488B302924B7C5C4004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B2F7824B761CF004905AA;
+			remoteInfo = RedditPosts;
+		};
+		488B303024B7C5C4004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B301C24B7C5C3004905AA;
+			remoteInfo = Utils;
+		};
+		488B305224B7C5F5004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B303E24B7C5F5004905AA;
+			remoteInfo = UtilsInterfaces;
+		};
+		488B306224B7C762004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B303E24B7C5F5004905AA;
+			remoteInfo = UtilsInterfaces;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -120,8 +166,10 @@
 			dstSubfolderSpec = 10;
 			files = (
 				488B2FFA24B79C78004905AA /* ServicesInterfaces.framework in Embed Frameworks */,
+				488B303324B7C5C4004905AA /* Utils.framework in Embed Frameworks */,
 				488B2FCE24B7950F004905AA /* ModelsInterfaces.framework in Embed Frameworks */,
 				488B2FE924B79C6E004905AA /* Services.framework in Embed Frameworks */,
+				488B305524B7C5F5004905AA /* UtilsInterfaces.framework in Embed Frameworks */,
 				488B2FB924B794FA004905AA /* Models.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -174,6 +222,19 @@
 		488B300D24B7C0A5004905AA /* ServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		488B300F24B7C0A5004905AA /* ServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTests.swift; sourceTree = "<group>"; };
 		488B301124B7C0A5004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488B301D24B7C5C3004905AA /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		488B301F24B7C5C4004905AA /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		488B302024B7C5C4004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488B302524B7C5C4004905AA /* UtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		488B302C24B7C5C4004905AA /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
+		488B302E24B7C5C4004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtilsInterfaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		488B304124B7C5F5004905AA /* UtilsInterfaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsInterfaces.h; sourceTree = "<group>"; };
+		488B304224B7C5F5004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488B304E24B7C5F5004905AA /* UtilsInterfacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsInterfacesTests.swift; sourceTree = "<group>"; };
+		488B305024B7C5F5004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488B305C24B7C623004905AA /* DecodableHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableHelper.swift; sourceTree = "<group>"; };
+		488B305E24B7C649004905AA /* DecodableHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableHelperProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,8 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				488B2FF924B79C78004905AA /* ServicesInterfaces.framework in Frameworks */,
+				488B303224B7C5C4004905AA /* Utils.framework in Frameworks */,
 				488B2FCD24B7950F004905AA /* ModelsInterfaces.framework in Frameworks */,
 				488B2FE824B79C6E004905AA /* Services.framework in Frameworks */,
+				488B305424B7C5F5004905AA /* UtilsInterfaces.framework in Frameworks */,
 				488B2FB824B794FA004905AA /* Models.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +304,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		488B301A24B7C5C3004905AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B306024B7C762004905AA /* UtilsInterfaces.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B302224B7C5C4004905AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B302624B7C5C4004905AA /* Utils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B303C24B7C5F5004905AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -256,6 +342,10 @@
 				488B2FE224B79C6E004905AA /* Services */,
 				488B2FF324B79C78004905AA /* ServicesInterfaces */,
 				488B300E24B7C0A5004905AA /* ServicesTests */,
+				488B301E24B7C5C4004905AA /* Utils */,
+				488B302B24B7C5C4004905AA /* UtilsTests */,
+				488B304024B7C5F5004905AA /* UtilsInterfaces */,
+				488B304D24B7C5F5004905AA /* UtilsInterfacesTests */,
 				488B2F7A24B761CF004905AA /* Products */,
 				488B2FD224B795B3004905AA /* Frameworks */,
 			);
@@ -272,6 +362,9 @@
 				488B2FE124B79C6D004905AA /* Services.framework */,
 				488B2FF224B79C78004905AA /* ServicesInterfaces.framework */,
 				488B300D24B7C0A5004905AA /* ServicesTests.xctest */,
+				488B301D24B7C5C3004905AA /* Utils.framework */,
+				488B302524B7C5C4004905AA /* UtilsTests.xctest */,
+				488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -363,6 +456,44 @@
 			path = ServicesTests;
 			sourceTree = "<group>";
 		};
+		488B301E24B7C5C4004905AA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				488B301F24B7C5C4004905AA /* Utils.h */,
+				488B302024B7C5C4004905AA /* Info.plist */,
+				488B305C24B7C623004905AA /* DecodableHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		488B302B24B7C5C4004905AA /* UtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				488B302C24B7C5C4004905AA /* UtilsTests.swift */,
+				488B302E24B7C5C4004905AA /* Info.plist */,
+			);
+			path = UtilsTests;
+			sourceTree = "<group>";
+		};
+		488B304024B7C5F5004905AA /* UtilsInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				488B304124B7C5F5004905AA /* UtilsInterfaces.h */,
+				488B304224B7C5F5004905AA /* Info.plist */,
+				488B305E24B7C649004905AA /* DecodableHelperProtocol.swift */,
+			);
+			path = UtilsInterfaces;
+			sourceTree = "<group>";
+		};
+		488B304D24B7C5F5004905AA /* UtilsInterfacesTests */ = {
+			isa = PBXGroup;
+			children = (
+				488B304E24B7C5F5004905AA /* UtilsInterfacesTests.swift */,
+				488B305024B7C5F5004905AA /* Info.plist */,
+			);
+			path = UtilsInterfacesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -398,6 +529,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		488B301824B7C5C3004905AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B302F24B7C5C4004905AA /* Utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B303A24B7C5F5004905AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B305124B7C5F5004905AA /* UtilsInterfaces.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -417,6 +564,8 @@
 				488B2FCC24B7950F004905AA /* PBXTargetDependency */,
 				488B2FE724B79C6E004905AA /* PBXTargetDependency */,
 				488B2FF824B79C78004905AA /* PBXTargetDependency */,
+				488B303124B7C5C4004905AA /* PBXTargetDependency */,
+				488B305324B7C5F5004905AA /* PBXTargetDependency */,
 			);
 			name = RedditPosts;
 			productName = RedditPosts;
@@ -553,6 +702,62 @@
 			productReference = 488B300D24B7C0A5004905AA /* ServicesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		488B301C24B7C5C3004905AA /* Utils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488B303424B7C5C4004905AA /* Build configuration list for PBXNativeTarget "Utils" */;
+			buildPhases = (
+				488B301824B7C5C3004905AA /* Headers */,
+				488B301924B7C5C3004905AA /* Sources */,
+				488B301A24B7C5C3004905AA /* Frameworks */,
+				488B301B24B7C5C3004905AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				488B306324B7C762004905AA /* PBXTargetDependency */,
+			);
+			name = Utils;
+			productName = Utils;
+			productReference = 488B301D24B7C5C3004905AA /* Utils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		488B302424B7C5C4004905AA /* UtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488B303724B7C5C4004905AA /* Build configuration list for PBXNativeTarget "UtilsTests" */;
+			buildPhases = (
+				488B302124B7C5C4004905AA /* Sources */,
+				488B302224B7C5C4004905AA /* Frameworks */,
+				488B302324B7C5C4004905AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				488B302824B7C5C4004905AA /* PBXTargetDependency */,
+				488B302A24B7C5C4004905AA /* PBXTargetDependency */,
+			);
+			name = UtilsTests;
+			productName = UtilsTests;
+			productReference = 488B302524B7C5C4004905AA /* UtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		488B303E24B7C5F5004905AA /* UtilsInterfaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488B305624B7C5F5004905AA /* Build configuration list for PBXNativeTarget "UtilsInterfaces" */;
+			buildPhases = (
+				488B303A24B7C5F5004905AA /* Headers */,
+				488B303B24B7C5F5004905AA /* Sources */,
+				488B303C24B7C5F5004905AA /* Frameworks */,
+				488B303D24B7C5F5004905AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UtilsInterfaces;
+			productName = UtilsInterfaces;
+			productReference = 488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -593,6 +798,18 @@
 					488B300C24B7C0A5004905AA = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					488B301C24B7C5C3004905AA = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					488B302424B7C5C4004905AA = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 488B2F7824B761CF004905AA;
+					};
+					488B303E24B7C5F5004905AA = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
 				};
 			};
 			buildConfigurationList = 488B2F7424B761CF004905AA /* Build configuration list for PBXProject "RedditPosts" */;
@@ -616,6 +833,9 @@
 				488B2FE024B79C6D004905AA /* Services */,
 				488B2FF124B79C78004905AA /* ServicesInterfaces */,
 				488B300C24B7C0A5004905AA /* ServicesTests */,
+				488B301C24B7C5C3004905AA /* Utils */,
+				488B302424B7C5C4004905AA /* UtilsTests */,
+				488B303E24B7C5F5004905AA /* UtilsInterfaces */,
 			);
 		};
 /* End PBXProject section */
@@ -675,6 +895,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		488B300B24B7C0A5004905AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B301B24B7C5C3004905AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B302324B7C5C4004905AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B303D24B7C5F5004905AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -749,6 +990,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		488B301924B7C5C3004905AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B305D24B7C623004905AA /* DecodableHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B302124B7C5C4004905AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B302D24B7C5C4004905AA /* UtilsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B303B24B7C5F5004905AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B305F24B7C649004905AA /* DecodableHelperProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -801,6 +1066,31 @@
 			isa = PBXTargetDependency;
 			target = 488B2FE024B79C6D004905AA /* Services */;
 			targetProxy = 488B301324B7C0A5004905AA /* PBXContainerItemProxy */;
+		};
+		488B302824B7C5C4004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B301C24B7C5C3004905AA /* Utils */;
+			targetProxy = 488B302724B7C5C4004905AA /* PBXContainerItemProxy */;
+		};
+		488B302A24B7C5C4004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B2F7824B761CF004905AA /* RedditPosts */;
+			targetProxy = 488B302924B7C5C4004905AA /* PBXContainerItemProxy */;
+		};
+		488B303124B7C5C4004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B301C24B7C5C3004905AA /* Utils */;
+			targetProxy = 488B303024B7C5C4004905AA /* PBXContainerItemProxy */;
+		};
+		488B305324B7C5F5004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B303E24B7C5F5004905AA /* UtilsInterfaces */;
+			targetProxy = 488B305224B7C5F5004905AA /* PBXContainerItemProxy */;
+		};
+		488B306324B7C762004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B303E24B7C5F5004905AA /* UtilsInterfaces */;
+			targetProxy = 488B306224B7C762004905AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1324,6 +1614,160 @@
 			};
 			name = Release;
 		};
+		488B303524B7C5C4004905AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Utils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.Utils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		488B303624B7C5C4004905AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Utils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.Utils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		488B303824B7C5C4004905AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				INFOPLIST_FILE = UtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.UtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedditPosts.app/RedditPosts";
+			};
+			name = Debug;
+		};
+		488B303924B7C5C4004905AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				INFOPLIST_FILE = UtilsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.UtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedditPosts.app/RedditPosts";
+			};
+			name = Release;
+		};
+		488B305724B7C5F5004905AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UtilsInterfaces/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.UtilsInterfaces;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		488B305824B7C5F5004905AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UtilsInterfaces/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.UtilsInterfaces;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1404,6 +1848,33 @@
 			buildConfigurations = (
 				488B301624B7C0A5004905AA /* Debug */,
 				488B301724B7C0A5004905AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		488B303424B7C5C4004905AA /* Build configuration list for PBXNativeTarget "Utils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488B303524B7C5C4004905AA /* Debug */,
+				488B303624B7C5C4004905AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		488B303724B7C5C4004905AA /* Build configuration list for PBXNativeTarget "UtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488B303824B7C5C4004905AA /* Debug */,
+				488B303924B7C5C4004905AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		488B305624B7C5F5004905AA /* Build configuration list for PBXNativeTarget "UtilsInterfaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488B305724B7C5F5004905AA /* Debug */,
+				488B305824B7C5F5004905AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
