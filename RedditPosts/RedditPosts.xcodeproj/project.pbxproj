@@ -13,6 +13,17 @@
 		488B2F8624B761D3004905AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488B2F8524B761D3004905AA /* Assets.xcassets */; };
 		488B2F8924B761D3004905AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488B2F8724B761D3004905AA /* LaunchScreen.storyboard */; };
 		488B2F9424B761D3004905AA /* RedditPostsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B2F9324B761D3004905AA /* RedditPostsTests.swift */; };
+		488B2FAC24B794FA004905AA /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FA324B794F9004905AA /* Models.framework */; };
+		488B2FB324B794FA004905AA /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B2FB224B794FA004905AA /* PostTests.swift */; };
+		488B2FB524B794FA004905AA /* Models.h in Headers */ = {isa = PBXBuildFile; fileRef = 488B2FA524B794FA004905AA /* Models.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		488B2FB824B794FA004905AA /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FA324B794F9004905AA /* Models.framework */; };
+		488B2FB924B794FA004905AA /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FA324B794F9004905AA /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		488B2FCA24B7950F004905AA /* ModelsInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 488B2FC824B7950F004905AA /* ModelsInterfaces.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		488B2FCD24B7950F004905AA /* ModelsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; };
+		488B2FCE24B7950F004905AA /* ModelsInterfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		488B2FD324B795B3004905AA /* ModelsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; };
+		488B2FD924B79654004905AA /* PostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B2FD824B79654004905AA /* PostProtocol.swift */; };
+		488B2FDB24B79677004905AA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B2FDA24B79677004905AA /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +34,57 @@
 			remoteGlobalIDString = 488B2F7824B761CF004905AA;
 			remoteInfo = RedditPosts;
 		};
+		488B2FAD24B794FA004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B2FA224B794F9004905AA;
+			remoteInfo = Models;
+		};
+		488B2FAF24B794FA004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B2F7824B761CF004905AA;
+			remoteInfo = RedditPosts;
+		};
+		488B2FB624B794FA004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B2FA224B794F9004905AA;
+			remoteInfo = Models;
+		};
+		488B2FCB24B7950F004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B2FC524B7950F004905AA;
+			remoteInfo = ModelsInterfaces;
+		};
+		488B2FD524B795B3004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B2FC524B7950F004905AA;
+			remoteInfo = ModelsInterfaces;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		488B2FBD24B794FA004905AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				488B2FCE24B7950F004905AA /* ModelsInterfaces.framework in Embed Frameworks */,
+				488B2FB924B794FA004905AA /* Models.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		488B2F7924B761CF004905AA /* RedditPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +97,17 @@
 		488B2F8F24B761D3004905AA /* RedditPostsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditPostsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		488B2F9324B761D3004905AA /* RedditPostsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditPostsTests.swift; sourceTree = "<group>"; };
 		488B2F9524B761D3004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488B2FA324B794F9004905AA /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		488B2FA524B794FA004905AA /* Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		488B2FA624B794FA004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488B2FAB24B794FA004905AA /* ModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		488B2FB224B794FA004905AA /* PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTests.swift; sourceTree = "<group>"; };
+		488B2FB424B794FA004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488B2FC624B7950F004905AA /* ModelsInterfaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModelsInterfaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		488B2FC824B7950F004905AA /* ModelsInterfaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelsInterfaces.h; sourceTree = "<group>"; };
+		488B2FC924B7950F004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488B2FD824B79654004905AA /* PostProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProtocol.swift; sourceTree = "<group>"; };
+		488B2FDA24B79677004905AA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +115,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488B2FCD24B7950F004905AA /* ModelsInterfaces.framework in Frameworks */,
+				488B2FB824B794FA004905AA /* Models.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		488B2F8C24B761D3004905AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B2FA024B794F9004905AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B2FD324B795B3004905AA /* ModelsInterfaces.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B2FA824B794FA004905AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B2FAC24B794FA004905AA /* Models.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B2FC324B7950F004905AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,7 +158,11 @@
 			children = (
 				488B2F7B24B761CF004905AA /* RedditPosts */,
 				488B2F9224B761D3004905AA /* RedditPostsTests */,
+				488B2FA424B794FA004905AA /* Models */,
+				488B2FB124B794FA004905AA /* ModelsTests */,
+				488B2FC724B7950F004905AA /* ModelsInterfaces */,
 				488B2F7A24B761CF004905AA /* Products */,
+				488B2FD224B795B3004905AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +171,9 @@
 			children = (
 				488B2F7924B761CF004905AA /* RedditPosts.app */,
 				488B2F8F24B761D3004905AA /* RedditPostsTests.xctest */,
+				488B2FA324B794F9004905AA /* Models.framework */,
+				488B2FAB24B794FA004905AA /* ModelsTests.xctest */,
+				488B2FC624B7950F004905AA /* ModelsInterfaces.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +200,62 @@
 			path = RedditPostsTests;
 			sourceTree = "<group>";
 		};
+		488B2FA424B794FA004905AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				488B2FA524B794FA004905AA /* Models.h */,
+				488B2FA624B794FA004905AA /* Info.plist */,
+				488B2FDA24B79677004905AA /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		488B2FB124B794FA004905AA /* ModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				488B2FB224B794FA004905AA /* PostTests.swift */,
+				488B2FB424B794FA004905AA /* Info.plist */,
+			);
+			path = ModelsTests;
+			sourceTree = "<group>";
+		};
+		488B2FC724B7950F004905AA /* ModelsInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				488B2FC824B7950F004905AA /* ModelsInterfaces.h */,
+				488B2FC924B7950F004905AA /* Info.plist */,
+				488B2FD824B79654004905AA /* PostProtocol.swift */,
+			);
+			path = ModelsInterfaces;
+			sourceTree = "<group>";
+		};
+		488B2FD224B795B3004905AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		488B2F9E24B794F9004905AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B2FB524B794FA004905AA /* Models.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B2FC124B7950F004905AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B2FCA24B7950F004905AA /* ModelsInterfaces.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		488B2F7824B761CF004905AA /* RedditPosts */ = {
@@ -106,10 +265,13 @@
 				488B2F7524B761CF004905AA /* Sources */,
 				488B2F7624B761CF004905AA /* Frameworks */,
 				488B2F7724B761CF004905AA /* Resources */,
+				488B2FBD24B794FA004905AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				488B2FB724B794FA004905AA /* PBXTargetDependency */,
+				488B2FCC24B7950F004905AA /* PBXTargetDependency */,
 			);
 			name = RedditPosts;
 			productName = RedditPosts;
@@ -134,6 +296,62 @@
 			productReference = 488B2F8F24B761D3004905AA /* RedditPostsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		488B2FA224B794F9004905AA /* Models */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488B2FBA24B794FA004905AA /* Build configuration list for PBXNativeTarget "Models" */;
+			buildPhases = (
+				488B2F9E24B794F9004905AA /* Headers */,
+				488B2F9F24B794F9004905AA /* Sources */,
+				488B2FA024B794F9004905AA /* Frameworks */,
+				488B2FA124B794F9004905AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				488B2FD624B795B3004905AA /* PBXTargetDependency */,
+			);
+			name = Models;
+			productName = Models;
+			productReference = 488B2FA324B794F9004905AA /* Models.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		488B2FAA24B794FA004905AA /* ModelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488B2FBE24B794FA004905AA /* Build configuration list for PBXNativeTarget "ModelsTests" */;
+			buildPhases = (
+				488B2FA724B794FA004905AA /* Sources */,
+				488B2FA824B794FA004905AA /* Frameworks */,
+				488B2FA924B794FA004905AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				488B2FAE24B794FA004905AA /* PBXTargetDependency */,
+				488B2FB024B794FA004905AA /* PBXTargetDependency */,
+			);
+			name = ModelsTests;
+			productName = ModelsTests;
+			productReference = 488B2FAB24B794FA004905AA /* ModelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		488B2FC524B7950F004905AA /* ModelsInterfaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488B2FCF24B7950F004905AA /* Build configuration list for PBXNativeTarget "ModelsInterfaces" */;
+			buildPhases = (
+				488B2FC124B7950F004905AA /* Headers */,
+				488B2FC224B7950F004905AA /* Sources */,
+				488B2FC324B7950F004905AA /* Frameworks */,
+				488B2FC424B7950F004905AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModelsInterfaces;
+			productName = ModelsInterfaces;
+			productReference = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +368,18 @@
 					488B2F8E24B761D3004905AA = {
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = 488B2F7824B761CF004905AA;
+					};
+					488B2FA224B794F9004905AA = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					488B2FAA24B794FA004905AA = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 488B2F7824B761CF004905AA;
+					};
+					488B2FC524B7950F004905AA = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -168,6 +398,9 @@
 			targets = (
 				488B2F7824B761CF004905AA /* RedditPosts */,
 				488B2F8E24B761D3004905AA /* RedditPostsTests */,
+				488B2FA224B794F9004905AA /* Models */,
+				488B2FAA24B794FA004905AA /* ModelsTests */,
+				488B2FC524B7950F004905AA /* ModelsInterfaces */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +417,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		488B2F8D24B761D3004905AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B2FA124B794F9004905AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B2FA924B794FA004905AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B2FC424B7950F004905AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,6 +464,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		488B2F9F24B794F9004905AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B2FDB24B79677004905AA /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B2FA724B794FA004905AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B2FB324B794FA004905AA /* PostTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488B2FC224B7950F004905AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488B2FD924B79654004905AA /* PostProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +495,31 @@
 			isa = PBXTargetDependency;
 			target = 488B2F7824B761CF004905AA /* RedditPosts */;
 			targetProxy = 488B2F9024B761D3004905AA /* PBXContainerItemProxy */;
+		};
+		488B2FAE24B794FA004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B2FA224B794F9004905AA /* Models */;
+			targetProxy = 488B2FAD24B794FA004905AA /* PBXContainerItemProxy */;
+		};
+		488B2FB024B794FA004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B2F7824B761CF004905AA /* RedditPosts */;
+			targetProxy = 488B2FAF24B794FA004905AA /* PBXContainerItemProxy */;
+		};
+		488B2FB724B794FA004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B2FA224B794F9004905AA /* Models */;
+			targetProxy = 488B2FB624B794FA004905AA /* PBXContainerItemProxy */;
+		};
+		488B2FCC24B7950F004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B2FC524B7950F004905AA /* ModelsInterfaces */;
+			targetProxy = 488B2FCB24B7950F004905AA /* PBXContainerItemProxy */;
+		};
+		488B2FD624B795B3004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B2FC524B7950F004905AA /* ModelsInterfaces */;
+			targetProxy = 488B2FD524B795B3004905AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -357,6 +660,7 @@
 		488B2F9924B761D3004905AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQLWMW4T3Q;
@@ -375,6 +679,7 @@
 		488B2F9A24B761D3004905AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQLWMW4T3Q;
@@ -434,6 +739,160 @@
 			};
 			name = Release;
 		};
+		488B2FBB24B794FA004905AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Models/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.Models;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		488B2FBC24B794FA004905AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Models/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.Models;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		488B2FBF24B794FA004905AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				INFOPLIST_FILE = ModelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.ModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedditPosts.app/RedditPosts";
+			};
+			name = Debug;
+		};
+		488B2FC024B794FA004905AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				INFOPLIST_FILE = ModelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.ModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedditPosts.app/RedditPosts";
+			};
+			name = Release;
+		};
+		488B2FD024B7950F004905AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ModelsInterfaces/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.ModelsInterfaces;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		488B2FD124B7950F004905AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MQLWMW4T3Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ModelsInterfaces/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmoldes.redditposts.ModelsInterfaces;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -460,6 +919,33 @@
 			buildConfigurations = (
 				488B2F9C24B761D3004905AA /* Debug */,
 				488B2F9D24B761D3004905AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		488B2FBA24B794FA004905AA /* Build configuration list for PBXNativeTarget "Models" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488B2FBB24B794FA004905AA /* Debug */,
+				488B2FBC24B794FA004905AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		488B2FBE24B794FA004905AA /* Build configuration list for PBXNativeTarget "ModelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488B2FBF24B794FA004905AA /* Debug */,
+				488B2FC024B794FA004905AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		488B2FCF24B7950F004905AA /* Build configuration list for PBXNativeTarget "ModelsInterfaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488B2FD024B7950F004905AA /* Debug */,
+				488B2FD124B7950F004905AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
