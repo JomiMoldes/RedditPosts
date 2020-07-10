@@ -55,6 +55,9 @@
 		488B307924B8A738004905AA /* DecodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B305C24B7C623004905AA /* DecodableHelper.swift */; };
 		488B307A24B8A744004905AA /* DecodableHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B305E24B7C649004905AA /* DecodableHelperProtocol.swift */; };
 		488B307C24B8ABBF004905AA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B307B24B8ABBF004905AA /* NetworkError.swift */; };
+		488B307D24B8CB7A004905AA /* ModelsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; };
+		488B308224B8CBAA004905AA /* ModelsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; };
+		488B308624B8CBAA004905AA /* ServicesInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FF224B79C78004905AA /* ServicesInterfaces.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +172,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 488B303E24B7C5F5004905AA;
 			remoteInfo = UtilsInterfaces;
+		};
+		488B307F24B8CB7B004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B2FC524B7950F004905AA;
+			remoteInfo = ModelsInterfaces;
+		};
+		488B308424B8CBAA004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B2FC524B7950F004905AA;
+			remoteInfo = ModelsInterfaces;
+		};
+		488B308824B8CBAA004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B2FF124B79C78004905AA;
+			remoteInfo = ServicesInterfaces;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -304,6 +328,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488B307D24B8CB7A004905AA /* ModelsInterfaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +344,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488B308224B8CBAA004905AA /* ModelsInterfaces.framework in Frameworks */,
 				488B306024B7C762004905AA /* UtilsInterfaces.framework in Frameworks */,
+				488B308624B8CBAA004905AA /* ServicesInterfaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +723,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				488B308024B8CB7B004905AA /* PBXTargetDependency */,
 			);
 			name = ServicesInterfaces;
 			productName = ServicesInterfaces;
@@ -733,6 +761,8 @@
 			);
 			dependencies = (
 				488B306324B7C762004905AA /* PBXTargetDependency */,
+				488B308524B8CBAA004905AA /* PBXTargetDependency */,
+				488B308924B8CBAA004905AA /* PBXTargetDependency */,
 			);
 			name = Utils;
 			productName = Utils;
@@ -1121,6 +1151,21 @@
 			isa = PBXTargetDependency;
 			target = 488B303E24B7C5F5004905AA /* UtilsInterfaces */;
 			targetProxy = 488B306724B7C8B8004905AA /* PBXContainerItemProxy */;
+		};
+		488B308024B8CB7B004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B2FC524B7950F004905AA /* ModelsInterfaces */;
+			targetProxy = 488B307F24B8CB7B004905AA /* PBXContainerItemProxy */;
+		};
+		488B308524B8CBAA004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B2FC524B7950F004905AA /* ModelsInterfaces */;
+			targetProxy = 488B308424B8CBAA004905AA /* PBXContainerItemProxy */;
+		};
+		488B308924B8CBAA004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B2FF124B79C78004905AA /* ServicesInterfaces */;
+			targetProxy = 488B308824B8CBAA004905AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

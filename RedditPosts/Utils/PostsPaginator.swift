@@ -11,7 +11,7 @@ import UtilsInterfaces
 import ModelsInterfaces
 import ServicesInterfaces
 
-public struct PostsPaginator: PaginationProtocol {
+public class PostsPaginator: PaginationProtocol {
     
     public var results: [PostProtocol]
     public var before: String?
@@ -36,7 +36,7 @@ public struct PostsPaginator: PaginationProtocol {
         case results, before, after
     }
     
-    public mutating func fetchLatest(callback: (Result<Void, NetworkError>) -> Void) {
+    public func fetchLatest(callback: @escaping (Result<Void, NetworkError>) -> Void) {
         self.service.fetch(after: self.after ?? "1") { result in
             switch result {
             case .success(let posts):
@@ -56,7 +56,7 @@ public struct PostsPaginator: PaginationProtocol {
         }
     }
     
-    public func fetchOlder(result: (Result<Void, NetworkError>) -> Void) {
+    public func fetchOlder(result: @escaping (Result<Void, NetworkError>) -> Void) {
         
     }
     

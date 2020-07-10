@@ -18,8 +18,8 @@ public protocol PaginationProtocol: Equatable {
     
     var after: String? { get set }
     
-    mutating func fetchLatest(callback: (Result<Void, NetworkError>) -> Void) 
+    func fetchLatest(callback: @escaping (Result<Void, NetworkError>) -> Void)
     
-    func fetchOlder(result: (Result<Void, NetworkError>) -> Void)
+    func fetchOlder(result: @escaping (Result<Void, NetworkError>) -> Void)
     
 }
