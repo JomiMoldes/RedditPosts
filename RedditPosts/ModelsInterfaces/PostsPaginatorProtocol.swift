@@ -1,5 +1,5 @@
 //
-//  PaginationProtocol.swift
+//  PostsPaginatorProtocol.swift
 //  UtilsInterfaces
 //
 //  Created by Miguel Moldes on 09/07/2020.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-public protocol PaginationProtocol: Equatable {
+public protocol PostsPaginatorProtocol {
 
-    associatedtype PaginatedElement
-
-    var results: [PaginatedElement] { get set }
+    var results: [PostProtocol] { get set }
 
     var before: String? { get set }
     
     var after: String? { get set }
+    
+    // TO DO: split this responsiblity in another object
     
     func fetchLatest(callback: @escaping (Result<Void, NetworkError>) -> Void)
     

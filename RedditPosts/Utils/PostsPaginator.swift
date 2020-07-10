@@ -11,7 +11,7 @@ import UtilsInterfaces
 import ModelsInterfaces
 import ServicesInterfaces
 
-public class PostsPaginator: PaginationProtocol {
+public class PostsPaginator: PostsPaginatorProtocol {
     
     /* TO DO:
         I would like to make this Paginator Codable,
@@ -58,7 +58,8 @@ public class PostsPaginator: PaginationProtocol {
                 var results = [PostProtocol?]()
                 
                 children.forEach {
-                    if let post = self.postsCreator.createPost(from: $0) {
+                    if let postData = $0["data"] as? [String: Any],
+                        let post = self.postsCreator.createPost(from: postData) {
                         results.append(post)
                     }
                 }

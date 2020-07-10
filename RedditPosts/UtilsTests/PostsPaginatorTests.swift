@@ -99,24 +99,32 @@ class PostsPaginatorTests: XCTestCase {
         "before": "2",
         "children": [
             [
-                "id": "1",
-                "title": "Any title",
-                "thumbnail": "url 1"
+                "data": [
+                    "id": "1",
+                    "title": "Any title",
+                    "thumbnail": "url 1"
+                ]
             ],
             [
-                "id": "2",
-                "title": "Any title 2",
-                "thumbnail": "url 2"
+                "data": [
+                    "id": "2",
+                    "title": "Any title 2",
+                    "thumbnail": "url 2"
+                ]
             ],
             [
-                "id": "2",
-                "title": "Any title 3",
-                "thumbnail": "url 3"
+                "data": [
+                    "id": "2",
+                    "title": "Any title 3",
+                    "thumbnail": "url 3"
+                ]
             ],
             [
-                "id": "4",
-                "title": "Any title 4",
-                "thumbnail": "url 4"
+                "data": [
+                    "id": "4",
+                    "title": "Any title 4",
+                    "thumbnail": "url 4"
+                ]
             ]
         ]
     ]

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "488B2FA224B794F9004905AA"
-               BuildableName = "Models.framework"
-               BlueprintName = "Models"
+               BlueprintIdentifier = "488B308F24B9104C004905AA"
+               BuildableName = "PostsBrowserFeature.framework"
+               BlueprintName = "PostsBrowserFeature"
                ReferencedContainer = "container:RedditPosts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,49 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "488B2FAA24B794FA004905AA"
-               BuildableName = "ModelsTests.xctest"
-               BlueprintName = "ModelsTests"
-               ReferencedContainer = "container:RedditPosts.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "488B302424B7C5C4004905AA"
-               BuildableName = "UtilsTests.xctest"
-               BlueprintName = "UtilsTests"
-               ReferencedContainer = "container:RedditPosts.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "488B304624B7C5F5004905AA"
-               BuildableName = "UtilsInterfacesTests.xctest"
-               BlueprintName = "UtilsInterfacesTests"
-               ReferencedContainer = "container:RedditPosts.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "488B309724B9104D004905AA"
                BuildableName = "PostsBrowserFeatureTests.xctest"
                BlueprintName = "PostsBrowserFeatureTests"
-               ReferencedContainer = "container:RedditPosts.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "488B30B924B9105E004905AA"
-               BuildableName = "PostsBrowserFeatureInterfacesTests.xctest"
-               BlueprintName = "PostsBrowserFeatureInterfacesTests"
                ReferencedContainer = "container:RedditPosts.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -110,9 +70,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "488B2FA224B794F9004905AA"
-            BuildableName = "Models.framework"
-            BlueprintName = "Models"
+            BlueprintIdentifier = "488B308F24B9104C004905AA"
+            BuildableName = "PostsBrowserFeature.framework"
+            BlueprintName = "PostsBrowserFeature"
             ReferencedContainer = "container:RedditPosts.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

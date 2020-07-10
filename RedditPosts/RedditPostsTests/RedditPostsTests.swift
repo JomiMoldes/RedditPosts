@@ -21,8 +21,10 @@ class RedditPostsTests: XCTestCase {
         sut.fetch(after: "t3_homz15") { result in
             exp.fulfill()
         }
-        self.waitForExpectations(timeout: 20.0) { error in
-            print(error)
+        self.waitForExpectations(timeout: 1.0) { error in
+            if let error = error {
+                XCTFail(error.localizedDescription)
+            }
         }
     }
 }

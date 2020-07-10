@@ -7,6 +7,13 @@
 //
 
 import UIKit
+import PostsBrowserFeature
+import ServicesInterfaces
+import ModelsInterfaces
+import Services
+import UtilsInterfaces
+import Utils
+import Models
 
 class ViewController: UIViewController {
 
@@ -14,6 +21,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        let service: PostServiceProtocol = PostsService(deviceId: UIDevice.current.identifierForVendor!.uuidString)
+        let decodable = DecodableHelper()
+        let postsCreator: PostsListCreatorProtocol = PostsListCreator(decodableHelper: decodable)
+        let paginator: PostsPaginatorProtocol = PostsPaginator(service: service,
+                                                               postsCreator: postsCreator)
+        let viewModel = PostsBrowserViewModel(paginator: paginator)
+        let controller = PostsBrowserViewController(viewModel: viewModel)
+
+        self.navigationController?.pushViewController(controller, animated: false)
     }
 
 }

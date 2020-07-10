@@ -38,6 +38,36 @@
                ReferencedContainer = "container:RedditPosts.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "488B309724B9104D004905AA"
+               BuildableName = "PostsBrowserFeatureTests.xctest"
+               BlueprintName = "PostsBrowserFeatureTests"
+               ReferencedContainer = "container:RedditPosts.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "488B30B924B9105E004905AA"
+               BuildableName = "PostsBrowserFeatureInterfacesTests.xctest"
+               BlueprintName = "PostsBrowserFeatureInterfacesTests"
+               ReferencedContainer = "container:RedditPosts.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "488B30EC24B916CD004905AA"
+               BuildableName = "ExtensionsTests.xctest"
+               BlueprintName = "ExtensionsTests"
+               ReferencedContainer = "container:RedditPosts.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
