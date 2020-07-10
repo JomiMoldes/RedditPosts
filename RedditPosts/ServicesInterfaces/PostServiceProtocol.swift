@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ModelsInterfaces
 
 public protocol PostServiceProtocol {
     
@@ -14,9 +15,4 @@ public protocol PostServiceProtocol {
     
     func fetch(before: String, callback: (Result<[[String : Any]], NetworkError>) -> Void)
     
-}
-
-public enum NetworkError: Error {
-    case domainError
-    case decodingError
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import UtilsInterfaces
+import ModelsInterfaces
 
 public class DecodableHelper: DecodableHelperProtocol {
     

@@ -34,7 +34,6 @@
 		488B300124B79D67004905AA /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B300024B79D67004905AA /* PostsService.swift */; };
 		488B300324B7B7BC004905AA /* top.json in Resources */ = {isa = PBXBuildFile; fileRef = 488B300224B7B7BC004905AA /* top.json */; };
 		488B300424B7BF8E004905AA /* ServicesInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FF224B79C78004905AA /* ServicesInterfaces.framework */; };
-		488B300524B7BF8E004905AA /* ServicesInterfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FF224B79C78004905AA /* ServicesInterfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		488B301024B7C0A5004905AA /* ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B300F24B7C0A5004905AA /* ServicesTests.swift */; };
 		488B301224B7C0A5004905AA /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FE124B79C6D004905AA /* Services.framework */; };
 		488B302624B7C5C4004905AA /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B301D24B7C5C3004905AA /* Utils.framework */; };
@@ -45,9 +44,17 @@
 		488B305124B7C5F5004905AA /* UtilsInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 488B304124B7C5F5004905AA /* UtilsInterfaces.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		488B305424B7C5F5004905AA /* UtilsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */; };
 		488B305524B7C5F5004905AA /* UtilsInterfaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		488B305D24B7C623004905AA /* DecodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B305C24B7C623004905AA /* DecodableHelper.swift */; };
-		488B305F24B7C649004905AA /* DecodableHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B305E24B7C649004905AA /* DecodableHelperProtocol.swift */; };
 		488B306024B7C762004905AA /* UtilsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */; };
+		488B306524B7C8B8004905AA /* UtilsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */; };
+		488B306E24B7CECF004905AA /* PaginationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B306924B7CB99004905AA /* PaginationProtocol.swift */; };
+		488B307124B8A65F004905AA /* PostsPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B306B24B7CBD7004905AA /* PostsPaginator.swift */; };
+		488B307224B8A665004905AA /* PostsPaginatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B306F24B7D1A7004905AA /* PostsPaginatorTests.swift */; };
+		488B307424B8A67C004905AA /* PostsListCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B307324B8A67C004905AA /* PostsListCreator.swift */; };
+		488B307624B8A68A004905AA /* PostsListCreatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B307524B8A68A004905AA /* PostsListCreatorProtocol.swift */; };
+		488B307824B8A6C3004905AA /* PostsListCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B307724B8A6C3004905AA /* PostsListCreatorTests.swift */; };
+		488B307924B8A738004905AA /* DecodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B305C24B7C623004905AA /* DecodableHelper.swift */; };
+		488B307A24B8A744004905AA /* DecodableHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B305E24B7C649004905AA /* DecodableHelperProtocol.swift */; };
+		488B307C24B8ABBF004905AA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B307B24B8ABBF004905AA /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +163,13 @@
 			remoteGlobalIDString = 488B303E24B7C5F5004905AA;
 			remoteInfo = UtilsInterfaces;
 		};
+		488B306724B7C8B8004905AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B303E24B7C5F5004905AA;
+			remoteInfo = UtilsInterfaces;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -171,17 +185,6 @@
 				488B2FE924B79C6E004905AA /* Services.framework in Embed Frameworks */,
 				488B305524B7C5F5004905AA /* UtilsInterfaces.framework in Embed Frameworks */,
 				488B2FB924B794FA004905AA /* Models.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		488B300824B7BF8E004905AA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				488B300524B7BF8E004905AA /* ServicesInterfaces.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +238,13 @@
 		488B305024B7C5F5004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		488B305C24B7C623004905AA /* DecodableHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableHelper.swift; sourceTree = "<group>"; };
 		488B305E24B7C649004905AA /* DecodableHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableHelperProtocol.swift; sourceTree = "<group>"; };
+		488B306924B7CB99004905AA /* PaginationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationProtocol.swift; sourceTree = "<group>"; };
+		488B306B24B7CBD7004905AA /* PostsPaginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPaginator.swift; sourceTree = "<group>"; };
+		488B306F24B7D1A7004905AA /* PostsPaginatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPaginatorTests.swift; sourceTree = "<group>"; };
+		488B307324B8A67C004905AA /* PostsListCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListCreator.swift; sourceTree = "<group>"; };
+		488B307524B8A68A004905AA /* PostsListCreatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListCreatorProtocol.swift; sourceTree = "<group>"; };
+		488B307724B8A6C3004905AA /* PostsListCreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListCreatorTests.swift; sourceTree = "<group>"; };
+		488B307B24B8ABBF004905AA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488B306524B7C8B8004905AA /* UtilsInterfaces.framework in Frameworks */,
 				488B300424B7BF8E004905AA /* ServicesInterfaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +408,8 @@
 				488B2FA524B794FA004905AA /* Models.h */,
 				488B2FA624B794FA004905AA /* Info.plist */,
 				488B2FDA24B79677004905AA /* Post.swift */,
+				488B305C24B7C623004905AA /* DecodableHelper.swift */,
+				488B307324B8A67C004905AA /* PostsListCreator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -406,6 +419,7 @@
 			children = (
 				488B2FB224B794FA004905AA /* PostTests.swift */,
 				488B2FB424B794FA004905AA /* Info.plist */,
+				488B307724B8A6C3004905AA /* PostsListCreatorTests.swift */,
 			);
 			path = ModelsTests;
 			sourceTree = "<group>";
@@ -414,8 +428,12 @@
 			isa = PBXGroup;
 			children = (
 				488B2FC824B7950F004905AA /* ModelsInterfaces.h */,
+				488B305E24B7C649004905AA /* DecodableHelperProtocol.swift */,
+				488B306924B7CB99004905AA /* PaginationProtocol.swift */,
 				488B2FC924B7950F004905AA /* Info.plist */,
 				488B2FD824B79654004905AA /* PostProtocol.swift */,
+				488B307524B8A68A004905AA /* PostsListCreatorProtocol.swift */,
+				488B307B24B8ABBF004905AA /* NetworkError.swift */,
 			);
 			path = ModelsInterfaces;
 			sourceTree = "<group>";
@@ -459,9 +477,9 @@
 		488B301E24B7C5C4004905AA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				488B306B24B7CBD7004905AA /* PostsPaginator.swift */,
 				488B301F24B7C5C4004905AA /* Utils.h */,
 				488B302024B7C5C4004905AA /* Info.plist */,
-				488B305C24B7C623004905AA /* DecodableHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -469,6 +487,7 @@
 		488B302B24B7C5C4004905AA /* UtilsTests */ = {
 			isa = PBXGroup;
 			children = (
+				488B306F24B7D1A7004905AA /* PostsPaginatorTests.swift */,
 				488B302C24B7C5C4004905AA /* UtilsTests.swift */,
 				488B302E24B7C5C4004905AA /* Info.plist */,
 			);
@@ -480,7 +499,6 @@
 			children = (
 				488B304124B7C5F5004905AA /* UtilsInterfaces.h */,
 				488B304224B7C5F5004905AA /* Info.plist */,
-				488B305E24B7C649004905AA /* DecodableHelperProtocol.swift */,
 			);
 			path = UtilsInterfaces;
 			sourceTree = "<group>";
@@ -654,12 +672,12 @@
 				488B2FDD24B79C6D004905AA /* Sources */,
 				488B2FDE24B79C6D004905AA /* Frameworks */,
 				488B2FDF24B79C6D004905AA /* Resources */,
-				488B300824B7BF8E004905AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				488B300724B7BF8E004905AA /* PBXTargetDependency */,
+				488B306824B7C8B8004905AA /* PBXTargetDependency */,
 			);
 			name = Services;
 			productName = Services;
@@ -946,7 +964,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488B307424B8A67C004905AA /* PostsListCreator.swift in Sources */,
 				488B2FDB24B79677004905AA /* Post.swift in Sources */,
+				488B307924B8A738004905AA /* DecodableHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -954,6 +974,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488B307824B8A6C3004905AA /* PostsListCreatorTests.swift in Sources */,
 				488B2FB324B794FA004905AA /* PostTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -963,6 +984,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				488B2FD924B79654004905AA /* PostProtocol.swift in Sources */,
+				488B307A24B8A744004905AA /* DecodableHelperProtocol.swift in Sources */,
+				488B307624B8A68A004905AA /* PostsListCreatorProtocol.swift in Sources */,
+				488B306E24B7CECF004905AA /* PaginationProtocol.swift in Sources */,
+				488B307C24B8ABBF004905AA /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,7 +1019,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				488B305D24B7C623004905AA /* DecodableHelper.swift in Sources */,
+				488B307124B8A65F004905AA /* PostsPaginator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1003,6 +1028,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				488B302D24B7C5C4004905AA /* UtilsTests.swift in Sources */,
+				488B307224B8A665004905AA /* PostsPaginatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1010,7 +1036,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				488B305F24B7C649004905AA /* DecodableHelperProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1091,6 +1116,11 @@
 			isa = PBXTargetDependency;
 			target = 488B303E24B7C5F5004905AA /* UtilsInterfaces */;
 			targetProxy = 488B306224B7C762004905AA /* PBXContainerItemProxy */;
+		};
+		488B306824B7C8B8004905AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B303E24B7C5F5004905AA /* UtilsInterfaces */;
+			targetProxy = 488B306724B7C8B8004905AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

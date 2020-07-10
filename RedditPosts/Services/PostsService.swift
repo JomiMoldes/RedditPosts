@@ -8,6 +8,7 @@
 
 import Foundation
 import ServicesInterfaces
+import ModelsInterfaces
 
 public class PostsService: PostServiceProtocol {
     
@@ -36,8 +37,8 @@ public class PostsService: PostServiceProtocol {
             }
             
             callback(.success(children))
-        } catch let error {
-            print(error.localizedDescription)
+        } catch {
+            callback(.failure(.decodingError))
         }
     }
     
