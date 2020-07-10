@@ -12,7 +12,8 @@ import XCTest
 
 class ServicesTests: XCTestCase {
 
-    func testService() {
+    // TO DO: This was intended to test the API. To test it properly we should mock the API.
+    func _testService() {
         let service = PostsService(deviceId: "2345234523452345")
         let exp = self.expectation(description: "service")
         service.fetch(after: "1", callback: { result in
@@ -25,7 +26,7 @@ class ServicesTests: XCTestCase {
             }
             exp.fulfill()
         })
-        self.waitForExpectations(timeout: 10.0) { error in
+        self.waitForExpectations(timeout: 1.0) { error in
             if let error = error {
                 XCTFail(error.localizedDescription)
             }

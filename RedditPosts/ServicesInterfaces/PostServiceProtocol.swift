@@ -11,8 +11,8 @@ import ModelsInterfaces
 
 public protocol PostServiceProtocol {
     
-    func fetch(after: String, callback: @escaping (Result<[[String : Any]], NetworkError>) -> Void)
+    func fetch(after: String?, callback: @escaping (Result<[String : Any], NetworkError>) -> Void)
     
-    func fetch(before: String, callback: @escaping (Result<[[String : Any]], NetworkError>) -> Void)
+    func fetch(before: String?, callback: @escaping (Result<[String : Any], NetworkError>) -> Void)
     
 }

@@ -13,14 +13,15 @@ import Services
 
 class RedditPostsTests: XCTestCase {
 
-    func testService() {
+    // TO DO: remove this tests.
+    func _testService() {
         let device_id = UIDevice.current.identifierForVendor?.uuidString ?? "3452345609872345345"
-        let sut = PostsService(deviceId: device_id)
+        let sut = PostsService(token: "-X5lii_on9wFILwuTzgg9m1XGJAw",deviceId: device_id)
         let exp = self.expectation(description: "service")
-        sut.fetch(after: "1") { result in 
+        sut.fetch(after: "t3_homz15") { result in
             exp.fulfill()
         }
-        self.waitForExpectations(timeout: 10.0) { error in
+        self.waitForExpectations(timeout: 20.0) { error in
             print(error)
         }
     }

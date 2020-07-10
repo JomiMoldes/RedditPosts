@@ -13,6 +13,13 @@ import ServicesInterfaces
 
 public class PostsPaginator: PaginationProtocol {
     
+    /* TO DO:
+        I would like to make this Paginator Codable,
+        but I can't do it without knowing Post implementation,
+        thing that I'm trying to avoid.
+        This could be done separating PostsPaginator responsibilities.
+        I'll try it if I have time.
+     */
     public var results: [PostProtocol]
     public var before: String?
     public var after: String?
@@ -37,13 +44,20 @@ public class PostsPaginator: PaginationProtocol {
     }
     
     public func fetchLatest(callback: @escaping (Result<Void, NetworkError>) -> Void) {
-        self.service.fetch(after: self.after ?? "1") { result in
+        self.service.fetch(after: self.after) { result in
             switch result {
-            case .success(let posts):
-                print(posts)
+            case .success(let data):
+                self.after = data["after"] as? String
+                self.before = data["before"] as? String
+                
+                guard let children = data["children"] as? [[String: Any]] else {
+                    return
+                }
+                
                 // TO DO: make list Codable
                 var results = [PostProtocol?]()
-                posts.forEach {
+                
+                children.forEach {
                     if let post = self.postsCreator.createPost(from: $0) {
                         results.append(post)
                     }
