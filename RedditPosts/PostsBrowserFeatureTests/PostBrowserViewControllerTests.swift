@@ -14,6 +14,20 @@ import ModelsInterfaces
 
 class PostBrowserViewControllerTests: XCTestCase {
     
+    weak var weakSUT: PostsBrowserViewController?
+    
+    override func tearDown() {
+        super.tearDown()
+        XCTAssertNil(self.weakSUT)
+    }
+    
+    func testMemoryLeak() {
+        let controller = self.createSUT()
+        _ = controller.view
+        
+        self.weakSUT = controller
+    }
+    
     func test_should_call_to_fetch_when_it_starts() {
         let viewModel = self.createViewModel()
         let sut = self.createSUT(viewModel: viewModel)

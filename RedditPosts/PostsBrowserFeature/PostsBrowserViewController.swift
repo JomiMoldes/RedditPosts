@@ -43,11 +43,12 @@ private extension PostsBrowserViewController {
         table.register(PostViewCell.self, forCellReuseIdentifier: PostViewCell.identifier)
         
         self.viewModel.didError = { error in
-            
+            // TO DO: handle error
         }
-        self.viewModel.didUpdate = {
+        
+        self.viewModel.didUpdate = { [weak self] in
             ensureMainThread {
-                self.customView.tableView.reloadData()
+                self?.customView.tableView.reloadData()
             }
         }
     }
