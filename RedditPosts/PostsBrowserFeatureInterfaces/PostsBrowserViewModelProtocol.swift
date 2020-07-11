@@ -8,6 +8,7 @@
 
 import Foundation
 import ModelsInterfaces
+import UIKit
 
 public protocol PostsBrowserViewModelProtocol {
     
@@ -16,5 +17,25 @@ public protocol PostsBrowserViewModelProtocol {
     var didUpdate: (() -> Void)? { get set }
     
     func fetchPosts()
+    
+    func createViewCellModel(post: PostProtocol) -> PostViewCellViewModelProtocol
+    
+}
+
+public protocol PostViewCellViewModelProtocol {
+    
+    var title: String { get }
+    
+    var author: String { get }
+    
+    var timePassed: String { get }
+    
+    var comments: String { get }
+    
+    var thumbnail: UIImage? { get }
+    
+    var didUpdateImage: (() -> Void)? { get set}
+    
+    var dismissTitle: NSAttributedString { get }
     
 }

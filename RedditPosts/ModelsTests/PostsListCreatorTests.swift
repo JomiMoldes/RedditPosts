@@ -17,17 +17,23 @@ class PostsListCreatorTests: XCTestCase {
     func test_CreatePosts() {
         let sut = PostsListCreator(decodableHelper: DecodableHelper())
         let post = sut.createPost(from: getPostJSON())
-        XCTAssertEqual(post?.id, "1542")
+        XCTAssertEqual(post?.id, "1")
         XCTAssertEqual(post?.title, "Any title")
-        XCTAssertEqual(post?.thumbnail, "http://b.thumbs.redditmedia.com/9N1f7UGKM5fPZydrsgbb4_SUyyLW7A27um1VOygY3LM.jpg")
+        XCTAssertEqual(post?.thumbnail, "url 1")
+        XCTAssertEqual(post?.createdTime, 1234)
+        XCTAssertEqual(post?.comments, 1)
+        XCTAssertEqual(post?.author, "Author 1")
     }
     
 }
 
 func getPostJSON() -> [String: Any] {
     return [
-        "id": "1542",
+        "id": "1",
         "title": "Any title",
-        "thumbnail": "http://b.thumbs.redditmedia.com/9N1f7UGKM5fPZydrsgbb4_SUyyLW7A27um1VOygY3LM.jpg"
+        "thumbnail": "url 1",
+        "created_utc": 1234,
+        "num_comments": 1,
+        "author": "Author 1"
     ]
 }

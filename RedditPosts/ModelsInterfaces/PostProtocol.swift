@@ -13,5 +13,7 @@ public protocol PostProtocol: Codable {
     var id: String { get }
     var thumbnail: String { get }
     var title: String { get }
-    
+    var createdTime: TimeInterval { get }
+    var author: String { get }
+    var comments: Int { get }
 }

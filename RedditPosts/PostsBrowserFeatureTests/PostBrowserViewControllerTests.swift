@@ -52,20 +52,31 @@ class PostBrowserViewControllerTests: XCTestCase {
 private extension PostBrowserViewControllerTests {
     
     func createViewModel() -> PostsBrowserViewModelFake {
-        let posts = [PostFake(id: "1", thumbnail: "th", title: "Title")]
+        let posts = [createFakePost()]
         let paginator = Paginator(results: posts)
         let vModel = PostsBrowserViewModelFake(paginator: paginator)
         return vModel
     }
     
     func createSUT(viewModel: PostsBrowserViewModel? = nil) -> PostsBrowserViewController {
-        let posts = [PostFake(id: "1", thumbnail: "th", title: "Title")]
+        let posts = [createFakePost()]
         let paginator = Paginator(results: posts)
         let vModel = viewModel ?? PostsBrowserViewModelFake(paginator: paginator)
         let sut = PostsBrowserViewController(viewModel: vModel)
         return sut
     }
     
+}
+
+// TO DO: create a module to share in test targets
+private func createFakePost() -> PostProtocol {
+    return PostFake(id: "1",
+                    thumbnail: "th",
+                    title: "Title",
+                    createdTime: 1234,
+                    author: "Author",
+                    comments: 20
+    )
 }
 
 private class PostsBrowserViewModelFake: PostsBrowserViewModel {
@@ -106,5 +117,11 @@ struct PostFake: PostProtocol {
     var thumbnail: String
     
     var title: String
+    
+    var createdTime: TimeInterval
+    
+    var author: String
+    
+    var comments: Int
     
 }

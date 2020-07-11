@@ -109,3 +109,59 @@ public enum ViewFixedConstraint {
     case height(CGFloat)
     case width(CGFloat)
 }
+
+public extension UIImage {
+    convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
+        let rect = CGRect(origin: .zero, size: size)
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        color.setFill()
+        UIRectFill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        guard let cgImage = image?.cgImage else { return nil }
+        self.init(cgImage: cgImage)
+    }
+}
+
+public extension UIView {
+    
+    func showActivityIndicator(withBlurEffect blurEffectEnabled: Bool? = false, color: UIColor = .white, style: UIActivityIndicatorView.Style = UIActivityIndicatorView.Style.large) {
+        
+        if blurEffectEnabled! {
+            let visualEffectView = UIVisualEffectView()
+            if #available(iOS 13.0, *) {
+                visualEffectView.effect = self.traitCollection.userInterfaceStyle == .dark ? UIBlurEffect(style: .dark) : UIBlurEffect(style: .light)
+            } else {
+                visualEffectView.effect = UIBlurEffect(style: .light)
+            }
+            visualEffectView.frame = self.bounds
+            self.addSubview(visualEffectView)
+        }
+        
+        let loader = UIActivityIndicatorView(style: style)
+        if #available(iOS 13.0, *) {
+            loader.color = self.traitCollection.userInterfaceStyle == .dark ? .gray : color
+        } else {
+            loader.color = color
+        }
+        loader.center = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2)
+        self.addSubview(loader)
+        loader.startAnimating()
+        
+    }
+    
+    func hideActivityIndicator() {
+        
+        self.subviews.forEach {
+            if let view = $0 as? UIActivityIndicatorView {
+                view.stopAnimating()
+                view.removeFromSuperview()
+            }
+            if let view = $0 as? UIVisualEffectView {
+                view.removeFromSuperview()
+            }
+        }
+        
+    }
+}

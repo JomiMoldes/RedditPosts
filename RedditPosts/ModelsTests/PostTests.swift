@@ -16,26 +16,17 @@ class PostTests: XCTestCase {
     func test_Decode() {
         
         do {
-            let post: Post? = try DecodableHelper().decodeJSON(json: self.getPostJSON())
+            let post: Post? = try DecodableHelper().decodeJSON(json: getPostJSON())
             XCTAssertEqual(post?.id, "1")
             XCTAssertEqual(post?.title, "Any title")
-            XCTAssertEqual(post?.thumbnail, "http://b.thumbs.redditmedia.com/9N1f7UGKM5fPZydrsgbb4_SUyyLW7A27um1VOygY3LM.jpg")
+            XCTAssertEqual(post?.thumbnail, "url 1")
+            XCTAssertEqual(post?.createdTime, 1234)
+            XCTAssertEqual(post?.comments, 1)
+            XCTAssertEqual(post?.author, "Author 1")
         } catch let error {
             XCTFail("failed decoding \(error.localizedDescription)")
         }
         
     }
 
-}
-
-private extension PostTests {
-    
-    func getPostJSON() -> [String: Any] {
-        return [
-            "id": "1",
-            "title": "Any title",
-            "thumbnail": "http://b.thumbs.redditmedia.com/9N1f7UGKM5fPZydrsgbb4_SUyyLW7A27um1VOygY3LM.jpg"
-        ]
-    }
-    
 }

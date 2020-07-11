@@ -39,4 +39,8 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
         }
     }
     
+    public func createViewCellModel(post: PostProtocol) -> PostViewCellViewModelProtocol {
+        return PostViewCellViewModel(post: post)
+    }
+    
 }

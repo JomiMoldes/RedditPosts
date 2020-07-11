@@ -102,28 +102,40 @@ class PostsPaginatorTests: XCTestCase {
                 "data": [
                     "id": "1",
                     "title": "Any title",
-                    "thumbnail": "url 1"
+                    "thumbnail": "url 1",
+                    "created_utc": 1234,
+                    "num_comments": 1,
+                    "author": "Author 1"
                 ]
             ],
             [
                 "data": [
                     "id": "2",
                     "title": "Any title 2",
-                    "thumbnail": "url 2"
+                    "thumbnail": "url 2",
+                    "created_utc": 1234,
+                    "num_comments": 2,
+                    "author": "Author 2"
                 ]
             ],
             [
                 "data": [
                     "id": "2",
                     "title": "Any title 3",
-                    "thumbnail": "url 3"
+                    "thumbnail": "url 3",
+                    "created_utc": 1234,
+                    "num_comments": 3,
+                    "author": "Author 3"
                 ]
             ],
             [
                 "data": [
                     "id": "4",
                     "title": "Any title 4",
-                    "thumbnail": "url 4"
+                    "thumbnail": "url 4",
+                    "created_utc": 1234,
+                    "num_comments": 4,
+                    "author": "Author 4"
                 ]
             ]
         ]
@@ -171,5 +183,13 @@ struct PostFake: PostProtocol {
     var id: String
     var thumbnail: String
     var title: String
+    var createdTime: TimeInterval
+    var author: String
+    var comments: Int
     
+    enum CodingKeys: String, CodingKey {
+        case id, title, thumbnail, author
+        case createdTime = "created_utc"
+        case comments = "num_comments"
+    }
 }

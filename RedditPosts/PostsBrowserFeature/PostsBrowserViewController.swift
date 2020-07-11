@@ -40,6 +40,7 @@ private extension PostsBrowserViewController {
     func bindViewModel() {
         let table = self.customView.tableView
         table.dataSource = self
+        table.rowHeight = PostViewCell.rowHeight
         table.register(PostViewCell.self, forCellReuseIdentifier: PostViewCell.identifier)
         
         self.viewModel.didError = { error in
@@ -71,7 +72,8 @@ extension PostsBrowserViewController: UITableViewDataSource {
             return cell
         }
         let post = posts[row]
-        let viewModel = PostViewCellViewModel(post: post)
+        let viewModel = self.viewModel.createViewCellModel(post: post)
+        
         cell.setup(viewModel)
         return cell
     }
