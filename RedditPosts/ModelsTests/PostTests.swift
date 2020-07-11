@@ -8,6 +8,7 @@
 
 import XCTest
 import Utils
+import TestingResources
 
 @testable import Models
 
@@ -16,7 +17,7 @@ class PostTests: XCTestCase {
     func test_Decode() {
         
         do {
-            let post: Post? = try DecodableHelper().decodeJSON(json: getPostJSON())
+            let post: Post? = try DecodableHelper().decodeJSON(json: PostFake.getPostJSON())
             XCTAssertEqual(post?.id, "1")
             XCTAssertEqual(post?.title, "Any title")
             XCTAssertEqual(post?.thumbnail, "url 1")

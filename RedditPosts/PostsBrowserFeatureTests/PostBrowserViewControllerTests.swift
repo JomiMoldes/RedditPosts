@@ -9,6 +9,7 @@
 import Foundation
 import XCTest
 import ModelsInterfaces
+import TestingResources
 
 @testable import PostsBrowserFeature
 
@@ -52,31 +53,20 @@ class PostBrowserViewControllerTests: XCTestCase {
 private extension PostBrowserViewControllerTests {
     
     func createViewModel() -> PostsBrowserViewModelFake {
-        let posts = [createFakePost()]
+        let posts = [PostFake.faked()]
         let paginator = Paginator(results: posts)
         let vModel = PostsBrowserViewModelFake(paginator: paginator)
         return vModel
     }
     
     func createSUT(viewModel: PostsBrowserViewModel? = nil) -> PostsBrowserViewController {
-        let posts = [createFakePost()]
+        let posts = [PostFake.faked()]
         let paginator = Paginator(results: posts)
         let vModel = viewModel ?? PostsBrowserViewModelFake(paginator: paginator)
         let sut = PostsBrowserViewController(viewModel: vModel)
         return sut
     }
     
-}
-
-// TO DO: create a module to share in test targets
-private func createFakePost() -> PostProtocol {
-    return PostFake(id: "1",
-                    thumbnail: "th",
-                    title: "Title",
-                    createdTime: 1234,
-                    author: "Author",
-                    comments: 20
-    )
 }
 
 private class PostsBrowserViewModelFake: PostsBrowserViewModel {
@@ -107,21 +97,5 @@ class Paginator: PostsPaginatorProtocol {
     func fetchOlder(result: @escaping (Result<Void, NetworkError>) -> Void) {
         
     }
-    
-}
-
-struct PostFake: PostProtocol {
-    
-    var id: String
-    
-    var thumbnail: String
-    
-    var title: String
-    
-    var createdTime: TimeInterval
-    
-    var author: String
-    
-    var comments: Int
     
 }
