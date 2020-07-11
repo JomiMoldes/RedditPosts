@@ -40,8 +40,8 @@ public extension UIView {
                 constraints.append(self.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: value))
             case .centerX(let value):
                 constraints.append(NSLayoutConstraint(item: self, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: value, constant: 0))
-            case .centerY(let value, let constant):
-                let anchorConstant: CGFloat = constant != nil ? constant! : 0
+            case .centerY(let value):
+                let anchorConstant: CGFloat = 0
                 constraints.append(NSLayoutConstraint(item: self, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: value, constant: anchorConstant))
             }
         }
@@ -56,7 +56,7 @@ public extension UIView {
         }
         self.translatesAutoresizingMaskIntoConstraints = false
         
-        self.addConstraintEqualToSuperView(anchors: [.width(1.0), .centerX(1.0), .height(1.0), .centerY(1.0, 0.0)])
+        self.addConstraintEqualToSuperView(anchors: [.width(1.0), .centerX(1.0), .height(1.0), .centerY(1.0)])
         
     }
     
@@ -102,7 +102,7 @@ public enum ViewAnchors {
     case width(CGFloat)
     case height(CGFloat)
     case centerX(CGFloat)
-    case centerY(CGFloat, CGFloat?)
+    case centerY(CGFloat)
 }
 
 public enum ViewFixedConstraint {

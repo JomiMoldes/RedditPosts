@@ -90,6 +90,7 @@
 		488B313A24BA2CEE004905AA /* PostViewCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313924BA2CEE004905AA /* PostViewCellViewModelTests.swift */; };
 		488B313C24BA2FA7004905AA /* PostsBrowserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313B24BA2FA7004905AA /* PostsBrowserViewModelTests.swift */; };
 		488B313E24BA3071004905AA /* PostsPaginatorFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313D24BA3071004905AA /* PostsPaginatorFake.swift */; };
+		488B316224BA4A46004905AA /* PostsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B316124BA4A46004905AA /* PostsSplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -426,6 +427,7 @@
 		488B313924BA2CEE004905AA /* PostViewCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCellViewModelTests.swift; sourceTree = "<group>"; };
 		488B313B24BA2FA7004905AA /* PostsBrowserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsBrowserViewModelTests.swift; sourceTree = "<group>"; };
 		488B313D24BA3071004905AA /* PostsPaginatorFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPaginatorFake.swift; sourceTree = "<group>"; };
+		488B316124BA4A46004905AA /* PostsSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -762,6 +764,7 @@
 				488B30DC24B913ED004905AA /* PostsBrowserView.swift */,
 				488B310824B91C46004905AA /* PostViewCellViewModel.swift */,
 				488B310A24B91D10004905AA /* PostViewCell.swift */,
+				488B316124BA4A46004905AA /* PostsSplitViewController.swift */,
 			);
 			path = PostsBrowserFeature;
 			sourceTree = "<group>";
@@ -1549,6 +1552,7 @@
 				488B30DD24B913ED004905AA /* PostsBrowserView.swift in Sources */,
 				488B30D224B91140004905AA /* PostsBrowserViewController.swift in Sources */,
 				488B30D424B911EE004905AA /* PostsBrowserViewModel.swift in Sources */,
+				488B316224BA4A46004905AA /* PostsSplitViewController.swift in Sources */,
 				488B310924B91C46004905AA /* PostViewCellViewModel.swift in Sources */,
 				488B310B24B91D10004905AA /* PostViewCell.swift in Sources */,
 			);
