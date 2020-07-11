@@ -91,6 +91,7 @@
 		488B313C24BA2FA7004905AA /* PostsBrowserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313B24BA2FA7004905AA /* PostsBrowserViewModelTests.swift */; };
 		488B313E24BA3071004905AA /* PostsPaginatorFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313D24BA3071004905AA /* PostsPaginatorFake.swift */; };
 		488B316224BA4A46004905AA /* PostsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B316124BA4A46004905AA /* PostsSplitViewController.swift */; };
+		488B316624BA656C004905AA /* Thread+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B316524BA656C004905AA /* Thread+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -428,6 +429,7 @@
 		488B313B24BA2FA7004905AA /* PostsBrowserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsBrowserViewModelTests.swift; sourceTree = "<group>"; };
 		488B313D24BA3071004905AA /* PostsPaginatorFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPaginatorFake.swift; sourceTree = "<group>"; };
 		488B316124BA4A46004905AA /* PostsSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSplitViewController.swift; sourceTree = "<group>"; };
+		488B316524BA656C004905AA /* Thread+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thread+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -797,6 +799,7 @@
 				488B30DE24B9163A004905AA /* UIView+Extensions.swift */,
 				488B30E724B916CD004905AA /* Extensions.h */,
 				488B30E824B916CD004905AA /* Info.plist */,
+				488B316524BA656C004905AA /* Thread+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1582,6 +1585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				488B310224B916DA004905AA /* UIView+Extensions.swift in Sources */,
+				488B316624BA656C004905AA /* Thread+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

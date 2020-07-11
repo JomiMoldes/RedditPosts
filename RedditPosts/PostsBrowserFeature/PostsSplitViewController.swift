@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import ModelsInterfaces
+import Extensions
 
 public class PostsSplitViewController: UIViewController {
     
@@ -17,7 +19,10 @@ public class PostsSplitViewController: UIViewController {
     private var splitConstraints = [NSLayoutConstraint]()
     private var narrowConstraints = [NSLayoutConstraint]()
     
-    public init() {
+    private let paginator: PostsPaginatorProtocol
+    
+    public init(paginator: PostsPaginatorProtocol) {
+        self.paginator = paginator
         super.init(nibName: nil, bundle: nil)
         self.addSubviews()
         self.addConstraints()
@@ -30,6 +35,7 @@ public class PostsSplitViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        self.addListViewController()
     }
     
     public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -41,17 +47,17 @@ public class PostsSplitViewController: UIViewController {
 
 private extension PostsSplitViewController {
     
-    private func addSubviews() {
+    func addSubviews() {
         self.view.addSubview(self.listContainer)
         self.view.addSubview(self.detailContainer)
     }
     
-    private func addDetailsConstraints() {
+    func addDetailsConstraints() {
         self.detailContainer.addConstraintEqualToSuperView(anchors: [.right(0.0), .height(1.0), .centerY(1.0)])
         self.detailContainer.leftAnchor.constraint(equalTo: self.listContainer.rightAnchor, constant: 0.0).isActive = true
     }
     
-    private func addConstraints() {
+    func addConstraints() {
         if shouldSplit() {
             self.splitView()
         } else {
@@ -59,7 +65,7 @@ private extension PostsSplitViewController {
         }
     }
     
-    private func shouldSplit() -> Bool {
+    func shouldSplit() -> Bool {
         return traitCollection.horizontalSizeClass == .regular &&
             traitCollection.verticalSizeClass == .regular ||
             traitCollection.horizontalSizeClass == .compact &&
@@ -67,7 +73,7 @@ private extension PostsSplitViewController {
     }
     
     
-    private func splitView() {
+    func splitView() {
         NSLayoutConstraint.deactivate(narrowConstraints)
         let listConstraints = self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .centerY(1.0), .left(0.0)])
         let preferedWitdhConstraint = self.listContainer.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5)
@@ -80,9 +86,15 @@ private extension PostsSplitViewController {
         NSLayoutConstraint.activate(splitConstraints)
     }
     
-    private func narrowView() {
+    func narrowView() {
         NSLayoutConstraint.deactivate(splitConstraints)
         narrowConstraints.append(contentsOf: self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .width(1.0), .centerY(1.0), .centerX(1.0)]))
         NSLayoutConstraint.activate(narrowConstraints)
+    }
+    
+    func addListViewController() {
+        let viewModel = PostsBrowserViewModel(paginator: paginator)
+        let controller = PostsBrowserViewController(viewModel: viewModel)
+        self.load(viewController: controller, intoView: self.listContainer)
     }
 }

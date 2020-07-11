@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import PostsBrowserFeatureInterfaces
+import Extensions
 
 public class PostsBrowserViewController: UIViewController {
     
@@ -49,7 +50,7 @@ private extension PostsBrowserViewController {
         
         self.viewModel.didUpdate = { [weak self] in
             ensureMainThread {
-                self?.customView.tableView.reloadData()
+                self?.customView.reloadData()
             }
         }
     }
@@ -78,15 +79,4 @@ extension PostsBrowserViewController: UITableViewDataSource {
         return cell
     }
     
-}
-
-// TO DO: Share this
-func ensureMainThread(_ completion: @escaping () -> Void) {
-    if Thread.isMainThread {
-        completion()
-        return
-    }
-    DispatchQueue.main.async {
-        completion()
-    }
 }

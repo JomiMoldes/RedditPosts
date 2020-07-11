@@ -25,6 +25,16 @@ final class PostsBrowserView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func reloadData() {
+        self.tableView.hideActivityIndicator()
+        self.tableView.reloadData()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.tableView.showActivityIndicator()
+    }
+    
 }
 
 private extension PostsBrowserView {

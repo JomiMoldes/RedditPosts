@@ -165,3 +165,34 @@ public extension UIView {
         
     }
 }
+public extension UIViewController {
+    
+    func load(viewController: UIViewController, intoView: UIView? = .none, insets: UIEdgeInsets = .zero) {
+        let containerView: UIView = intoView ?? view
+        self.addChild(viewController)
+        viewController.view.loadInto(containerView: containerView, insets: insets)
+        viewController.didMove(toParent: self)
+    }
+
+    func remove(_ controller: UIViewController) {
+        controller.willMove(toParent: nil)
+        controller.view.removeFromSuperview()
+        controller.removeFromParent()
+    }
+
+}
+
+public extension UIView {
+    
+    func loadInto(containerView: UIView, insets: UIEdgeInsets = .zero) {
+        containerView.addSubview(self)
+        self.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            topAnchor.constraint(equalTo: containerView.topAnchor, constant: insets.top),
+            rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: insets.right),
+            bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: insets.bottom),
+            leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: insets.left)
+        ])
+    }
+}

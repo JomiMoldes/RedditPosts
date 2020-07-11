@@ -22,14 +22,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
-//        let service: PostServiceProtocol = PostsService(deviceId: UIDevice.current.identifierForVendor!.uuidString)
-//        let decodable = DecodableHelper()
-//        let postsCreator: PostsListCreatorProtocol = PostsListCreator(decodableHelper: decodable)
-//        let paginator: PostsPaginatorProtocol = PostsPaginator(service: service,
-//                                                               postsCreator: postsCreator)
-//        let viewModel = PostsBrowserViewModel(paginator: paginator)
-//        let controller = PostsBrowserViewController(viewModel: viewModel)
-        let controller = PostsSplitViewController()
+        let service: PostServiceProtocol = PostsService(deviceId: UIDevice.current.identifierForVendor!.uuidString)
+        let decodable = DecodableHelper()
+        let postsCreator: PostsListCreatorProtocol = PostsListCreator(decodableHelper: decodable)
+        let paginator: PostsPaginatorProtocol = PostsPaginator(service: service,
+                                                               postsCreator: postsCreator)
+        let controller = PostsSplitViewController(paginator: paginator)
 
         self.navigationController?.pushViewController(controller, animated: false)
     }
