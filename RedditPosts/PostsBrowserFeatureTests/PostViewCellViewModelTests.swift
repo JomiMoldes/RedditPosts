@@ -38,7 +38,8 @@ final class PostViewCellViewModelTests: XCTestCase {
     }
     
     private func createSUT(post: PostFake? = nil) -> PostViewCellViewModel {
-        let sut = PostViewCellViewModel(post: post ?? PostFake.faked())
+        let sut = PostViewCellViewModel(post: post ?? PostFake.faked(),
+                                        imageProvider: ImageProviderFake())
         return sut
     }
     

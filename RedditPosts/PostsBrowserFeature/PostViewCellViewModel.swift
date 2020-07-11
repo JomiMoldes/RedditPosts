@@ -9,14 +9,19 @@
 import Foundation
 import UIKit
 import ModelsInterfaces
+import UtilsInterfaces
 import PostsBrowserFeatureInterfaces
 
 final class PostViewCellViewModel: PostViewCellViewModelProtocol {
     
     private let post: PostProtocol
+    private let imageProvider: ImageProviderProtocol
     
-    init(post: PostProtocol) {
+    init(post: PostProtocol,
+         imageProvider: ImageProviderProtocol) {
         self.post = post
+        self.imageProvider = imageProvider
+        self.loadThumbnail()
     }
     
     var title: String {
@@ -48,4 +53,11 @@ final class PostViewCellViewModel: PostViewCellViewModelProtocol {
     var thumbnail: UIImage? = nil
     
     var didUpdateImage: (() -> Void)?
+    
+    private func loadThumbnail() {
+        self.imageProvider.loadImage(imageURL: self.post.thumbnail) { image in
+            self.thumbnail = image
+            self.didUpdateImage?()
+        }
+    }
 }

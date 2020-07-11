@@ -53,7 +53,8 @@ final class PostsBrowserViewModelTests: XCTestCase {
     
     private func createSUT(_ paginator: PostsPaginatorProtocol? = nil) -> PostsBrowserViewModel {
         
-        let sut = PostsBrowserViewModel(paginator: paginator ?? createPaginator())
+        let sut = PostsBrowserViewModel(paginator: paginator ?? createPaginator(),
+                                        imageProvider: ImageProviderFake())
         return sut
     }
     

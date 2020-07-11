@@ -44,11 +44,11 @@ private extension PostsBrowserView {
     }
     
     func setConstraints() {
-        self.tableView.addConstraintEqualToSuperView(anchors: [.centerX(1.0), .width(1.0), .top(0.0), .bottom(0.0)])
+        self.tableView.addConstraintEqualToSuperView(anchors: [.centerX(1.0), .width(0.95), .top(0.0), .bottom(0.0)])
     }
     
     func setStyles() {
-        self.tableView.backgroundColor = .orange
+        self.tableView.backgroundColor = .clear
     }
     
 }

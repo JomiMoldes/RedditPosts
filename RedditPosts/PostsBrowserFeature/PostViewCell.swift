@@ -106,7 +106,6 @@ private func createAuthorLabel() -> UILabel {
     let label = UILabel()
     label.textAlignment = .left
     label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-    label.backgroundColor = UIColor.orange.withAlphaComponent(0.5)
     label.numberOfLines = 1
     return label
 }
@@ -115,7 +114,6 @@ private func createTimeLabel() -> UILabel {
     let label = UILabel()
     label.textAlignment = .left
     label.setContentHuggingPriority(.defaultLow, for: .horizontal)
-    label.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
     label.numberOfLines = 1
     return label
 }
@@ -168,14 +166,14 @@ private func createInfoLabel() -> UILabel {
     label.textAlignment = .left
     label.setContentHuggingPriority(.defaultLow, for: .horizontal)
     label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
-    label.backgroundColor = UIColor.green.withAlphaComponent(0.5)
     label.numberOfLines = 0
     return label
 }
 
 private func createDisclosureButton() -> UIButton {
     let button = UIButton()
-    button.setTitle("open", for: .normal)
+    // TO DO: Replace by a nicer asset
+    button.setTitle(">", for: .normal)
     button.setContentHuggingPriority(.defaultHigh, for: .horizontal)
     button.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
     return button
@@ -189,6 +187,5 @@ private func createDismissButton() -> UIButton {
 private func createCommentsLabel() -> UILabel {
     let label = UILabel()
     label.textAlignment = .left
-    label.backgroundColor = UIColor.green.withAlphaComponent(0.5)
     return label
 }

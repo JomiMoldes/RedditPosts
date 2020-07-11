@@ -27,7 +27,9 @@ class ViewController: UIViewController {
         let postsCreator: PostsListCreatorProtocol = PostsListCreator(decodableHelper: decodable)
         let paginator: PostsPaginatorProtocol = PostsPaginator(service: service,
                                                                postsCreator: postsCreator)
-        let controller = PostsSplitViewController(paginator: paginator)
+        let imageProvider = ImageProvider()
+        let controller = PostsSplitViewController(paginator: paginator,
+                                                  imageProvider: imageProvider)
 
         self.navigationController?.pushViewController(controller, animated: false)
     }

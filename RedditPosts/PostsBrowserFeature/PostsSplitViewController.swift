@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import ModelsInterfaces
+import UtilsInterfaces
 import Extensions
 
 public class PostsSplitViewController: UIViewController {
@@ -20,9 +21,12 @@ public class PostsSplitViewController: UIViewController {
     private var narrowConstraints = [NSLayoutConstraint]()
     
     private let paginator: PostsPaginatorProtocol
+    private let imageProvider: ImageProviderProtocol
     
-    public init(paginator: PostsPaginatorProtocol) {
+    public init(paginator: PostsPaginatorProtocol,
+                imageProvider: ImageProviderProtocol) {
         self.paginator = paginator
+        self.imageProvider = imageProvider
         super.init(nibName: nil, bundle: nil)
         self.addSubviews()
         self.addConstraints()
@@ -93,7 +97,7 @@ private extension PostsSplitViewController {
     }
     
     func addListViewController() {
-        let viewModel = PostsBrowserViewModel(paginator: paginator)
+        let viewModel = PostsBrowserViewModel(paginator: paginator, imageProvider: self.imageProvider)
         let controller = PostsBrowserViewController(viewModel: viewModel)
         self.load(viewController: controller, intoView: self.listContainer)
     }

@@ -19,12 +19,15 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
         return self.paginator.results
     }
     private let paginator: PostsPaginatorProtocol
+    private let imageProvider: ImageProviderProtocol
     
     public var didError: ((NetworkError) -> Void)?
     public var didUpdate: (() -> Void)?
     
-    public init(paginator: PostsPaginatorProtocol) {
+    public init(paginator: PostsPaginatorProtocol,
+                imageProvider: ImageProviderProtocol) {
         self.paginator = paginator
+        self.imageProvider = imageProvider
     }
     
     public func fetchPosts() {
@@ -40,7 +43,7 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
     }
     
     public func createViewCellModel(post: PostProtocol) -> PostViewCellViewModelProtocol {
-        return PostViewCellViewModel(post: post)
+        return PostViewCellViewModel(post: post, imageProvider: self.imageProvider)
     }
     
 }
