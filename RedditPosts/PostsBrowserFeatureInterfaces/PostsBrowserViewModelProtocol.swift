@@ -38,4 +38,6 @@ public protocol PostViewCellViewModelProtocol {
     
     var dismissTitle: NSAttributedString { get }
     
+    func loadThumbnail() -> URLSessionDataTask?
+    
 }

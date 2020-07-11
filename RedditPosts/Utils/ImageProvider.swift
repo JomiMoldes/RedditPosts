@@ -16,26 +16,31 @@ public class ImageProvider: ImageProviderProtocol {
     
     public init() { }
     
-    public func loadImage(imageURL: String, callback: @escaping (UIImage?) -> Void) {
+    public func loadImage(imageURL: String, callback: @escaping (UIImage?) -> Void) -> URLSessionDataTask? {
         if let image = self.imageCache.object(forKey: imageURL as AnyObject) as? UIImage {
             callback(image)
-            return
+            return nil
         }
         guard let url = URL(string: imageURL) else {
-            return
+            callback(nil)
+            return nil
         }
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if error != nil {
+                callback(nil)
                 return
             }
             guard let data = data,
                 let image = UIImage(data: data) else {
-                return
+                    callback(nil)
+                    return
             }
             self.imageCache.setObject(image, forKey: imageURL as AnyObject)
             callback(image)
         }
+        task.resume()
+        return task
     }
     
 }

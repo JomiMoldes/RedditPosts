@@ -32,6 +32,10 @@ final class PostsBrowserView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+    }
+    
+    func showLoader() {
         self.tableView.showActivityIndicator()
     }
     

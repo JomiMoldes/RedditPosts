@@ -14,9 +14,9 @@ public class ImageProviderFake: ImageProviderProtocol {
     
     public init() { }
     
-    public func loadImage(imageURL: String, callback: (UIImage?) -> Void) {
+    public func loadImage(imageURL: String, callback: (UIImage?) -> Void) -> URLSessionDataTask? {
         callback(nil)
-        return
+        return nil
     }
     
 }

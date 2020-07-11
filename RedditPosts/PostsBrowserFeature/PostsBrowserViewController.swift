@@ -34,6 +34,13 @@ public class PostsBrowserViewController: UIViewController {
         self.viewModel.fetchPosts()
         self.bindViewModel()
     }
+    
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if self.viewModel.posts.count == 0 {
+            self.customView.showLoader()
+        }
+    }
 }
 
 private extension PostsBrowserViewController {
@@ -73,8 +80,17 @@ extension PostsBrowserViewController: UITableViewDataSource {
             return cell
         }
         let post = posts[row]
-        let viewModel = self.viewModel.createViewCellModel(post: post)
+        var viewModel = self.viewModel.createViewCellModel(post: post)
         
+        viewModel.didUpdateImage = {
+            ensureMainThread {
+                if let image = viewModel.thumbnail {
+                    cell.showImage(image)
+                    return
+                }
+                cell.showErrorImage()
+            }
+        }
         cell.setup(viewModel)
         return cell
     }

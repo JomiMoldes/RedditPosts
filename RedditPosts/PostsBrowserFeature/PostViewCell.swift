@@ -41,6 +41,8 @@ final class PostViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private var task: URLSessionDataTask?
+    
     func setup(_ viewModel: PostViewCellViewModelProtocol) {
         self.authorLabel.text = viewModel.author
         self.timeLabel.text = viewModel.timePassed
@@ -50,6 +52,18 @@ final class PostViewCell: UITableViewCell {
         self.dismissButton.setAttributedTitle(viewModel.dismissTitle, for: .normal)
         
         self.showDefaultImage()
+        self.task?.cancel()
+        self.task = viewModel.loadThumbnail()
+    }
+    
+    func showImage(_ image: UIImage) {
+        self.thumbnailView.hideActivityIndicator()
+        self.thumbnailView.image = image
+    }
+    
+    func showErrorImage() {
+        self.thumbnailView.hideActivityIndicator()
+        self.thumbnailView.image = UIImage(color: .gray, size: CGSize(width: 10.0, height: 10.0))
     }
 }
 
@@ -74,6 +88,7 @@ private extension PostViewCell {
     
     func setConstraints() {
         self.verticalStack.layoutToFillSuperview()
+        self.thumbnailView.addFixedConstraints([.width(90.0), .height(90.0)])
     }
     
     func setStyles() {

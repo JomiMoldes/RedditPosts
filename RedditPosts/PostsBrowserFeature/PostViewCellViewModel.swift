@@ -21,7 +21,6 @@ final class PostViewCellViewModel: PostViewCellViewModelProtocol {
          imageProvider: ImageProviderProtocol) {
         self.post = post
         self.imageProvider = imageProvider
-        self.loadThumbnail()
     }
     
     var title: String {
@@ -54,10 +53,11 @@ final class PostViewCellViewModel: PostViewCellViewModelProtocol {
     
     var didUpdateImage: (() -> Void)?
     
-    private func loadThumbnail() {
-        self.imageProvider.loadImage(imageURL: self.post.thumbnail) { image in
+    func loadThumbnail() -> URLSessionDataTask? {
+        let task = self.imageProvider.loadImage(imageURL: self.post.thumbnail) { image in
             self.thumbnail = image
             self.didUpdateImage?()
         }
+        return task
     }
 }

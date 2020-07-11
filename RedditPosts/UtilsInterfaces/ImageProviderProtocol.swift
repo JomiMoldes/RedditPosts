@@ -11,6 +11,6 @@ import UIKit
 
 public protocol ImageProviderProtocol {
     
-    func loadImage(imageURL: String, callback: @escaping (UIImage?) -> Void)
+    func loadImage(imageURL: String, callback: @escaping (UIImage?) -> Void) -> URLSessionDataTask?
     
 }
