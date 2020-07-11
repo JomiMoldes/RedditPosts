@@ -87,6 +87,9 @@
 		488B312C24BA2724004905AA /* ModelsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; };
 		488B313224BA274C004905AA /* PostFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313124BA274C004905AA /* PostFake.swift */; };
 		488B313624BA284A004905AA /* PostServiceFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313524BA284A004905AA /* PostServiceFake.swift */; };
+		488B313A24BA2CEE004905AA /* PostViewCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313924BA2CEE004905AA /* PostViewCellViewModelTests.swift */; };
+		488B313C24BA2FA7004905AA /* PostsBrowserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313B24BA2FA7004905AA /* PostsBrowserViewModelTests.swift */; };
+		488B313E24BA3071004905AA /* PostsPaginatorFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313D24BA3071004905AA /* PostsPaginatorFake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -420,6 +423,9 @@
 		488B311F24BA2717004905AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		488B313124BA274C004905AA /* PostFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFake.swift; sourceTree = "<group>"; };
 		488B313524BA284A004905AA /* PostServiceFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceFake.swift; sourceTree = "<group>"; };
+		488B313924BA2CEE004905AA /* PostViewCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCellViewModelTests.swift; sourceTree = "<group>"; };
+		488B313B24BA2FA7004905AA /* PostsBrowserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsBrowserViewModelTests.swift; sourceTree = "<group>"; };
+		488B313D24BA3071004905AA /* PostsPaginatorFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPaginatorFake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -766,6 +772,8 @@
 				488B309F24B9104E004905AA /* PostsBrowserFeatureTests.swift */,
 				488B30A124B9104E004905AA /* Info.plist */,
 				488B30CF24B910C8004905AA /* PostBrowserViewControllerTests.swift */,
+				488B313924BA2CEE004905AA /* PostViewCellViewModelTests.swift */,
+				488B313B24BA2FA7004905AA /* PostsBrowserViewModelTests.swift */,
 			);
 			path = PostsBrowserFeatureTests;
 			sourceTree = "<group>";
@@ -806,6 +814,7 @@
 				488B311F24BA2717004905AA /* Info.plist */,
 				488B313124BA274C004905AA /* PostFake.swift */,
 				488B313524BA284A004905AA /* PostServiceFake.swift */,
+				488B313D24BA3071004905AA /* PostsPaginatorFake.swift */,
 			);
 			path = TestingResources;
 			sourceTree = "<group>";
@@ -1551,6 +1560,8 @@
 			files = (
 				488B30A024B9104E004905AA /* PostsBrowserFeatureTests.swift in Sources */,
 				488B30D024B910C8004905AA /* PostBrowserViewControllerTests.swift in Sources */,
+				488B313C24BA2FA7004905AA /* PostsBrowserViewModelTests.swift in Sources */,
+				488B313A24BA2CEE004905AA /* PostViewCellViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1574,6 +1585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488B313E24BA3071004905AA /* PostsPaginatorFake.swift in Sources */,
 				488B313624BA284A004905AA /* PostServiceFake.swift in Sources */,
 				488B313224BA274C004905AA /* PostFake.swift in Sources */,
 			);

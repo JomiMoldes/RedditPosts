@@ -38,16 +38,6 @@
                ReferencedContainer = "container:RedditPosts.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "488B30EC24B916CD004905AA"
-               BuildableName = "ExtensionsTests.xctest"
-               BlueprintName = "ExtensionsTests"
-               ReferencedContainer = "container:RedditPosts.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

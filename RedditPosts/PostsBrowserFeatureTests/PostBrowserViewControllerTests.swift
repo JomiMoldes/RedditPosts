@@ -54,14 +54,14 @@ private extension PostBrowserViewControllerTests {
     
     func createViewModel() -> PostsBrowserViewModelFake {
         let posts = [PostFake.faked()]
-        let paginator = Paginator(results: posts)
+        let paginator = PostsPaginatorFake(results: posts)
         let vModel = PostsBrowserViewModelFake(paginator: paginator)
         return vModel
     }
     
     func createSUT(viewModel: PostsBrowserViewModel? = nil) -> PostsBrowserViewController {
         let posts = [PostFake.faked()]
-        let paginator = Paginator(results: posts)
+        let paginator = PostsPaginatorFake(results: posts)
         let vModel = viewModel ?? PostsBrowserViewModelFake(paginator: paginator)
         let sut = PostsBrowserViewController(viewModel: vModel)
         return sut
@@ -75,27 +75,6 @@ private class PostsBrowserViewModelFake: PostsBrowserViewModel {
     
     override func fetchPosts() {
         self.fetched = true
-    }
-    
-}
-
-class Paginator: PostsPaginatorProtocol {
-    var results: [PostProtocol] = [PostProtocol]()
-    
-    var before: String?
-    
-    var after: String?
-    
-    init(results: [PostProtocol]) {
-        self.results = results
-    }
-    
-    func fetchLatest(callback: @escaping (Result<Void, NetworkError>) -> Void) {
-        
-    }
-    
-    func fetchOlder(result: @escaping (Result<Void, NetworkError>) -> Void) {
-        
     }
     
 }

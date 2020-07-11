@@ -29,11 +29,12 @@ final class PostViewCellViewModel: PostViewCellViewModelProtocol {
     
     var timePassed: String {
         // TO DO: format time
-        return "\(self.post.createdTime) +  ago"
+        return "\(self.post.createdTime) + ago"
     }
     
     var comments: String {
-        return "\(self.post.comments) comments"
+        let comments: Int = self.post.comments
+        return "\(self.post.comments) \(comments == 1 ? "comment" : "comments")"
     }
     
     var dismissTitle: NSAttributedString {
