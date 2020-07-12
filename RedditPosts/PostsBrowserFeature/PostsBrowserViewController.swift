@@ -10,11 +10,14 @@ import Foundation
 import UIKit
 import PostsBrowserFeatureInterfaces
 import Extensions
+import ModelsInterfaces
 
 public class PostsBrowserViewController: UIViewController {
     
     private var viewModel: PostsBrowserViewModelProtocol
     private let customView = PostsBrowserView()
+    
+    var didSelectPost: ((PostProtocol) -> Void)?
     
     public init(viewModel: PostsBrowserViewModelProtocol) {
         self.viewModel = viewModel
@@ -48,6 +51,7 @@ private extension PostsBrowserViewController {
     func bindViewModel() {
         let table = self.customView.tableView
         table.dataSource = self
+        table.delegate = self
         table.rowHeight = PostViewCell.rowHeight
         table.register(PostViewCell.self, forCellReuseIdentifier: PostViewCell.identifier)
         
@@ -91,8 +95,34 @@ extension PostsBrowserViewController: UITableViewDataSource {
                 cell.showErrorImage()
             }
         }
+        viewModel.didUpdateInfo = {
+            ensureMainThread {
+                cell.setup(viewModel)
+            }
+        }
         cell.setup(viewModel)
         return cell
+    }
+    
+}
+
+extension PostsBrowserViewController: UITableViewDelegate {
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        let viewModels = self.viewModel.viewModels
+        guard row < viewModels.count else {
+            return
+        }
+        let viewModel = viewModels[row]
+        viewModel.selected()
+        
+        let posts = self.viewModel.posts
+        guard row < posts.count else {
+            return
+        }
+        let post = posts[row]
+        self.didSelectPost?(post)
     }
     
 }

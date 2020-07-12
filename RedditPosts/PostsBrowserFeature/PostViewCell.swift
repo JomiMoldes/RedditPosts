@@ -22,6 +22,7 @@ final class PostViewCell: UITableViewCell {
     
     let authorLabel: UILabel = createAuthorLabel()
     let timeLabel: UILabel = createTimeLabel()
+    let readView: UIView = createCircle()
     
     let thumbnailView: UIImageView = createImageView()
     let infoLabel: UILabel = createInfoLabel()
@@ -29,6 +30,10 @@ final class PostViewCell: UITableViewCell {
     
     let dismissButton: UIButton = createDismissButton()
     let commentsLabel: UILabel = createCommentsLabel()
+    
+    private var task: URLSessionDataTask?
+    
+    private static let circleRadius: CGFloat = 5.0
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -41,8 +46,6 @@ final class PostViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private var task: URLSessionDataTask?
-    
     func setup(_ viewModel: PostViewCellViewModelProtocol) {
         self.authorLabel.text = viewModel.author
         self.timeLabel.text = viewModel.timePassed
@@ -54,6 +57,12 @@ final class PostViewCell: UITableViewCell {
         self.showDefaultImage()
         self.task?.cancel()
         self.task = viewModel.loadThumbnail()
+        
+        if viewModel.read {
+            self.readView.removeFromSuperview()
+        } else {
+            self.topStackView.insertArrangedSubview(self.readView, at: 0)
+        }
     }
     
     func showImage(_ image: UIImage) {
@@ -65,6 +74,7 @@ final class PostViewCell: UITableViewCell {
         self.thumbnailView.hideActivityIndicator()
         self.thumbnailView.image = UIImage(color: .gray, size: CGSize(width: 10.0, height: 10.0))
     }
+    
 }
 
 private extension PostViewCell {
@@ -75,6 +85,7 @@ private extension PostViewCell {
         self.verticalStack.addArrangedSubview(self.middleStackView)
         self.verticalStack.addArrangedSubview(self.bottomStackView)
         
+        self.topStackView.addArrangedSubview(self.readView)
         self.topStackView.addArrangedSubview(self.authorLabel)
         self.topStackView.addArrangedSubview(self.timeLabel)
         
@@ -89,6 +100,9 @@ private extension PostViewCell {
     func setConstraints() {
         self.verticalStack.layoutToFillSuperview()
         self.thumbnailView.addFixedConstraints([.width(90.0), .height(90.0)])
+        let readSize = PostViewCell.circleRadius * 2
+        self.readView.addFixedConstraints([.width(readSize),
+                                           .height(readSize)])
     }
     
     func setStyles() {
@@ -104,6 +118,9 @@ private extension PostViewCell {
         self.timeLabel.font = UIFont.systemFont(ofSize: 15.0)
         self.infoLabel.font = UIFont.systemFont(ofSize: 13.0)
         self.commentsLabel.font = UIFont.systemFont(ofSize: 15.0)
+        self.readView.backgroundColor = .orange
+
+        self.readView.layer.cornerRadius = PostViewCell.circleRadius
     }
     
     func showDefaultImage() {
@@ -203,4 +220,10 @@ private func createCommentsLabel() -> UILabel {
     let label = UILabel()
     label.textAlignment = .left
     return label
+}
+
+private func createCircle() -> UIView {
+    let view = UIView()
+    view.layer.masksToBounds = true
+    return view
 }

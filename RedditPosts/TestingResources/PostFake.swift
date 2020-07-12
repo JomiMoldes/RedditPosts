@@ -17,6 +17,7 @@ public struct PostFake: PostProtocol {
     public var createdTime: TimeInterval
     public var author: String
     public var comments: Int
+    public var read: Bool = false
     
     enum CodingKeys: String, CodingKey {
         case id, title, thumbnail, author
@@ -29,13 +30,16 @@ public struct PostFake: PostProtocol {
                              title: String = "Any title 1",
                              createdTime: TimeInterval = 124,
                              author: String = "Any author",
-                             comments: Int = 1) -> PostFake {
+                             comments: Int = 1,
+                             read: Bool = false) -> PostFake {
         return PostFake(id: id,
                         thumbnail: thumbnail,
                         title: title,
                         createdTime: createdTime,
                         author: author,
-                        comments: comments)
+                        comments: comments,
+                        read: read
+        )
     }
     
     public static func getPostJSON() -> [String: Any] {

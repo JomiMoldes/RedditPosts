@@ -79,12 +79,14 @@ private extension PostsSplitViewController {
     
     func splitView() {
         NSLayoutConstraint.deactivate(narrowConstraints)
-        let listConstraints = self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .centerY(1.0), .left(0.0)])
+        let listConstraints = self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .centerY(1.0)])
+        let leftConstraint = self.listContainer.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor)
         let preferedWitdhConstraint = self.listContainer.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5)
         preferedWitdhConstraint.priority = .defaultLow
         let maxWitdhConstraint = self.listContainer.widthAnchor.constraint(lessThanOrEqualToConstant: 350.0)
         maxWitdhConstraint.priority = .defaultHigh
         splitConstraints.append(contentsOf: listConstraints)
+        splitConstraints.append(leftConstraint)
         splitConstraints.append(preferedWitdhConstraint)
         splitConstraints.append(maxWitdhConstraint)
         NSLayoutConstraint.activate(splitConstraints)
@@ -100,5 +102,9 @@ private extension PostsSplitViewController {
         let viewModel = PostsBrowserViewModel(paginator: paginator, imageProvider: self.imageProvider)
         let controller = PostsBrowserViewController(viewModel: viewModel)
         self.load(viewController: controller, intoView: self.listContainer)
+        
+        controller.didSelectPost = { post in
+            print(post.author)
+        }
     }
 }

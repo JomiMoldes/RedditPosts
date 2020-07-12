@@ -16,4 +16,5 @@ public protocol PostProtocol: Codable {
     var createdTime: TimeInterval { get }
     var author: String { get }
     var comments: Int { get }
+    var read: Bool { get set }
 }

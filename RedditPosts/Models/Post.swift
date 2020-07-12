@@ -16,6 +16,7 @@ public struct Post: PostProtocol {
     public var createdTime: TimeInterval
     public var author: String
     public var comments: Int
+    public var read: Bool = false
     
     enum CodingKeys: String, CodingKey {
         case id, title, thumbnail, author

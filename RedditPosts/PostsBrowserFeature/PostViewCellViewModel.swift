@@ -14,7 +14,7 @@ import PostsBrowserFeatureInterfaces
 
 final class PostViewCellViewModel: PostViewCellViewModelProtocol {
     
-    private let post: PostProtocol
+    private var post: PostProtocol
     private let imageProvider: ImageProviderProtocol
     
     init(post: PostProtocol,
@@ -25,6 +25,10 @@ final class PostViewCellViewModel: PostViewCellViewModelProtocol {
     
     var title: String {
         return self.post.title
+    }
+    
+    var id: String {
+        return self.post.id
     }
     
     var author: String {
@@ -53,11 +57,24 @@ final class PostViewCellViewModel: PostViewCellViewModelProtocol {
     
     var didUpdateImage: (() -> Void)?
     
+    var didUpdateInfo: (() -> Void)?
+    
     func loadThumbnail() -> URLSessionDataTask? {
         let task = self.imageProvider.loadImage(imageURL: self.post.thumbnail) { image in
             self.thumbnail = image
             self.didUpdateImage?()
         }
         return task
+    }
+    
+    var read: Bool {
+        get {
+            return self.post.read
+        }
+    }
+    
+    func selected() {
+        self.post.read = true
+        self.didUpdateInfo?()
     }
 }

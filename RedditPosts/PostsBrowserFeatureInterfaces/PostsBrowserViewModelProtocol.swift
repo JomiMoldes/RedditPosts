@@ -13,6 +13,7 @@ import UIKit
 public protocol PostsBrowserViewModelProtocol {
     
     var posts: [PostProtocol] { get }
+    var viewModels: [PostViewCellViewModelProtocol] { get }
     var didError: ((NetworkError) -> Void)? { get set }
     var didUpdate: (() -> Void)? { get set }
     
@@ -23,6 +24,8 @@ public protocol PostsBrowserViewModelProtocol {
 }
 
 public protocol PostViewCellViewModelProtocol {
+    
+    var id: String { get }
     
     var title: String { get }
     
@@ -36,8 +39,14 @@ public protocol PostViewCellViewModelProtocol {
     
     var didUpdateImage: (() -> Void)? { get set}
     
+    var didUpdateInfo: (() -> Void)? { get set}
+    
     var dismissTitle: NSAttributedString { get }
     
     func loadThumbnail() -> URLSessionDataTask?
+    
+    var read: Bool { get }
+    
+    func selected()
     
 }

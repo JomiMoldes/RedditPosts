@@ -10,14 +10,13 @@ import Foundation
 import PostsBrowserFeatureInterfaces
 import ModelsInterfaces
 import UtilsInterfaces
-// TO DO: see how to solve PostsPaginator dependency
-//import Utils
 
 public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
     
     public var posts: [PostProtocol] {
         return self.paginator.results
     }
+    public var viewModels = [PostViewCellViewModelProtocol]()
     private let paginator: PostsPaginatorProtocol
     private let imageProvider: ImageProviderProtocol
     
@@ -43,7 +42,12 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
     }
     
     public func createViewCellModel(post: PostProtocol) -> PostViewCellViewModelProtocol {
-        return PostViewCellViewModel(post: post, imageProvider: self.imageProvider)
+        if let viewModel = self.viewModels.first(where: { post.id == $0.id }) {
+            return viewModel
+        }
+        let viewModel = PostViewCellViewModel(post: post, imageProvider: self.imageProvider)
+        self.viewModels.append(viewModel)
+        return viewModel
     }
     
 }
