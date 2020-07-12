@@ -25,6 +25,7 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
     
     public var firstTime: Bool
     private let dateUtils: DateUtilsProtocol
+    public var lastSelectedIndex: Int = 0
     
     public init(paginator: PostsPaginatorProtocol,
                 imageProvider: ImageProviderProtocol,
@@ -57,6 +58,16 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
                                               dateUtils: self.dateUtils)
         self.viewModels.append(viewModel)
         return viewModel
+    }
+    
+    public func removePost(at index: Int) {
+        guard self.posts.count > index &&
+            self.viewModels.count > index else {
+            return
+        }
+        self.paginator.removePost(at: index)
+        self.viewModels.remove(at: index)
+        self.didUpdate?()
     }
     
 }

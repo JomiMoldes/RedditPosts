@@ -33,6 +33,8 @@ final class PostViewCell: UITableViewCell {
     
     private var task: URLSessionDataTask?
     
+    var didTapDismiss: (() -> Void)?
+    
     private static let circleRadius: CGFloat = 5.0
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -63,6 +65,8 @@ final class PostViewCell: UITableViewCell {
         } else {
             self.topStackView.insertArrangedSubview(self.readView, at: 0)
         }
+        
+        self.dismissButton.addTarget(self, action: #selector(dismissButtonTapped), for: .touchUpInside)
     }
     
     func showImage(_ image: UIImage) {
@@ -73,6 +77,10 @@ final class PostViewCell: UITableViewCell {
     func showErrorImage() {
         self.thumbnailView.hideActivityIndicator()
         self.thumbnailView.image = UIImage(color: .gray, size: CGSize(width: 10.0, height: 10.0))
+    }
+    
+    @objc func dismissButtonTapped() {
+        self.didTapDismiss?()
     }
     
 }

@@ -75,6 +75,13 @@ public class PostsPaginator: PostsPaginatorProtocol {
         
     }
     
+    public func removePost(at index: Int) {
+        guard self.results.count > index else {
+            return
+        }
+        self.results.remove(at: index)
+    }
+    
 }
 
 extension PostsPaginator {

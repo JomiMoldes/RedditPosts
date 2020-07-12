@@ -22,4 +22,6 @@ public protocol PostsPaginatorProtocol {
     
     func fetchOlder(result: @escaping (Result<Void, NetworkError>) -> Void)
     
+    func removePost(at index: Int)
+    
 }

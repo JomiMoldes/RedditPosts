@@ -45,6 +45,17 @@ final class PostsBrowserViewModelTests: XCTestCase {
         XCTAssertEqual(postViewModel.title, "Post title")
     }
     
+    func test_remove_post() {
+        let paginator = self.createPaginator()
+        let sut = self.createSUT(paginator)
+        paginator.results.forEach {
+            _ = sut.createViewCellModel(post: $0)
+        }
+        XCTAssertEqual(sut.viewModels.count, 3)
+        sut.removePost(at: 1)
+        XCTAssertEqual(sut.viewModels.count, 2)
+    }
+    
     private func createPaginator() -> PostsPaginatorProtocol {
         let posts = [PostFake.faked(id: "1"), PostFake.faked(id: "2"), PostFake.faked(id: "3")]
         let paginator: PostsPaginatorProtocol = PostsPaginatorFake(results: posts)

@@ -18,9 +18,12 @@ public class PostsBrowserViewController: UIViewController {
     private let customView = PostsBrowserView()
     
     var didSelectPost: ((PostProtocol) -> Void)?
+    private let shouldAutoSelect: (() -> Bool)
     
-    public init(viewModel: PostsBrowserViewModelProtocol) {
+    public init(viewModel: PostsBrowserViewModelProtocol,
+                shouldAutoSelect: @escaping (() -> Bool)) {
         self.viewModel = viewModel
+        self.shouldAutoSelect = shouldAutoSelect
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -101,6 +104,18 @@ extension PostsBrowserViewController: UITableViewDataSource {
             }
         }
         cell.setup(viewModel)
+        cell.didTapDismiss = { [unowned self] in
+            self.viewModel.removePost(at: indexPath.row)
+            ensureMainThread {
+                if self.shouldAutoSelect() == true &&
+                    indexPath.row == self.viewModel.lastSelectedIndex {
+                    self.tableView(tableView, didSelectRowAt: indexPath)
+                } else {
+                    self.viewModel.lastSelectedIndex = self.viewModel.lastSelectedIndex == 0 ? 0 : self.viewModel.lastSelectedIndex - 1
+                }
+            }
+            
+        }
         
         if self.viewModel.firstTime && indexPath.row == 0 {
             self.viewModel.firstTime = false
@@ -128,6 +143,7 @@ extension PostsBrowserViewController: UITableViewDelegate {
         }
         let post = posts[row]
         self.didSelectPost?(post)
+        self.viewModel.lastSelectedIndex = row
     }
     
 }

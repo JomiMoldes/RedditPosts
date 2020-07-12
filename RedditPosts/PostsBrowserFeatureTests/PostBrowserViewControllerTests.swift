@@ -70,7 +70,7 @@ private extension PostBrowserViewControllerTests {
     
     func createSUT(viewModel: PostsBrowserViewModel? = nil) -> PostsBrowserViewController {
         let vModel = viewModel ?? createViewModel()
-        let sut = PostsBrowserViewController(viewModel: vModel)
+        let sut = PostsBrowserViewController(viewModel: vModel, shouldAutoSelect: { return true })
         return sut
     }
     

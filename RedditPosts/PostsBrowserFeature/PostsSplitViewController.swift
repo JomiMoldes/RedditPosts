@@ -108,7 +108,10 @@ private extension PostsSplitViewController {
     
     func addListViewController() {
         let viewModel = self.viewModel.createBrowserViewModel(shouldSplit: self.shouldSplit())
-        let controller = PostsBrowserViewController(viewModel: viewModel)
+        let controller = PostsBrowserViewController(viewModel: viewModel,
+                                                    shouldAutoSelect: { [weak self] in
+                                                        return self?.shouldSplit() ?? false
+        })
         self.load(viewController: controller, intoView: self.listContainer)
         
         controller.didSelectPost = { [weak self] post in

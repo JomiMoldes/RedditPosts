@@ -17,10 +17,13 @@ public protocol PostsBrowserViewModelProtocol {
     var didError: ((NetworkError) -> Void)? { get set }
     var didUpdate: (() -> Void)? { get set }
     var firstTime: Bool { get set }
+    var lastSelectedIndex: Int { get set }
     
     func fetchPosts()
     
     func createViewCellModel(post: PostProtocol) -> PostViewCellViewModelProtocol
+    
+    func removePost(at index: Int)
     
 }
 

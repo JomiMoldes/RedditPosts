@@ -29,4 +29,8 @@ public class PostsPaginatorFake: PostsPaginatorProtocol {
         
     }
     
+    public func removePost(at index: Int) {
+        
+    }
+    
 }

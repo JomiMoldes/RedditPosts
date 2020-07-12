@@ -51,43 +51,67 @@ class PostsPaginatorTests: XCTestCase {
     }
     
     func test_fetch_latest_calls_with_after() {
-            
-            let service = PostServiceFake()
-            service.afterResponse = PostServiceFake.fakedResponse
-            let sut = self.createSUT(service: service)
-            
-            let exp = self.expectation(description: "should fetch latests posts with after")
-            
-            sut.fetchLatest { result in
-                switch result {
-                case .success():
-                    XCTAssertNil(service.lastAfter)
-                    sut.fetchLatest { result in
-                        switch result {
-                        case .success():
-                            XCTAssertEqual(service.lastAfter, "1")
-                            exp.fulfill()
-                            break
-                        case .failure(_):
-                            XCTFail("should return response")
-                        }
+        
+        let service = PostServiceFake()
+        service.afterResponse = PostServiceFake.fakedResponse
+        let sut = self.createSUT(service: service)
+        
+        let exp = self.expectation(description: "should fetch latests posts with after")
+        
+        sut.fetchLatest { result in
+            switch result {
+            case .success():
+                XCTAssertNil(service.lastAfter)
+                sut.fetchLatest { result in
+                    switch result {
+                    case .success():
+                        XCTAssertEqual(service.lastAfter, "1")
+                        exp.fulfill()
+                        break
+                    case .failure(_):
+                        XCTFail("should return response")
                     }
-                    break
-                case .failure(_):
-                    XCTFail("should return response")
                 }
-            }
-            
-            self.waitForExpectations(timeout: 1.0) { error in
-                if let error = error {
-                    XCTFail(error.localizedDescription)
-                }
+                break
+            case .failure(_):
+                XCTFail("should return response")
             }
         }
+        
+        self.waitForExpectations(timeout: 1.0) { error in
+            if let error = error {
+                XCTFail(error.localizedDescription)
+            }
+        }
+    }
     
-    private func createSUT(service: PostServiceProtocol) -> PostsPaginator {
-        let postsCreator = PostsCreatorFake()
-        let sut = PostsPaginator(results: [Post](),
+    func test_should_remove_post() {
+        let posts = PostsPaginatorTests.fakePosts()
+        let count = posts.count
+        let sut = self.createSUT(posts: posts)
+        XCTAssertEqual(sut.results.count, count)
+        sut.removePost(at: 0)
+        XCTAssertEqual(sut.results.count, count - 1)
+        XCTAssertEqual(sut.results.first?.id, "2")
+        
+        sut.removePost(at: count)
+        XCTAssertEqual(sut.results.count, count - 1)
+        sut.removePost(at: 0)
+        XCTAssertEqual(sut.results.count, count - 2)
+        sut.removePost(at: 0)
+        XCTAssertEqual(sut.results.count, count - 3)
+        sut.removePost(at: 0)
+        XCTAssertEqual(sut.results.count, count - 3)
+    }
+    
+    private static func fakePosts() -> [PostProtocol] {
+        return [PostFake.faked(id: "1"), PostFake.faked(id: "2"), PostFake.faked(id: "3")]
+    }
+    
+    private func createSUT(posts: [PostProtocol] = fakePosts(),
+        service: PostServiceProtocol = PostServiceFake(),
+                           postsCreator: PostsListCreatorProtocol = PostsCreatorFake()) -> PostsPaginator {
+        let sut = PostsPaginator(results: posts,
                                  before: nil,
                                  after: nil,
                                  service: service,
