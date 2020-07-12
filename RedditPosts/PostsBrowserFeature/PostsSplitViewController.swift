@@ -40,6 +40,7 @@ public class PostsSplitViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         self.addListViewController()
+        self.view.backgroundColor = .white
     }
     
     public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -52,13 +53,12 @@ public class PostsSplitViewController: UIViewController {
 private extension PostsSplitViewController {
     
     func addSubviews() {
-        self.view.addSubview(self.listContainer)
         self.view.addSubview(self.detailContainer)
+        self.view.addSubview(self.listContainer)
     }
     
     func addDetailsConstraints() {
-        self.detailContainer.addConstraintEqualToSuperView(anchors: [.right(0.0), .height(1.0), .centerY(1.0)])
-        self.detailContainer.leftAnchor.constraint(equalTo: self.listContainer.rightAnchor, constant: 0.0).isActive = true
+        
     }
     
     func addConstraints() {
@@ -79,22 +79,35 @@ private extension PostsSplitViewController {
     
     func splitView() {
         NSLayoutConstraint.deactivate(narrowConstraints)
-        let listConstraints = self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .centerY(1.0)])
-        let leftConstraint = self.listContainer.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor)
+        let listConstraints = self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .centerY(1.0), .left(0.0)])
         let preferedWitdhConstraint = self.listContainer.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5)
-        preferedWitdhConstraint.priority = .defaultLow
+        preferedWitdhConstraint.priority = .defaultHigh
         let maxWitdhConstraint = self.listContainer.widthAnchor.constraint(lessThanOrEqualToConstant: 350.0)
-        maxWitdhConstraint.priority = .defaultHigh
+        maxWitdhConstraint.priority = .required
         splitConstraints.append(contentsOf: listConstraints)
-        splitConstraints.append(leftConstraint)
         splitConstraints.append(preferedWitdhConstraint)
         splitConstraints.append(maxWitdhConstraint)
+        
+        
+        let detailConstraints = self.detailContainer.addConstraintEqualToSuperView(anchors: [ .height(1.0), .centerY(1.0)])
+        let detailLeftConstraint = self.detailContainer.leadingAnchor.constraint(equalTo: self.listContainer.trailingAnchor)
+        detailLeftConstraint.priority = .defaultHigh
+        let detailLeftConstraintRequired = self.detailContainer.leftAnchor.constraint(greaterThanOrEqualTo: self.view.leftAnchor, constant: 350)
+        detailLeftConstraintRequired.priority = .required
+        let rightConstraint = self.detailContainer.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor, constant: -10.0)
+        
+        splitConstraints.append(contentsOf: detailConstraints)
+        splitConstraints.append(detailLeftConstraint)
+        splitConstraints.append(detailLeftConstraintRequired)
+        splitConstraints.append(rightConstraint)
+        
         NSLayoutConstraint.activate(splitConstraints)
     }
     
     func narrowView() {
         NSLayoutConstraint.deactivate(splitConstraints)
         narrowConstraints.append(contentsOf: self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .width(1.0), .centerY(1.0), .centerX(1.0)]))
+        narrowConstraints.append(contentsOf: self.detailContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .width(1.0), .centerY(1.0), .centerX(1.0)]))
         NSLayoutConstraint.activate(narrowConstraints)
     }
     
@@ -104,7 +117,18 @@ private extension PostsSplitViewController {
         self.load(viewController: controller, intoView: self.listContainer)
         
         controller.didSelectPost = { post in
-            print(post.author)
+            ensureMainThread {
+                self.addDetailViewController(post: post)
+            }
         }
+    }
+    
+    func addDetailViewController(post: PostProtocol) {
+        self.detailContainer.subviews.forEach { $0.removeFromSuperview() }
+        let viewModel = PostDetailViewModel(post: post,
+                                            imageProvider: self.imageProvider)
+        let controller = PostDetailViewController(viewModel: viewModel)
+        self.load(viewController: controller, intoView: self.detailContainer)
+        viewModel.loadThumbnail()
     }
 }

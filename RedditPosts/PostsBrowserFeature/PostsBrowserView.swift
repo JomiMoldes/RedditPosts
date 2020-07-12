@@ -30,11 +30,6 @@ final class PostsBrowserView: UIView {
         self.tableView.reloadData()
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-    }
-    
     func showLoader() {
         self.tableView.showActivityIndicator()
     }
@@ -48,11 +43,13 @@ private extension PostsBrowserView {
     }
     
     func setConstraints() {
-        self.tableView.addConstraintEqualToSuperView(anchors: [.centerX(1.0), .width(0.95), .top(0.0), .bottom(0.0)])
+        self.tableView.addConstraintEqualToSuperView(anchors: [.right(0.0), .top(0.0), .bottom(0.0)])
+        self.tableView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 5.0).isActive = true
     }
     
     func setStyles() {
         self.tableView.backgroundColor = .clear
+        self.backgroundColor = .black
     }
     
 }

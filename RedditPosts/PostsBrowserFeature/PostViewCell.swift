@@ -121,6 +121,8 @@ private extension PostViewCell {
         self.readView.backgroundColor = .orange
 
         self.readView.layer.cornerRadius = PostViewCell.circleRadius
+        
+        self.backgroundColor = .clear
     }
     
     func showDefaultImage() {
