@@ -73,6 +73,10 @@ private extension PostsSplitViewController {
     
     func splitView() {
         NSLayoutConstraint.deactivate(narrowConstraints)
+        if self.splitConstraints.count > 0 {
+            NSLayoutConstraint.activate(self.splitConstraints)
+            return
+        }
         let listConstraints = self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .centerY(1.0), .left(0.0)])
         let preferedWitdhConstraint = self.listContainer.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5)
         preferedWitdhConstraint.priority = .defaultHigh
@@ -99,10 +103,16 @@ private extension PostsSplitViewController {
     
     func narrowView() {
         NSLayoutConstraint.deactivate(splitConstraints)
+        if self.narrowConstraints.count > 0 {
+            NSLayoutConstraint.activate(self.narrowConstraints)
+            return
+        }
         let listConstraints = self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .width(1.0), .centerY(1.0), .centerX(1.0)])
         self.listLeftConstraint = listConstraints[3]
         narrowConstraints.append(contentsOf: listConstraints)
-        narrowConstraints.append(contentsOf: self.detailContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .width(1.0), .centerY(1.0), .centerX(1.0)]))
+        narrowConstraints.append(contentsOf: self.detailContainer.addConstraintEqualToSuperView(anchors: [.width(1.0), .centerX(1.0)]))
+        narrowConstraints.append(self.detailContainer.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor))
+        narrowConstraints.append(self.detailContainer.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor))
         NSLayoutConstraint.activate(narrowConstraints)
     }
     
