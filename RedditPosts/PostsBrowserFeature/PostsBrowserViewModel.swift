@@ -27,6 +27,8 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
     private let dateUtils: DateUtilsProtocol
     public var lastSelectedIndex: Int = 0
     
+    public let title: String = "Reddit Posts"
+    
     public init(paginator: PostsPaginatorProtocol,
                 imageProvider: ImageProviderProtocol,
                 firstTime: Bool,

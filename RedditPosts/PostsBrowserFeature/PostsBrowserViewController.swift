@@ -58,6 +58,8 @@ private extension PostsBrowserViewController {
         table.rowHeight = PostViewCell.rowHeight
         table.register(PostViewCell.self, forCellReuseIdentifier: PostViewCell.identifier)
         
+        self.customView.titleLabel.text = self.viewModel.title
+        
         self.viewModel.didError = { error in
             // TO DO: handle error
         }

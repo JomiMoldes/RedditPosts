@@ -18,6 +18,7 @@ public protocol PostsBrowserViewModelProtocol {
     var didUpdate: (() -> Void)? { get set }
     var firstTime: Bool { get set }
     var lastSelectedIndex: Int { get set }
+    var title: String { get }
     
     func fetchPosts()
     
