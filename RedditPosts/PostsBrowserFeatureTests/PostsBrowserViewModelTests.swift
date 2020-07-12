@@ -55,7 +55,8 @@ final class PostsBrowserViewModelTests: XCTestCase {
         
         let sut = PostsBrowserViewModel(paginator: paginator ?? createPaginator(),
                                         imageProvider: ImageProviderFake(),
-                                        firstTime: true)
+                                        firstTime: true,
+                                        dateUtils: DateUtilsFake())
         return sut
     }
     

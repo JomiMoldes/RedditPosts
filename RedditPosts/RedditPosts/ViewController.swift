@@ -29,10 +29,11 @@ class ViewController: UIViewController {
         let paginator: PostsPaginatorProtocol = PostsPaginator(service: service,
                                                                postsCreator: postsCreator)
         let imageProvider = ImageProvider()
-        let viewModel: PostsSplitViewModelProtocol = PostsSplitViewModel()
-        let controller = PostsSplitViewController(viewModel: viewModel,
-                                                  paginator: paginator,
-                                                  imageProvider: imageProvider)
+        let dateUtils = DateUtils()
+        let viewModel: PostsSplitViewModelProtocol = PostsSplitViewModel(dateUtils: dateUtils,
+                                                                         paginator: paginator,
+                                                                         imageProvider: imageProvider)
+        let controller = PostsSplitViewController(viewModel: viewModel)
 
         self.navigationController?.pushViewController(controller, animated: false)
     }

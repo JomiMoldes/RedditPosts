@@ -19,7 +19,7 @@ final class PostViewCellViewModelTests: XCTestCase {
         let sut = createSUT(post: post)
         XCTAssertEqual(sut.title, post.title)
         XCTAssertEqual(sut.author, post.author)
-        XCTAssertEqual(sut.timePassed, "\(post.createdTime) + ago")
+        XCTAssertEqual(sut.timePassed, " + ago")
         XCTAssertEqual(sut.comments, "1 comment")
         XCTAssertEqual(sut.dismissTitle.string, NSAttributedString(string: "Dismiss Post").string)
         XCTAssertNil(sut.thumbnail)
@@ -39,7 +39,8 @@ final class PostViewCellViewModelTests: XCTestCase {
     
     private func createSUT(post: PostFake? = nil) -> PostViewCellViewModel {
         let sut = PostViewCellViewModel(post: post ?? PostFake.faked(),
-                                        imageProvider: ImageProviderFake())
+                                        imageProvider: ImageProviderFake(),
+                                        dateUtils: DateUtilsFake())
         return sut
     }
     

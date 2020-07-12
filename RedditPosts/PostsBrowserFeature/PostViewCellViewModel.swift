@@ -16,11 +16,14 @@ final class PostViewCellViewModel: PostViewCellViewModelProtocol {
     
     private var post: PostProtocol
     private let imageProvider: ImageProviderProtocol
+    private let dateUtils: DateUtilsProtocol
     
     init(post: PostProtocol,
-         imageProvider: ImageProviderProtocol) {
+         imageProvider: ImageProviderProtocol,
+         dateUtils: DateUtilsProtocol) {
         self.post = post
         self.imageProvider = imageProvider
+        self.dateUtils = dateUtils
     }
     
     var title: String {
@@ -37,7 +40,10 @@ final class PostViewCellViewModel: PostViewCellViewModelProtocol {
     
     var timePassed: String {
         // TO DO: format time
-        return "\(self.post.createdTime) + ago"
+        let now = Date()
+        let from = Date(timeIntervalSince1970: self.post.createdTime)
+        let timeElapsed = self.dateUtils.timeElapsed(from: from, to: now)
+        return "\(timeElapsed) + ago"
     }
     
     var comments: String {

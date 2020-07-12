@@ -24,13 +24,16 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
     public var didUpdate: (() -> Void)?
     
     public var firstTime: Bool
+    private let dateUtils: DateUtilsProtocol
     
     public init(paginator: PostsPaginatorProtocol,
                 imageProvider: ImageProviderProtocol,
-                firstTime: Bool) {
+                firstTime: Bool,
+                dateUtils: DateUtilsProtocol) {
         self.paginator = paginator
         self.imageProvider = imageProvider
         self.firstTime = firstTime
+        self.dateUtils = dateUtils
     }
     
     public func fetchPosts() {
@@ -49,7 +52,9 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
         if let viewModel = self.viewModels.first(where: { post.id == $0.id }) {
             return viewModel
         }
-        let viewModel = PostViewCellViewModel(post: post, imageProvider: self.imageProvider)
+        let viewModel = PostViewCellViewModel(post: post,
+                                              imageProvider: self.imageProvider,
+                                              dateUtils: self.dateUtils)
         self.viewModels.append(viewModel)
         return viewModel
     }

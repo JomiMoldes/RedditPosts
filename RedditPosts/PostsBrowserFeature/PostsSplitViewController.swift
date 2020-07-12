@@ -21,17 +21,12 @@ public class PostsSplitViewController: UIViewController {
     private var splitConstraints = [NSLayoutConstraint]()
     private var narrowConstraints = [NSLayoutConstraint]()
     
-    private let paginator: PostsPaginatorProtocol
-    private let imageProvider: ImageProviderProtocol
+    
     private var viewModel: PostsSplitViewModelProtocol
     private var listLeftConstraint: NSLayoutConstraint?
     
-    public init(viewModel: PostsSplitViewModelProtocol,
-                paginator: PostsPaginatorProtocol,
-                imageProvider: ImageProviderProtocol) {
+    public init(viewModel: PostsSplitViewModelProtocol) {
         self.viewModel = viewModel
-        self.paginator = paginator
-        self.imageProvider = imageProvider
         super.init(nibName: nil, bundle: nil)
         self.addSubviews()
         self.addConstraints()
@@ -112,9 +107,7 @@ private extension PostsSplitViewController {
     }
     
     func addListViewController() {
-        let viewModel = PostsBrowserViewModel(paginator: paginator,
-                                              imageProvider: self.imageProvider,
-                                              firstTime: self.shouldSplit())
+        let viewModel = self.viewModel.createBrowserViewModel(shouldSplit: self.shouldSplit())
         let controller = PostsBrowserViewController(viewModel: viewModel)
         self.load(viewController: controller, intoView: self.listContainer)
         
@@ -135,8 +128,7 @@ private extension PostsSplitViewController {
     
     func addDetailViewController(post: PostProtocol) {
         self.detailContainer.subviews.forEach { $0.removeFromSuperview() }
-        let viewModel = PostDetailViewModel(post: post,
-                                            imageProvider: self.imageProvider)
+        let viewModel = self.viewModel.createDetailViewModel(post: post)
         let controller = PostDetailViewController(viewModel: viewModel)
         self.load(viewController: controller, intoView: self.detailContainer)
         viewModel.loadThumbnail()

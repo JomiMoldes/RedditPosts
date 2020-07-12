@@ -63,16 +63,13 @@ private extension PostBrowserViewControllerTests {
         let paginator = PostsPaginatorFake(results: posts)
         let vModel = PostsBrowserViewModelFake(paginator: paginator,
                                                imageProvider: ImageProviderFake(),
-                                               firstTime: true)
+                                               firstTime: true,
+                                               dateUtils: DateUtilsFake())
         return vModel
     }
     
     func createSUT(viewModel: PostsBrowserViewModel? = nil) -> PostsBrowserViewController {
-        let posts = [PostFake.faked()]
-        let paginator = PostsPaginatorFake(results: posts)
-        let vModel = viewModel ?? PostsBrowserViewModelFake(paginator: paginator,
-                                                            imageProvider: ImageProviderFake(),
-                                                            firstTime: true)
+        let vModel = viewModel ?? createViewModel()
         let sut = PostsBrowserViewController(viewModel: vModel)
         return sut
     }

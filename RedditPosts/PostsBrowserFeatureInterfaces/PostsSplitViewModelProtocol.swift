@@ -7,7 +7,12 @@
 //
 
 import Foundation
+import ModelsInterfaces
 
 public protocol PostsSplitViewModelProtocol {
+    
+    func createBrowserViewModel(shouldSplit: Bool) -> PostsBrowserViewModelProtocol
+    
+    func createDetailViewModel(post: PostProtocol) -> PostDetailViewModelProtocol
     
 }
