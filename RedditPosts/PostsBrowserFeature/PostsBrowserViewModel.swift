@@ -23,12 +23,14 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
     public var didError: ((NetworkError) -> Void)?
     public var didUpdate: (() -> Void)?
     
-    public var firstTime: Bool = true
+    public var firstTime: Bool
     
     public init(paginator: PostsPaginatorProtocol,
-                imageProvider: ImageProviderProtocol) {
+                imageProvider: ImageProviderProtocol,
+                firstTime: Bool) {
         self.paginator = paginator
         self.imageProvider = imageProvider
+        self.firstTime = firstTime
     }
     
     public func fetchPosts() {

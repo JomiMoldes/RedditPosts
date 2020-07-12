@@ -62,7 +62,8 @@ private extension PostBrowserViewControllerTests {
         let posts = [PostFake.faked()]
         let paginator = PostsPaginatorFake(results: posts)
         let vModel = PostsBrowserViewModelFake(paginator: paginator,
-                                               imageProvider: ImageProviderFake())
+                                               imageProvider: ImageProviderFake(),
+                                               firstTime: true)
         return vModel
     }
     
@@ -70,7 +71,8 @@ private extension PostBrowserViewControllerTests {
         let posts = [PostFake.faked()]
         let paginator = PostsPaginatorFake(results: posts)
         let vModel = viewModel ?? PostsBrowserViewModelFake(paginator: paginator,
-                                                            imageProvider: ImageProviderFake())
+                                                            imageProvider: ImageProviderFake(),
+                                                            firstTime: true)
         let sut = PostsBrowserViewController(viewModel: vModel)
         return sut
     }

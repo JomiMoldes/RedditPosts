@@ -24,6 +24,7 @@ public class PostsSplitViewController: UIViewController {
     private let paginator: PostsPaginatorProtocol
     private let imageProvider: ImageProviderProtocol
     private var viewModel: PostsSplitViewModelProtocol
+    private var listLeftConstraint: NSLayoutConstraint?
     
     public init(viewModel: PostsSplitViewModelProtocol,
                 paginator: PostsPaginatorProtocol,
@@ -34,7 +35,6 @@ public class PostsSplitViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         self.addSubviews()
         self.addConstraints()
-        self.addDetailsConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -61,10 +61,6 @@ private extension PostsSplitViewController {
         self.view.addSubview(self.listContainer)
     }
     
-    func addDetailsConstraints() {
-        
-    }
-    
     func addConstraints() {
         if shouldSplit() {
             self.splitView()
@@ -80,7 +76,6 @@ private extension PostsSplitViewController {
             traitCollection.verticalSizeClass == .compact
     }
     
-    
     func splitView() {
         NSLayoutConstraint.deactivate(narrowConstraints)
         let listConstraints = self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .centerY(1.0), .left(0.0)])
@@ -91,7 +86,6 @@ private extension PostsSplitViewController {
         splitConstraints.append(contentsOf: listConstraints)
         splitConstraints.append(preferedWitdhConstraint)
         splitConstraints.append(maxWitdhConstraint)
-        
         
         let detailConstraints = self.detailContainer.addConstraintEqualToSuperView(anchors: [ .height(1.0), .centerY(1.0)])
         let detailLeftConstraint = self.detailContainer.leadingAnchor.constraint(equalTo: self.listContainer.trailingAnchor)
@@ -110,19 +104,31 @@ private extension PostsSplitViewController {
     
     func narrowView() {
         NSLayoutConstraint.deactivate(splitConstraints)
-        narrowConstraints.append(contentsOf: self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .width(1.0), .centerY(1.0), .centerX(1.0)]))
+        let listConstraints = self.listContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .width(1.0), .centerY(1.0), .centerX(1.0)])
+        self.listLeftConstraint = listConstraints[3]
+        narrowConstraints.append(contentsOf: listConstraints)
         narrowConstraints.append(contentsOf: self.detailContainer.addConstraintEqualToSuperView(anchors: [.height(1.0), .width(1.0), .centerY(1.0), .centerX(1.0)]))
         NSLayoutConstraint.activate(narrowConstraints)
     }
     
     func addListViewController() {
-        let viewModel = PostsBrowserViewModel(paginator: paginator, imageProvider: self.imageProvider)
+        let viewModel = PostsBrowserViewModel(paginator: paginator,
+                                              imageProvider: self.imageProvider,
+                                              firstTime: self.shouldSplit())
         let controller = PostsBrowserViewController(viewModel: viewModel)
         self.load(viewController: controller, intoView: self.listContainer)
         
-        controller.didSelectPost = { post in
+        controller.didSelectPost = { [weak self] post in
             ensureMainThread {
-                self.addDetailViewController(post: post)
+                guard let strongSelf = self else {
+                    return
+                }
+                strongSelf.addDetailViewController(post: post)
+                if strongSelf.shouldSplit() == false {
+                    DispatchQueue.main.async {
+                        strongSelf.animateListOut()
+                    }
+                }
             }
         }
     }
@@ -134,5 +140,45 @@ private extension PostsSplitViewController {
         let controller = PostDetailViewController(viewModel: viewModel)
         self.load(viewController: controller, intoView: self.detailContainer)
         viewModel.loadThumbnail()
+        self.addGesturesToDetails()
     }
+    
+}
+
+private extension PostsSplitViewController {
+    
+    // TO DO: This is not the way I should handle this feature
+    func addGesturesToDetails() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTouchDetail))
+        self.detailContainer.addGestureRecognizer(tapGesture)
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(didSwipeDetail))
+        self.detailContainer.addGestureRecognizer(swipeGesture)
+    }
+    
+    @objc func didTouchDetail(_: UITapGestureRecognizer) {
+        if self.shouldSplit() == false {
+            self.animateListIn()
+        }
+    }
+    
+    @objc func didSwipeDetail(gesture: UITapGestureRecognizer) {
+        if self.shouldSplit() == false {
+            self.animateListIn()
+        }
+    }
+    
+    func animateListOut() {
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.listLeftConstraint?.constant = -self.listContainer.frame.width
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    func animateListIn() {
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.listLeftConstraint?.constant = 0.0
+            self.view.layoutIfNeeded()
+        })
+    }
+    
 }
