@@ -8,6 +8,7 @@
 
 import UIKit
 import PostsBrowserFeature
+import PostsBrowserFeatureInterfaces
 import ServicesInterfaces
 import ModelsInterfaces
 import Services
@@ -28,7 +29,9 @@ class ViewController: UIViewController {
         let paginator: PostsPaginatorProtocol = PostsPaginator(service: service,
                                                                postsCreator: postsCreator)
         let imageProvider = ImageProvider()
-        let controller = PostsSplitViewController(paginator: paginator,
+        let viewModel: PostsSplitViewModelProtocol = PostsSplitViewModel()
+        let controller = PostsSplitViewController(viewModel: viewModel,
+                                                  paginator: paginator,
                                                   imageProvider: imageProvider)
 
         self.navigationController?.pushViewController(controller, animated: false)

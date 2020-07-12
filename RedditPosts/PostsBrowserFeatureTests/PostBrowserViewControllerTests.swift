@@ -37,13 +37,19 @@ class PostBrowserViewControllerTests: XCTestCase {
     }
     
     func test_should_show_posts_in_table() {
-        let sut = self.createSUT()
+        let viewModel = self.createViewModel()
+        let sut = self.createSUT(viewModel: viewModel)
         _ = sut.view
+        XCTAssertTrue(viewModel.firstTime)
         guard let table: UITableView = sut.view.subviews.first(where: { $0 is UITableView}) as? UITableView else {
             XCTFail("should have a table")
             return
         }
         XCTAssertEqual(table.numberOfRows(inSection: 0), 1)
+
+        _ = sut.tableView(table, cellForRowAt: IndexPath(row: 0, section: 0))
+        
+        XCTAssertFalse(viewModel.firstTime)
     }
     
     // TO DO: test has a loader

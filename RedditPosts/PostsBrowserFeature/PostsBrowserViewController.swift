@@ -101,6 +101,11 @@ extension PostsBrowserViewController: UITableViewDataSource {
             }
         }
         cell.setup(viewModel)
+        
+        if self.viewModel.firstTime && indexPath.row == 0 {
+            self.viewModel.firstTime = false
+            self.tableView(tableView, didSelectRowAt: indexPath)
+        }
         return cell
     }
     

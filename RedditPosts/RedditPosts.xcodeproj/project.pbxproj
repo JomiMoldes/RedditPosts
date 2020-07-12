@@ -16,6 +16,8 @@
 		4838A50224BB5A2700D3B696 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4838A50124BB5A2700D3B696 /* PostDetailViewModel.swift */; };
 		4838A50424BB5A5800D3B696 /* PostDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4838A50324BB5A5800D3B696 /* PostDetailViewModelProtocol.swift */; };
 		4838A50624BB5AA400D3B696 /* PostDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4838A50524BB5AA400D3B696 /* PostDetailViewModelTests.swift */; };
+		4838A50824BB86B100D3B696 /* PostsSplitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4838A50724BB86B100D3B696 /* PostsSplitViewModel.swift */; };
+		4838A50A24BB86D900D3B696 /* PostsSplitViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4838A50924BB86D900D3B696 /* PostsSplitViewModelProtocol.swift */; };
 		488B2F7D24B761CF004905AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B2F7C24B761CF004905AA /* AppDelegate.swift */; };
 		488B2F8124B761CF004905AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B2F8024B761CF004905AA /* ViewController.swift */; };
 		488B2F8424B761CF004905AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488B2F8224B761CF004905AA /* Main.storyboard */; };
@@ -363,6 +365,8 @@
 		4838A50124BB5A2700D3B696 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
 		4838A50324BB5A5800D3B696 /* PostDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModelProtocol.swift; sourceTree = "<group>"; };
 		4838A50524BB5AA400D3B696 /* PostDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModelTests.swift; sourceTree = "<group>"; };
+		4838A50724BB86B100D3B696 /* PostsSplitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSplitViewModel.swift; sourceTree = "<group>"; };
+		4838A50924BB86D900D3B696 /* PostsSplitViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSplitViewModelProtocol.swift; sourceTree = "<group>"; };
 		488B2F7924B761CF004905AA /* RedditPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488B2F7C24B761CF004905AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		488B2F8024B761CF004905AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -790,6 +794,7 @@
 				4838A4FD24BB582D00D3B696 /* PostDetailViewController.swift */,
 				4838A4FF24BB591100D3B696 /* PostDetailView.swift */,
 				4838A50124BB5A2700D3B696 /* PostDetailViewModel.swift */,
+				4838A50724BB86B100D3B696 /* PostsSplitViewModel.swift */,
 			);
 			path = PostsBrowserFeature;
 			sourceTree = "<group>";
@@ -815,6 +820,7 @@
 				488B30B524B9105E004905AA /* Info.plist */,
 				488B30D524B91246004905AA /* PostsBrowserViewModelProtocol.swift */,
 				4838A50324BB5A5800D3B696 /* PostDetailViewModelProtocol.swift */,
+				4838A50924BB86D900D3B696 /* PostsSplitViewModelProtocol.swift */,
 			);
 			path = PostsBrowserFeatureInterfaces;
 			sourceTree = "<group>";
@@ -1590,6 +1596,7 @@
 				488B316224BA4A46004905AA /* PostsSplitViewController.swift in Sources */,
 				488B310924B91C46004905AA /* PostViewCellViewModel.swift in Sources */,
 				488B310B24B91D10004905AA /* PostViewCell.swift in Sources */,
+				4838A50824BB86B100D3B696 /* PostsSplitViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1610,6 +1617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4838A50A24BB86D900D3B696 /* PostsSplitViewModelProtocol.swift in Sources */,
 				488B30D624B91246004905AA /* PostsBrowserViewModelProtocol.swift in Sources */,
 				4838A50424BB5A5800D3B696 /* PostDetailViewModelProtocol.swift in Sources */,
 			);

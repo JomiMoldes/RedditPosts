@@ -23,6 +23,8 @@ public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
     public var didError: ((NetworkError) -> Void)?
     public var didUpdate: (() -> Void)?
     
+    public var firstTime: Bool = true
+    
     public init(paginator: PostsPaginatorProtocol,
                 imageProvider: ImageProviderProtocol) {
         self.paginator = paginator

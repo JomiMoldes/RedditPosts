@@ -16,6 +16,7 @@ public protocol PostsBrowserViewModelProtocol {
     var viewModels: [PostViewCellViewModelProtocol] { get }
     var didError: ((NetworkError) -> Void)? { get set }
     var didUpdate: (() -> Void)? { get set }
+    var firstTime: Bool { get set }
     
     func fetchPosts()
     

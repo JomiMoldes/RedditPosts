@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import ModelsInterfaces
 import UtilsInterfaces
+import PostsBrowserFeatureInterfaces
 import Extensions
 
 public class PostsSplitViewController: UIViewController {
@@ -22,9 +23,12 @@ public class PostsSplitViewController: UIViewController {
     
     private let paginator: PostsPaginatorProtocol
     private let imageProvider: ImageProviderProtocol
+    private var viewModel: PostsSplitViewModelProtocol
     
-    public init(paginator: PostsPaginatorProtocol,
+    public init(viewModel: PostsSplitViewModelProtocol,
+                paginator: PostsPaginatorProtocol,
                 imageProvider: ImageProviderProtocol) {
+        self.viewModel = viewModel
         self.paginator = paginator
         self.imageProvider = imageProvider
         super.init(nibName: nil, bundle: nil)
