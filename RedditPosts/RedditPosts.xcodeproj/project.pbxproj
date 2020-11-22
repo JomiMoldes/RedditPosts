@@ -102,6 +102,406 @@
 		488B313E24BA3071004905AA /* PostsPaginatorFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313D24BA3071004905AA /* PostsPaginatorFake.swift */; };
 		488B316224BA4A46004905AA /* PostsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B316124BA4A46004905AA /* PostsSplitViewController.swift */; };
 		488B316624BA656C004905AA /* Thread+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B316524BA656C004905AA /* Thread+Extensions.swift */; };
+		489C80B5256B23ED00A1A598 /* MyStruct153.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FED256B23CF00A1A598 /* MyStruct153.swift */; };
+		489C80B6256B23ED00A1A598 /* MyStruct147.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FEE256B23CF00A1A598 /* MyStruct147.swift */; };
+		489C80B7256B23ED00A1A598 /* MyStruct162.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FEF256B23D000A1A598 /* MyStruct162.swift */; };
+		489C80B8256B23ED00A1A598 /* MyStruct48.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FF0256B23D000A1A598 /* MyStruct48.swift */; };
+		489C80B9256B23ED00A1A598 /* MyStruct75.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FF1256B23D000A1A598 /* MyStruct75.swift */; };
+		489C80BA256B23ED00A1A598 /* MyStruct15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FF2256B23D000A1A598 /* MyStruct15.swift */; };
+		489C80BB256B23ED00A1A598 /* MyStruct7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FF3256B23D000A1A598 /* MyStruct7.swift */; };
+		489C80BC256B23ED00A1A598 /* MyStruct171.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FF4256B23D000A1A598 /* MyStruct171.swift */; };
+		489C80BD256B23ED00A1A598 /* MyStruct160.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FF5256B23D100A1A598 /* MyStruct160.swift */; };
+		489C80BE256B23ED00A1A598 /* MyStruct55.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FF6256B23D100A1A598 /* MyStruct55.swift */; };
+		489C80BF256B23ED00A1A598 /* MyStruct168.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FF7256B23D100A1A598 /* MyStruct168.swift */; };
+		489C80C0256B23ED00A1A598 /* MyStruct1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FF8256B23D100A1A598 /* MyStruct1.swift */; };
+		489C80C1256B23ED00A1A598 /* MyStruct60.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FF9256B23D200A1A598 /* MyStruct60.swift */; };
+		489C80C2256B23ED00A1A598 /* MyStruct158.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FFA256B23D200A1A598 /* MyStruct158.swift */; };
+		489C80C3256B23ED00A1A598 /* MyStruct59.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FFB256B23D200A1A598 /* MyStruct59.swift */; };
+		489C80C4256B23ED00A1A598 /* MyStruct56.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FFC256B23D200A1A598 /* MyStruct56.swift */; };
+		489C80C5256B23ED00A1A598 /* MyStruct186.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FFD256B23D200A1A598 /* MyStruct186.swift */; };
+		489C80C6256B23ED00A1A598 /* MyStruct159.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FFE256B23D200A1A598 /* MyStruct159.swift */; };
+		489C80C7256B23ED00A1A598 /* MyStruct110.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C7FFF256B23D300A1A598 /* MyStruct110.swift */; };
+		489C80C8256B23ED00A1A598 /* MyStruct13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8000256B23D300A1A598 /* MyStruct13.swift */; };
+		489C80C9256B23ED00A1A598 /* MyStruct182.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8001256B23D300A1A598 /* MyStruct182.swift */; };
+		489C80CA256B23ED00A1A598 /* MyStruct69.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8002256B23D300A1A598 /* MyStruct69.swift */; };
+		489C80CB256B23ED00A1A598 /* MyStruct188.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8003256B23D300A1A598 /* MyStruct188.swift */; };
+		489C80CC256B23EE00A1A598 /* MyStruct140.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8004256B23D300A1A598 /* MyStruct140.swift */; };
+		489C80CD256B23EE00A1A598 /* MyStruct138.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8005256B23D400A1A598 /* MyStruct138.swift */; };
+		489C80CE256B23EE00A1A598 /* MyStruct143.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8006256B23D400A1A598 /* MyStruct143.swift */; };
+		489C80CF256B23EE00A1A598 /* MyStruct6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8007256B23D400A1A598 /* MyStruct6.swift */; };
+		489C80D0256B23EE00A1A598 /* MyStruct113.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8008256B23D400A1A598 /* MyStruct113.swift */; };
+		489C80D1256B23EE00A1A598 /* MyStruct49.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8009256B23D400A1A598 /* MyStruct49.swift */; };
+		489C80D2256B23EE00A1A598 /* MyStruct107.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C800A256B23D500A1A598 /* MyStruct107.swift */; };
+		489C80D3256B23EE00A1A598 /* MyStruct124.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C800B256B23D500A1A598 /* MyStruct124.swift */; };
+		489C80D4256B23EE00A1A598 /* MyStruct54.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C800C256B23D500A1A598 /* MyStruct54.swift */; };
+		489C80D5256B23EE00A1A598 /* MyStruct193.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C800D256B23D500A1A598 /* MyStruct193.swift */; };
+		489C80D6256B23EE00A1A598 /* MyStruct3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C800E256B23D500A1A598 /* MyStruct3.swift */; };
+		489C80D7256B23EE00A1A598 /* MyStruct101.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C800F256B23D500A1A598 /* MyStruct101.swift */; };
+		489C80D8256B23EE00A1A598 /* MyStruct172.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8010256B23D500A1A598 /* MyStruct172.swift */; };
+		489C80D9256B23EE00A1A598 /* MyStruct9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8011256B23D600A1A598 /* MyStruct9.swift */; };
+		489C80DA256B23EE00A1A598 /* MyStruct152.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8012256B23D600A1A598 /* MyStruct152.swift */; };
+		489C80DB256B23EE00A1A598 /* MyStruct88.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8013256B23D600A1A598 /* MyStruct88.swift */; };
+		489C80DC256B23EE00A1A598 /* MyStruct72.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8014256B23D600A1A598 /* MyStruct72.swift */; };
+		489C80DD256B23EE00A1A598 /* MyStruct179.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8015256B23D600A1A598 /* MyStruct179.swift */; };
+		489C80DE256B23EE00A1A598 /* MyStruct70.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8016256B23D600A1A598 /* MyStruct70.swift */; };
+		489C80DF256B23EE00A1A598 /* MyStruct43.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8017256B23D600A1A598 /* MyStruct43.swift */; };
+		489C80E0256B23EE00A1A598 /* MyStruct170.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8018256B23D700A1A598 /* MyStruct170.swift */; };
+		489C80E1256B23EE00A1A598 /* MyStruct8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8019256B23D700A1A598 /* MyStruct8.swift */; };
+		489C80E2256B23EE00A1A598 /* MyStruct131.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C801A256B23D700A1A598 /* MyStruct131.swift */; };
+		489C80E3256B23EE00A1A598 /* MyStruct79.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C801B256B23D700A1A598 /* MyStruct79.swift */; };
+		489C80E4256B23EE00A1A598 /* MyStruct189.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C801C256B23D700A1A598 /* MyStruct189.swift */; };
+		489C80E5256B23EE00A1A598 /* MyStruct32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C801D256B23D700A1A598 /* MyStruct32.swift */; };
+		489C80E6256B23EE00A1A598 /* MyStruct183.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C801E256B23D800A1A598 /* MyStruct183.swift */; };
+		489C80E7256B23EE00A1A598 /* MyStruct42.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C801F256B23D800A1A598 /* MyStruct42.swift */; };
+		489C80E8256B23EE00A1A598 /* MyStruct135.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8020256B23D800A1A598 /* MyStruct135.swift */; };
+		489C80E9256B23EE00A1A598 /* MyStruct65.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8021256B23D800A1A598 /* MyStruct65.swift */; };
+		489C80EA256B23EE00A1A598 /* MyStruct41.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8022256B23D800A1A598 /* MyStruct41.swift */; };
+		489C80EB256B23EE00A1A598 /* MyStruct134.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8023256B23D800A1A598 /* MyStruct134.swift */; };
+		489C80EC256B23EE00A1A598 /* MyStruct16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8024256B23D900A1A598 /* MyStruct16.swift */; };
+		489C80ED256B23EE00A1A598 /* MyStruct157.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8025256B23D900A1A598 /* MyStruct157.swift */; };
+		489C80EE256B23EE00A1A598 /* MyStruct87.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8026256B23D900A1A598 /* MyStruct87.swift */; };
+		489C80EF256B23EE00A1A598 /* MyStruct51.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8027256B23D900A1A598 /* MyStruct51.swift */; };
+		489C80F0256B23EE00A1A598 /* MyStruct118.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8028256B23D900A1A598 /* MyStruct118.swift */; };
+		489C80F1256B23EE00A1A598 /* MyStruct29.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8029256B23D900A1A598 /* MyStruct29.swift */; };
+		489C80F2256B23EE00A1A598 /* MyStruct116.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C802A256B23D900A1A598 /* MyStruct116.swift */; };
+		489C80F3256B23EE00A1A598 /* MyStruct93.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C802B256B23D900A1A598 /* MyStruct93.swift */; };
+		489C80F4256B23EE00A1A598 /* MyStruct89.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C802C256B23DA00A1A598 /* MyStruct89.swift */; };
+		489C80F5256B23EE00A1A598 /* MyStruct165.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C802D256B23DA00A1A598 /* MyStruct165.swift */; };
+		489C80F6256B23EE00A1A598 /* MyStruct33.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C802E256B23DA00A1A598 /* MyStruct33.swift */; };
+		489C80F7256B23EE00A1A598 /* MyStruct11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C802F256B23DA00A1A598 /* MyStruct11.swift */; };
+		489C80F8256B23EE00A1A598 /* MyStruct164.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8030256B23DA00A1A598 /* MyStruct164.swift */; };
+		489C80F9256B23EE00A1A598 /* MyStruct167.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8031256B23DA00A1A598 /* MyStruct167.swift */; };
+		489C80FA256B23EE00A1A598 /* MyStruct31.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8032256B23DA00A1A598 /* MyStruct31.swift */; };
+		489C80FB256B23EE00A1A598 /* MyStruct61.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8033256B23DB00A1A598 /* MyStruct61.swift */; };
+		489C80FC256B23EE00A1A598 /* MyStruct35.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8034256B23DB00A1A598 /* MyStruct35.swift */; };
+		489C80FD256B23EE00A1A598 /* MyStruct106.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8035256B23DB00A1A598 /* MyStruct106.swift */; };
+		489C80FE256B23EE00A1A598 /* MyStruct117.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8036256B23DB00A1A598 /* MyStruct117.swift */; };
+		489C80FF256B23EE00A1A598 /* MyStruct90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8037256B23DB00A1A598 /* MyStruct90.swift */; };
+		489C8100256B23EE00A1A598 /* MyStruct151.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8038256B23DB00A1A598 /* MyStruct151.swift */; };
+		489C8101256B23EE00A1A598 /* MyStruct45.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8039256B23DB00A1A598 /* MyStruct45.swift */; };
+		489C8102256B23EE00A1A598 /* MyStruct137.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C803A256B23DC00A1A598 /* MyStruct137.swift */; };
+		489C8103256B23EE00A1A598 /* MyStruct63.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C803B256B23DC00A1A598 /* MyStruct63.swift */; };
+		489C8104256B23EE00A1A598 /* MyStruct86.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C803C256B23DC00A1A598 /* MyStruct86.swift */; };
+		489C8105256B23EE00A1A598 /* MyStruct150.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C803D256B23DC00A1A598 /* MyStruct150.swift */; };
+		489C8106256B23EE00A1A598 /* MyStruct187.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C803E256B23DC00A1A598 /* MyStruct187.swift */; };
+		489C8107256B23EE00A1A598 /* MyStruct28.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C803F256B23DC00A1A598 /* MyStruct28.swift */; };
+		489C8108256B23EE00A1A598 /* MyStruct192.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8040256B23DC00A1A598 /* MyStruct192.swift */; };
+		489C8109256B23EE00A1A598 /* MyStruct36.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8041256B23DD00A1A598 /* MyStruct36.swift */; };
+		489C810A256B23EE00A1A598 /* MyStruct139.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8042256B23DD00A1A598 /* MyStruct139.swift */; };
+		489C810B256B23EE00A1A598 /* MyStruct125.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8043256B23DD00A1A598 /* MyStruct125.swift */; };
+		489C810C256B23EE00A1A598 /* MyStruct126.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8044256B23DD00A1A598 /* MyStruct126.swift */; };
+		489C810D256B23EE00A1A598 /* MyStruct83.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8045256B23DD00A1A598 /* MyStruct83.swift */; };
+		489C810E256B23EE00A1A598 /* MyStruct127.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8046256B23DD00A1A598 /* MyStruct127.swift */; };
+		489C810F256B23EE00A1A598 /* MyStruct136.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8047256B23DD00A1A598 /* MyStruct136.swift */; };
+		489C8110256B23EE00A1A598 /* MyStruct12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8048256B23DE00A1A598 /* MyStruct12.swift */; };
+		489C8111256B23EE00A1A598 /* MyStruct119.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8049256B23DE00A1A598 /* MyStruct119.swift */; };
+		489C8112256B23EE00A1A598 /* MyStruct142.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C804A256B23DE00A1A598 /* MyStruct142.swift */; };
+		489C8113256B23EE00A1A598 /* MyStruct148.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C804B256B23DE00A1A598 /* MyStruct148.swift */; };
+		489C8114256B23EE00A1A598 /* MyStruct197.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C804C256B23DE00A1A598 /* MyStruct197.swift */; };
+		489C8115256B23EE00A1A598 /* MyStruct74.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C804D256B23DE00A1A598 /* MyStruct74.swift */; };
+		489C8116256B23EE00A1A598 /* MyStruct97.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C804E256B23DE00A1A598 /* MyStruct97.swift */; };
+		489C8117256B23EE00A1A598 /* MyStruct109.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C804F256B23DF00A1A598 /* MyStruct109.swift */; };
+		489C8118256B23EE00A1A598 /* MyStruct37.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8050256B23DF00A1A598 /* MyStruct37.swift */; };
+		489C8119256B23EE00A1A598 /* MyStruct161.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8051256B23DF00A1A598 /* MyStruct161.swift */; };
+		489C811A256B23EE00A1A598 /* MyStruct76.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8052256B23DF00A1A598 /* MyStruct76.swift */; };
+		489C811B256B23EE00A1A598 /* MyStruct174.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8053256B23DF00A1A598 /* MyStruct174.swift */; };
+		489C811C256B23EE00A1A598 /* MyStruct82.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8054256B23DF00A1A598 /* MyStruct82.swift */; };
+		489C811D256B23EE00A1A598 /* MyStruct17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8055256B23DF00A1A598 /* MyStruct17.swift */; };
+		489C811E256B23EE00A1A598 /* MyStruct166.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8056256B23E000A1A598 /* MyStruct166.swift */; };
+		489C811F256B23EE00A1A598 /* MyStruct155.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8057256B23E000A1A598 /* MyStruct155.swift */; };
+		489C8120256B23EE00A1A598 /* MyStruct104.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8058256B23E000A1A598 /* MyStruct104.swift */; };
+		489C8121256B23EE00A1A598 /* MyStruct130.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8059256B23E000A1A598 /* MyStruct130.swift */; };
+		489C8122256B23EE00A1A598 /* MyStruct23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C805A256B23E000A1A598 /* MyStruct23.swift */; };
+		489C8123256B23EE00A1A598 /* MyStruct191.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C805B256B23E000A1A598 /* MyStruct191.swift */; };
+		489C8124256B23EE00A1A598 /* MyStruct85.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C805C256B23E100A1A598 /* MyStruct85.swift */; };
+		489C8125256B23EE00A1A598 /* MyStruct19.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C805D256B23E100A1A598 /* MyStruct19.swift */; };
+		489C8126256B23EE00A1A598 /* MyStruct180.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C805E256B23E100A1A598 /* MyStruct180.swift */; };
+		489C8127256B23EE00A1A598 /* MyStruct112.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C805F256B23E100A1A598 /* MyStruct112.swift */; };
+		489C8128256B23EE00A1A598 /* MyStruct176.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8060256B23E100A1A598 /* MyStruct176.swift */; };
+		489C8129256B23EE00A1A598 /* MyStruct185.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8061256B23E100A1A598 /* MyStruct185.swift */; };
+		489C812A256B23EE00A1A598 /* MyStruct4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8062256B23E100A1A598 /* MyStruct4.swift */; };
+		489C812B256B23EE00A1A598 /* MyStruct190.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8063256B23E200A1A598 /* MyStruct190.swift */; };
+		489C812C256B23EE00A1A598 /* MyStruct21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8064256B23E200A1A598 /* MyStruct21.swift */; };
+		489C812D256B23EE00A1A598 /* MyStruct77.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8065256B23E200A1A598 /* MyStruct77.swift */; };
+		489C812E256B23EE00A1A598 /* MyStruct39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8066256B23E200A1A598 /* MyStruct39.swift */; };
+		489C812F256B23EE00A1A598 /* MyStruct62.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8067256B23E200A1A598 /* MyStruct62.swift */; };
+		489C8130256B23EE00A1A598 /* MyStruct81.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8068256B23E200A1A598 /* MyStruct81.swift */; };
+		489C8131256B23EE00A1A598 /* MyStruct26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8069256B23E200A1A598 /* MyStruct26.swift */; };
+		489C8132256B23EE00A1A598 /* MyStruct18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C806A256B23E300A1A598 /* MyStruct18.swift */; };
+		489C8133256B23EE00A1A598 /* MyStruct177.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C806B256B23E300A1A598 /* MyStruct177.swift */; };
+		489C8134256B23EE00A1A598 /* MyStruct30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C806C256B23E300A1A598 /* MyStruct30.swift */; };
+		489C8135256B23EE00A1A598 /* MyStruct178.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C806D256B23E300A1A598 /* MyStruct178.swift */; };
+		489C8136256B23EE00A1A598 /* MyStruct111.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C806E256B23E300A1A598 /* MyStruct111.swift */; };
+		489C8137256B23EE00A1A598 /* MyStruct105.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C806F256B23E300A1A598 /* MyStruct105.swift */; };
+		489C8138256B23EE00A1A598 /* MyStruct121.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8070256B23E300A1A598 /* MyStruct121.swift */; };
+		489C8139256B23EE00A1A598 /* MyStruct78.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8071256B23E300A1A598 /* MyStruct78.swift */; };
+		489C813A256B23EE00A1A598 /* MyStruct0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8072256B23E400A1A598 /* MyStruct0.swift */; };
+		489C813B256B23EE00A1A598 /* MyStruct98.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8073256B23E400A1A598 /* MyStruct98.swift */; };
+		489C813C256B23EE00A1A598 /* MyStruct156.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8074256B23E400A1A598 /* MyStruct156.swift */; };
+		489C813D256B23EE00A1A598 /* MyStruct199.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8075256B23E400A1A598 /* MyStruct199.swift */; };
+		489C813E256B23EE00A1A598 /* MyStruct96.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8076256B23E400A1A598 /* MyStruct96.swift */; };
+		489C813F256B23EE00A1A598 /* MyStruct94.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8077256B23E400A1A598 /* MyStruct94.swift */; };
+		489C8140256B23EE00A1A598 /* MyStruct14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8078256B23E400A1A598 /* MyStruct14.swift */; };
+		489C8141256B23EE00A1A598 /* MyStruct58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8079256B23E500A1A598 /* MyStruct58.swift */; };
+		489C8142256B23EE00A1A598 /* MyStruct47.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C807A256B23E500A1A598 /* MyStruct47.swift */; };
+		489C8143256B23EE00A1A598 /* MyStruct194.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C807B256B23E500A1A598 /* MyStruct194.swift */; };
+		489C8144256B23EE00A1A598 /* MyStruct108.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C807C256B23E500A1A598 /* MyStruct108.swift */; };
+		489C8145256B23EE00A1A598 /* MyStruct184.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C807D256B23E500A1A598 /* MyStruct184.swift */; };
+		489C8146256B23EE00A1A598 /* MyStruct122.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C807E256B23E500A1A598 /* MyStruct122.swift */; };
+		489C8147256B23EE00A1A598 /* MyStruct175.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C807F256B23E500A1A598 /* MyStruct175.swift */; };
+		489C8148256B23EE00A1A598 /* MyStruct99.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8080256B23E500A1A598 /* MyStruct99.swift */; };
+		489C8149256B23EE00A1A598 /* MyStruct100.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8081256B23E600A1A598 /* MyStruct100.swift */; };
+		489C814A256B23EE00A1A598 /* MyStruct53.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8082256B23E600A1A598 /* MyStruct53.swift */; };
+		489C814B256B23EE00A1A598 /* MyStruct67.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8083256B23E600A1A598 /* MyStruct67.swift */; };
+		489C814C256B23EE00A1A598 /* MyStruct34.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8084256B23E600A1A598 /* MyStruct34.swift */; };
+		489C814D256B23EE00A1A598 /* MyStruct141.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8085256B23E600A1A598 /* MyStruct141.swift */; };
+		489C814E256B23EE00A1A598 /* MyStruct128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8086256B23E600A1A598 /* MyStruct128.swift */; };
+		489C814F256B23EE00A1A598 /* MyStruct92.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8087256B23E700A1A598 /* MyStruct92.swift */; };
+		489C8150256B23EE00A1A598 /* MyStruct27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8088256B23E700A1A598 /* MyStruct27.swift */; };
+		489C8151256B23EE00A1A598 /* MyStruct163.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8089256B23E700A1A598 /* MyStruct163.swift */; };
+		489C8152256B23EE00A1A598 /* MyStruct169.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C808A256B23E700A1A598 /* MyStruct169.swift */; };
+		489C8153256B23EE00A1A598 /* MyStruct154.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C808B256B23E700A1A598 /* MyStruct154.swift */; };
+		489C8154256B23EE00A1A598 /* MyStruct103.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C808C256B23E700A1A598 /* MyStruct103.swift */; };
+		489C8155256B23EE00A1A598 /* MyStruct80.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C808D256B23E800A1A598 /* MyStruct80.swift */; };
+		489C8156256B23EE00A1A598 /* MyStruct173.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C808E256B23E800A1A598 /* MyStruct173.swift */; };
+		489C8157256B23EE00A1A598 /* MyStruct66.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C808F256B23E800A1A598 /* MyStruct66.swift */; };
+		489C8158256B23EE00A1A598 /* MyStruct91.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8090256B23E800A1A598 /* MyStruct91.swift */; };
+		489C8159256B23EE00A1A598 /* MyStruct24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8091256B23E800A1A598 /* MyStruct24.swift */; };
+		489C815A256B23EE00A1A598 /* MyStruct120.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8092256B23E800A1A598 /* MyStruct120.swift */; };
+		489C815B256B23EE00A1A598 /* MyStruct38.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8093256B23E800A1A598 /* MyStruct38.swift */; };
+		489C815C256B23EE00A1A598 /* MyStruct57.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8094256B23E900A1A598 /* MyStruct57.swift */; };
+		489C815D256B23EE00A1A598 /* MyStruct145.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8095256B23E900A1A598 /* MyStruct145.swift */; };
+		489C815E256B23EE00A1A598 /* MyStruct44.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8096256B23E900A1A598 /* MyStruct44.swift */; };
+		489C815F256B23EE00A1A598 /* MyStruct149.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8097256B23E900A1A598 /* MyStruct149.swift */; };
+		489C8160256B23EE00A1A598 /* MyStruct146.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8098256B23E900A1A598 /* MyStruct146.swift */; };
+		489C8161256B23EE00A1A598 /* MyStruct144.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8099256B23E900A1A598 /* MyStruct144.swift */; };
+		489C8162256B23EE00A1A598 /* MyStruct25.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C809A256B23E900A1A598 /* MyStruct25.swift */; };
+		489C8163256B23EE00A1A598 /* MyStruct20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C809B256B23E900A1A598 /* MyStruct20.swift */; };
+		489C8164256B23EE00A1A598 /* MyStruct129.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C809C256B23EA00A1A598 /* MyStruct129.swift */; };
+		489C8165256B23EE00A1A598 /* MyStruct40.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C809D256B23EA00A1A598 /* MyStruct40.swift */; };
+		489C8166256B23EE00A1A598 /* MyStruct22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C809E256B23EA00A1A598 /* MyStruct22.swift */; };
+		489C8167256B23EE00A1A598 /* MyStruct46.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C809F256B23EA00A1A598 /* MyStruct46.swift */; };
+		489C8168256B23EE00A1A598 /* MyStruct132.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80A0256B23EA00A1A598 /* MyStruct132.swift */; };
+		489C8169256B23EE00A1A598 /* MyStruct114.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80A1256B23EA00A1A598 /* MyStruct114.swift */; };
+		489C816A256B23EE00A1A598 /* MyStruct95.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80A2256B23EB00A1A598 /* MyStruct95.swift */; };
+		489C816B256B23EE00A1A598 /* MyStruct198.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80A3256B23EB00A1A598 /* MyStruct198.swift */; };
+		489C816C256B23EE00A1A598 /* MyStruct84.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80A4256B23EB00A1A598 /* MyStruct84.swift */; };
+		489C816D256B23EE00A1A598 /* MyStruct73.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80A5256B23EB00A1A598 /* MyStruct73.swift */; };
+		489C816E256B23EE00A1A598 /* MyStruct102.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80A6256B23EB00A1A598 /* MyStruct102.swift */; };
+		489C816F256B23EE00A1A598 /* MyStruct195.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80A7256B23EB00A1A598 /* MyStruct195.swift */; };
+		489C8170256B23EE00A1A598 /* MyStruct64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80A8256B23EB00A1A598 /* MyStruct64.swift */; };
+		489C8171256B23EE00A1A598 /* MyStruct5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80A9256B23EC00A1A598 /* MyStruct5.swift */; };
+		489C8172256B23EE00A1A598 /* MyStruct68.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80AA256B23EC00A1A598 /* MyStruct68.swift */; };
+		489C8173256B23EE00A1A598 /* MyStruct115.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80AB256B23EC00A1A598 /* MyStruct115.swift */; };
+		489C8174256B23EF00A1A598 /* MyStruct52.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80AC256B23EC00A1A598 /* MyStruct52.swift */; };
+		489C8175256B23EF00A1A598 /* MyStruct2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80AD256B23EC00A1A598 /* MyStruct2.swift */; };
+		489C8176256B23EF00A1A598 /* MyStruct50.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80AE256B23EC00A1A598 /* MyStruct50.swift */; };
+		489C8177256B23EF00A1A598 /* MyStruct196.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80AF256B23ED00A1A598 /* MyStruct196.swift */; };
+		489C8178256B23EF00A1A598 /* MyStruct133.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80B0256B23ED00A1A598 /* MyStruct133.swift */; };
+		489C8179256B23EF00A1A598 /* MyStruct71.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80B1256B23ED00A1A598 /* MyStruct71.swift */; };
+		489C817A256B23EF00A1A598 /* MyStruct123.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80B2256B23ED00A1A598 /* MyStruct123.swift */; };
+		489C817B256B23EF00A1A598 /* MyStruct181.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80B3256B23ED00A1A598 /* MyStruct181.swift */; };
+		489C817C256B23EF00A1A598 /* MyStruct10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C80B4256B23ED00A1A598 /* MyStruct10.swift */; };
+		489C8272256B258500A1A598 /* MyStructService89.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81AA256B254000A1A598 /* MyStructService89.swift */; };
+		489C8273256B258500A1A598 /* MyStructService33.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81AB256B254100A1A598 /* MyStructService33.swift */; };
+		489C8274256B258500A1A598 /* MyStructService22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81AC256B254100A1A598 /* MyStructService22.swift */; };
+		489C8275256B258500A1A598 /* MyStructService100.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81AD256B254100A1A598 /* MyStructService100.swift */; };
+		489C8276256B258500A1A598 /* MyStructService180.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81AE256B254200A1A598 /* MyStructService180.swift */; };
+		489C8277256B258500A1A598 /* MyStructService52.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81AF256B254200A1A598 /* MyStructService52.swift */; };
+		489C8278256B258500A1A598 /* MyStructService123.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81B0256B254200A1A598 /* MyStructService123.swift */; };
+		489C8279256B258500A1A598 /* MyStructService194.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81B1256B254300A1A598 /* MyStructService194.swift */; };
+		489C827A256B258500A1A598 /* MyStructService143.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81B2256B254300A1A598 /* MyStructService143.swift */; };
+		489C827B256B258500A1A598 /* MyStructService198.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81B3256B254300A1A598 /* MyStructService198.swift */; };
+		489C827C256B258500A1A598 /* MyStructService121.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81B4256B254400A1A598 /* MyStructService121.swift */; };
+		489C827D256B258500A1A598 /* MyStructService59.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81B5256B254400A1A598 /* MyStructService59.swift */; };
+		489C827E256B258500A1A598 /* MyStructService125.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81B6256B254400A1A598 /* MyStructService125.swift */; };
+		489C827F256B258500A1A598 /* MyStructService124.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81B7256B254500A1A598 /* MyStructService124.swift */; };
+		489C8280256B258500A1A598 /* MyStructService137.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81B8256B254500A1A598 /* MyStructService137.swift */; };
+		489C8281256B258500A1A598 /* MyStructService110.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81B9256B254500A1A598 /* MyStructService110.swift */; };
+		489C8282256B258500A1A598 /* MyStructService161.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81BA256B254600A1A598 /* MyStructService161.swift */; };
+		489C8283256B258500A1A598 /* MyStructService70.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81BB256B254600A1A598 /* MyStructService70.swift */; };
+		489C8284256B258500A1A598 /* MyStructService118.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81BC256B254600A1A598 /* MyStructService118.swift */; };
+		489C8285256B258500A1A598 /* MyStructService111.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81BD256B254700A1A598 /* MyStructService111.swift */; };
+		489C8286256B258500A1A598 /* MyStructService14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81BE256B254700A1A598 /* MyStructService14.swift */; };
+		489C8287256B258500A1A598 /* MyStructService25.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81BF256B254700A1A598 /* MyStructService25.swift */; };
+		489C8288256B258500A1A598 /* MyStructService92.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81C0256B254800A1A598 /* MyStructService92.swift */; };
+		489C8289256B258500A1A598 /* MyStructService41.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81C1256B254800A1A598 /* MyStructService41.swift */; };
+		489C828A256B258500A1A598 /* MyStructService145.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81C2256B254800A1A598 /* MyStructService145.swift */; };
+		489C828B256B258500A1A598 /* MyStructService107.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81C3256B254900A1A598 /* MyStructService107.swift */; };
+		489C828C256B258500A1A598 /* MyStructService62.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81C4256B254900A1A598 /* MyStructService62.swift */; };
+		489C828D256B258500A1A598 /* MyStructService108.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81C5256B254A00A1A598 /* MyStructService108.swift */; };
+		489C828E256B258500A1A598 /* MyStructService166.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81C6256B254A00A1A598 /* MyStructService166.swift */; };
+		489C828F256B258500A1A598 /* MyStructService78.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81C7256B254A00A1A598 /* MyStructService78.swift */; };
+		489C8290256B258500A1A598 /* MyStructService128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81C8256B254B00A1A598 /* MyStructService128.swift */; };
+		489C8291256B258500A1A598 /* MyStructService80.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81C9256B254B00A1A598 /* MyStructService80.swift */; };
+		489C8292256B258500A1A598 /* MyStructService148.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81CA256B254C00A1A598 /* MyStructService148.swift */; };
+		489C8293256B258500A1A598 /* MyStructService57.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81CB256B254C00A1A598 /* MyStructService57.swift */; };
+		489C8294256B258500A1A598 /* MyStructService65.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81CC256B254C00A1A598 /* MyStructService65.swift */; };
+		489C8295256B258500A1A598 /* MyStructService49.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81CD256B254D00A1A598 /* MyStructService49.swift */; };
+		489C8296256B258500A1A598 /* MyStructService77.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81CE256B254D00A1A598 /* MyStructService77.swift */; };
+		489C8297256B258500A1A598 /* MyStructService0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81CF256B254D00A1A598 /* MyStructService0.swift */; };
+		489C8298256B258500A1A598 /* MyStructService29.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81D0256B254E00A1A598 /* MyStructService29.swift */; };
+		489C8299256B258500A1A598 /* MyStructService23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81D1256B254E00A1A598 /* MyStructService23.swift */; };
+		489C829A256B258500A1A598 /* MyStructService26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81D2256B254F00A1A598 /* MyStructService26.swift */; };
+		489C829B256B258500A1A598 /* MyStructService191.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81D3256B254F00A1A598 /* MyStructService191.swift */; };
+		489C829C256B258500A1A598 /* MyStructService74.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81D4256B254F00A1A598 /* MyStructService74.swift */; };
+		489C829D256B258500A1A598 /* MyStructService139.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81D5256B255000A1A598 /* MyStructService139.swift */; };
+		489C829E256B258500A1A598 /* MyStructService101.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81D6256B255000A1A598 /* MyStructService101.swift */; };
+		489C829F256B258500A1A598 /* MyStructService76.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81D7256B255000A1A598 /* MyStructService76.swift */; };
+		489C82A0256B258500A1A598 /* MyStructService186.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81D8256B255100A1A598 /* MyStructService186.swift */; };
+		489C82A1256B258500A1A598 /* MyStructService69.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81D9256B255100A1A598 /* MyStructService69.swift */; };
+		489C82A2256B258500A1A598 /* MyStructService197.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81DA256B255100A1A598 /* MyStructService197.swift */; };
+		489C82A3256B258500A1A598 /* MyStructService66.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81DB256B255200A1A598 /* MyStructService66.swift */; };
+		489C82A4256B258500A1A598 /* MyStructService113.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81DC256B255200A1A598 /* MyStructService113.swift */; };
+		489C82A5256B258500A1A598 /* MyStructService169.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81DD256B255200A1A598 /* MyStructService169.swift */; };
+		489C82A6256B258500A1A598 /* MyStructService179.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81DE256B255300A1A598 /* MyStructService179.swift */; };
+		489C82A7256B258500A1A598 /* MyStructService173.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81DF256B255300A1A598 /* MyStructService173.swift */; };
+		489C82A8256B258500A1A598 /* MyStructService144.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81E0256B255300A1A598 /* MyStructService144.swift */; };
+		489C82A9256B258500A1A598 /* MyStructService189.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81E1256B255400A1A598 /* MyStructService189.swift */; };
+		489C82AA256B258500A1A598 /* MyStructService102.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81E2256B255400A1A598 /* MyStructService102.swift */; };
+		489C82AB256B258500A1A598 /* MyStructService19.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81E3256B255400A1A598 /* MyStructService19.swift */; };
+		489C82AC256B258500A1A598 /* MyStructService165.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81E4256B255400A1A598 /* MyStructService165.swift */; };
+		489C82AD256B258500A1A598 /* MyStructService162.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81E5256B255500A1A598 /* MyStructService162.swift */; };
+		489C82AE256B258500A1A598 /* MyStructService55.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81E6256B255500A1A598 /* MyStructService55.swift */; };
+		489C82AF256B258500A1A598 /* MyStructService127.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81E7256B255500A1A598 /* MyStructService127.swift */; };
+		489C82B0256B258500A1A598 /* MyStructService73.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81E8256B255600A1A598 /* MyStructService73.swift */; };
+		489C82B1256B258500A1A598 /* MyStructService12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81E9256B255600A1A598 /* MyStructService12.swift */; };
+		489C82B2256B258500A1A598 /* MyStructService35.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81EA256B255700A1A598 /* MyStructService35.swift */; };
+		489C82B3256B258500A1A598 /* MyStructService85.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81EB256B255700A1A598 /* MyStructService85.swift */; };
+		489C82B4256B258500A1A598 /* MyStructService117.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81EC256B255700A1A598 /* MyStructService117.swift */; };
+		489C82B5256B258500A1A598 /* MyStructService158.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81ED256B255700A1A598 /* MyStructService158.swift */; };
+		489C82B6256B258500A1A598 /* MyStructService190.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81EE256B255800A1A598 /* MyStructService190.swift */; };
+		489C82B7256B258500A1A598 /* MyStructService27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81EF256B255800A1A598 /* MyStructService27.swift */; };
+		489C82B8256B258500A1A598 /* MyStructService185.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81F0256B255800A1A598 /* MyStructService185.swift */; };
+		489C82B9256B258500A1A598 /* MyStructService195.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81F1256B255900A1A598 /* MyStructService195.swift */; };
+		489C82BA256B258500A1A598 /* MyStructService58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81F2256B255900A1A598 /* MyStructService58.swift */; };
+		489C82BB256B258500A1A598 /* MyStructService170.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81F3256B255900A1A598 /* MyStructService170.swift */; };
+		489C82BC256B258500A1A598 /* MyStructService54.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81F4256B255A00A1A598 /* MyStructService54.swift */; };
+		489C82BD256B258500A1A598 /* MyStructService164.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81F5256B255A00A1A598 /* MyStructService164.swift */; };
+		489C82BE256B258500A1A598 /* MyStructService20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81F6256B255A00A1A598 /* MyStructService20.swift */; };
+		489C82BF256B258500A1A598 /* MyStructService87.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81F7256B255B00A1A598 /* MyStructService87.swift */; };
+		489C82C0256B258500A1A598 /* MyStructService135.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81F8256B255B00A1A598 /* MyStructService135.swift */; };
+		489C82C1256B258500A1A598 /* MyStructService36.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81F9256B255B00A1A598 /* MyStructService36.swift */; };
+		489C82C2256B258500A1A598 /* MyStructService142.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81FA256B255C00A1A598 /* MyStructService142.swift */; };
+		489C82C3256B258500A1A598 /* MyStructService160.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81FB256B255C00A1A598 /* MyStructService160.swift */; };
+		489C82C4256B258500A1A598 /* MyStructService17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81FC256B255C00A1A598 /* MyStructService17.swift */; };
+		489C82C5256B258500A1A598 /* MyStructService90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81FD256B255D00A1A598 /* MyStructService90.swift */; };
+		489C82C6256B258500A1A598 /* MyStructService28.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81FE256B255D00A1A598 /* MyStructService28.swift */; };
+		489C82C7256B258500A1A598 /* MyStructService46.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C81FF256B255D00A1A598 /* MyStructService46.swift */; };
+		489C82C8256B258500A1A598 /* MyStructService119.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8200256B255E00A1A598 /* MyStructService119.swift */; };
+		489C82C9256B258500A1A598 /* MyStructService91.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8201256B255E00A1A598 /* MyStructService91.swift */; };
+		489C82CA256B258500A1A598 /* MyStructService67.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8202256B255E00A1A598 /* MyStructService67.swift */; };
+		489C82CB256B258500A1A598 /* MyStructService146.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8203256B255F00A1A598 /* MyStructService146.swift */; };
+		489C82CC256B258500A1A598 /* MyStructService6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8204256B255F00A1A598 /* MyStructService6.swift */; };
+		489C82CD256B258500A1A598 /* MyStructService53.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8205256B255F00A1A598 /* MyStructService53.swift */; };
+		489C82CE256B258500A1A598 /* MyStructService39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8206256B256000A1A598 /* MyStructService39.swift */; };
+		489C82CF256B258500A1A598 /* MyStructService9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8207256B256000A1A598 /* MyStructService9.swift */; };
+		489C82D0256B258500A1A598 /* MyStructService81.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8208256B256000A1A598 /* MyStructService81.swift */; };
+		489C82D1256B258500A1A598 /* MyStructService18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8209256B256100A1A598 /* MyStructService18.swift */; };
+		489C82D2256B258500A1A598 /* MyStructService71.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C820A256B256100A1A598 /* MyStructService71.swift */; };
+		489C82D3256B258500A1A598 /* MyStructService8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C820B256B256100A1A598 /* MyStructService8.swift */; };
+		489C82D4256B258500A1A598 /* MyStructService156.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C820C256B256100A1A598 /* MyStructService156.swift */; };
+		489C82D5256B258500A1A598 /* MyStructService129.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C820D256B256200A1A598 /* MyStructService129.swift */; };
+		489C82D6256B258500A1A598 /* MyStructService192.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C820E256B256200A1A598 /* MyStructService192.swift */; };
+		489C82D7256B258500A1A598 /* MyStructService24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C820F256B256200A1A598 /* MyStructService24.swift */; };
+		489C82D8256B258500A1A598 /* MyStructService45.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8210256B256300A1A598 /* MyStructService45.swift */; };
+		489C82D9256B258500A1A598 /* MyStructService21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8211256B256300A1A598 /* MyStructService21.swift */; };
+		489C82DA256B258500A1A598 /* MyStructService38.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8212256B256300A1A598 /* MyStructService38.swift */; };
+		489C82DB256B258500A1A598 /* MyStructService114.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8213256B256400A1A598 /* MyStructService114.swift */; };
+		489C82DC256B258500A1A598 /* MyStructService48.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8214256B256400A1A598 /* MyStructService48.swift */; };
+		489C82DD256B258500A1A598 /* MyStructService50.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8215256B256400A1A598 /* MyStructService50.swift */; };
+		489C82DE256B258500A1A598 /* MyStructService83.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8216256B256500A1A598 /* MyStructService83.swift */; };
+		489C82DF256B258500A1A598 /* MyStructService51.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8217256B256500A1A598 /* MyStructService51.swift */; };
+		489C82E0256B258500A1A598 /* MyStructService63.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8218256B256500A1A598 /* MyStructService63.swift */; };
+		489C82E1256B258500A1A598 /* MyStructService134.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8219256B256600A1A598 /* MyStructService134.swift */; };
+		489C82E2256B258500A1A598 /* MyStructService32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C821A256B256600A1A598 /* MyStructService32.swift */; };
+		489C82E3256B258500A1A598 /* MyStructService31.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C821B256B256600A1A598 /* MyStructService31.swift */; };
+		489C82E4256B258500A1A598 /* MyStructService75.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C821C256B256700A1A598 /* MyStructService75.swift */; };
+		489C82E5256B258500A1A598 /* MyStructService42.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C821D256B256700A1A598 /* MyStructService42.swift */; };
+		489C82E6256B258500A1A598 /* MyStructService68.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C821E256B256700A1A598 /* MyStructService68.swift */; };
+		489C82E7256B258500A1A598 /* MyStructService181.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C821F256B256800A1A598 /* MyStructService181.swift */; };
+		489C82E8256B258500A1A598 /* MyStructService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8220256B256800A1A598 /* MyStructService2.swift */; };
+		489C82E9256B258500A1A598 /* MyStructService149.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8221256B256800A1A598 /* MyStructService149.swift */; };
+		489C82EA256B258500A1A598 /* MyStructService199.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8222256B256900A1A598 /* MyStructService199.swift */; };
+		489C82EB256B258500A1A598 /* MyStructService98.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8223256B256900A1A598 /* MyStructService98.swift */; };
+		489C82EC256B258500A1A598 /* MyStructService171.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8224256B256900A1A598 /* MyStructService171.swift */; };
+		489C82ED256B258500A1A598 /* MyStructService188.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8225256B256A00A1A598 /* MyStructService188.swift */; };
+		489C82EE256B258500A1A598 /* MyStructService138.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8226256B256A00A1A598 /* MyStructService138.swift */; };
+		489C82EF256B258500A1A598 /* MyStructService34.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8227256B256B00A1A598 /* MyStructService34.swift */; };
+		489C82F0256B258500A1A598 /* MyStructService88.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8228256B256B00A1A598 /* MyStructService88.swift */; };
+		489C82F1256B258500A1A598 /* MyStructService157.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8229256B256B00A1A598 /* MyStructService157.swift */; };
+		489C82F2256B258500A1A598 /* MyStructService163.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C822A256B256C00A1A598 /* MyStructService163.swift */; };
+		489C82F3256B258500A1A598 /* MyStructService86.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C822B256B256C00A1A598 /* MyStructService86.swift */; };
+		489C82F4256B258500A1A598 /* MyStructService155.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C822C256B256C00A1A598 /* MyStructService155.swift */; };
+		489C82F5256B258500A1A598 /* MyStructService10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C822D256B256D00A1A598 /* MyStructService10.swift */; };
+		489C82F6256B258500A1A598 /* MyStructService1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C822E256B256D00A1A598 /* MyStructService1.swift */; };
+		489C82F7256B258500A1A598 /* MyStructService151.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C822F256B256E00A1A598 /* MyStructService151.swift */; };
+		489C82F8256B258500A1A598 /* MyStructService193.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8230256B256E00A1A598 /* MyStructService193.swift */; };
+		489C82F9256B258500A1A598 /* MyStructService82.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8231256B256E00A1A598 /* MyStructService82.swift */; };
+		489C82FA256B258500A1A598 /* MyStructService176.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8232256B256F00A1A598 /* MyStructService176.swift */; };
+		489C82FB256B258500A1A598 /* MyStructService93.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8233256B256F00A1A598 /* MyStructService93.swift */; };
+		489C82FC256B258500A1A598 /* MyStructService103.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8234256B256F00A1A598 /* MyStructService103.swift */; };
+		489C82FD256B258500A1A598 /* MyStructService178.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8235256B257000A1A598 /* MyStructService178.swift */; };
+		489C82FE256B258500A1A598 /* MyStructService13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8236256B257000A1A598 /* MyStructService13.swift */; };
+		489C82FF256B258500A1A598 /* MyStructService30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8237256B257100A1A598 /* MyStructService30.swift */; };
+		489C8300256B258500A1A598 /* MyStructService182.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8238256B257100A1A598 /* MyStructService182.swift */; };
+		489C8301256B258500A1A598 /* MyStructService136.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8239256B257100A1A598 /* MyStructService136.swift */; };
+		489C8302256B258500A1A598 /* MyStructService126.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C823A256B257100A1A598 /* MyStructService126.swift */; };
+		489C8303256B258500A1A598 /* MyStructService99.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C823B256B257200A1A598 /* MyStructService99.swift */; };
+		489C8304256B258500A1A598 /* MyStructService153.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C823C256B257200A1A598 /* MyStructService153.swift */; };
+		489C8305256B258500A1A598 /* MyStructService130.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C823D256B257200A1A598 /* MyStructService130.swift */; };
+		489C8306256B258500A1A598 /* MyStructService120.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C823E256B257300A1A598 /* MyStructService120.swift */; };
+		489C8307256B258500A1A598 /* MyStructService172.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C823F256B257300A1A598 /* MyStructService172.swift */; };
+		489C8308256B258500A1A598 /* MyStructService94.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8240256B257300A1A598 /* MyStructService94.swift */; };
+		489C8309256B258500A1A598 /* MyStructService196.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8241256B257400A1A598 /* MyStructService196.swift */; };
+		489C830A256B258500A1A598 /* MyStructService47.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8242256B257400A1A598 /* MyStructService47.swift */; };
+		489C830B256B258500A1A598 /* MyStructService140.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8243256B257400A1A598 /* MyStructService140.swift */; };
+		489C830C256B258500A1A598 /* MyStructService106.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8244256B257500A1A598 /* MyStructService106.swift */; };
+		489C830D256B258500A1A598 /* MyStructService167.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8245256B257500A1A598 /* MyStructService167.swift */; };
+		489C830E256B258500A1A598 /* MyStructService43.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8246256B257500A1A598 /* MyStructService43.swift */; };
+		489C830F256B258500A1A598 /* MyStructService183.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8247256B257600A1A598 /* MyStructService183.swift */; };
+		489C8310256B258500A1A598 /* MyStructService7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8248256B257600A1A598 /* MyStructService7.swift */; };
+		489C8311256B258500A1A598 /* MyStructService72.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8249256B257600A1A598 /* MyStructService72.swift */; };
+		489C8312256B258500A1A598 /* MyStructService131.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C824A256B257700A1A598 /* MyStructService131.swift */; };
+		489C8313256B258500A1A598 /* MyStructService95.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C824B256B257700A1A598 /* MyStructService95.swift */; };
+		489C8314256B258500A1A598 /* MyStructService104.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C824C256B257700A1A598 /* MyStructService104.swift */; };
+		489C8315256B258500A1A598 /* MyStructService159.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C824D256B257800A1A598 /* MyStructService159.swift */; };
+		489C8316256B258500A1A598 /* MyStructService3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C824E256B257800A1A598 /* MyStructService3.swift */; };
+		489C8317256B258500A1A598 /* MyStructService175.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C824F256B257800A1A598 /* MyStructService175.swift */; };
+		489C8318256B258500A1A598 /* MyStructService109.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8250256B257900A1A598 /* MyStructService109.swift */; };
+		489C8319256B258500A1A598 /* MyStructService105.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8251256B257900A1A598 /* MyStructService105.swift */; };
+		489C831A256B258500A1A598 /* MyStructService84.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8252256B257900A1A598 /* MyStructService84.swift */; };
+		489C831B256B258500A1A598 /* MyStructService96.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8253256B257A00A1A598 /* MyStructService96.swift */; };
+		489C831C256B258500A1A598 /* MyStructService4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8254256B257A00A1A598 /* MyStructService4.swift */; };
+		489C831D256B258500A1A598 /* MyStructService56.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8255256B257A00A1A598 /* MyStructService56.swift */; };
+		489C831E256B258500A1A598 /* MyStructService147.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8256256B257B00A1A598 /* MyStructService147.swift */; };
+		489C831F256B258500A1A598 /* MyStructService61.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8257256B257B00A1A598 /* MyStructService61.swift */; };
+		489C8320256B258500A1A598 /* MyStructService168.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8258256B257C00A1A598 /* MyStructService168.swift */; };
+		489C8321256B258500A1A598 /* MyStructService44.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8259256B257C00A1A598 /* MyStructService44.swift */; };
+		489C8322256B258500A1A598 /* MyStructService122.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C825A256B257C00A1A598 /* MyStructService122.swift */; };
+		489C8323256B258500A1A598 /* MyStructService64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C825B256B257D00A1A598 /* MyStructService64.swift */; };
+		489C8324256B258500A1A598 /* MyStructService112.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C825C256B257D00A1A598 /* MyStructService112.swift */; };
+		489C8325256B258500A1A598 /* MyStructService116.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C825D256B257D00A1A598 /* MyStructService116.swift */; };
+		489C8326256B258500A1A598 /* MyStructService187.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C825E256B257D00A1A598 /* MyStructService187.swift */; };
+		489C8327256B258500A1A598 /* MyStructService16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C825F256B257E00A1A598 /* MyStructService16.swift */; };
+		489C8328256B258500A1A598 /* MyStructService174.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8260256B257E00A1A598 /* MyStructService174.swift */; };
+		489C8329256B258500A1A598 /* MyStructService150.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8261256B257F00A1A598 /* MyStructService150.swift */; };
+		489C832A256B258500A1A598 /* MyStructService133.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8262256B257F00A1A598 /* MyStructService133.swift */; };
+		489C832B256B258500A1A598 /* MyStructService11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8263256B257F00A1A598 /* MyStructService11.swift */; };
+		489C832C256B258500A1A598 /* MyStructService177.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8264256B258000A1A598 /* MyStructService177.swift */; };
+		489C832D256B258500A1A598 /* MyStructService5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8265256B258000A1A598 /* MyStructService5.swift */; };
+		489C832E256B258500A1A598 /* MyStructService60.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8266256B258000A1A598 /* MyStructService60.swift */; };
+		489C832F256B258500A1A598 /* MyStructService15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8267256B258100A1A598 /* MyStructService15.swift */; };
+		489C8330256B258500A1A598 /* MyStructService97.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8268256B258100A1A598 /* MyStructService97.swift */; };
+		489C8331256B258600A1A598 /* MyStructService115.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8269256B258100A1A598 /* MyStructService115.swift */; };
+		489C8332256B258600A1A598 /* MyStructService40.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C826A256B258200A1A598 /* MyStructService40.swift */; };
+		489C8333256B258600A1A598 /* MyStructService79.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C826B256B258200A1A598 /* MyStructService79.swift */; };
+		489C8334256B258600A1A598 /* MyStructService141.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C826C256B258200A1A598 /* MyStructService141.swift */; };
+		489C8335256B258600A1A598 /* MyStructService152.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C826D256B258300A1A598 /* MyStructService152.swift */; };
+		489C8336256B258600A1A598 /* MyStructService37.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C826E256B258300A1A598 /* MyStructService37.swift */; };
+		489C8337256B258600A1A598 /* MyStructService154.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C826F256B258400A1A598 /* MyStructService154.swift */; };
+		489C8338256B258600A1A598 /* MyStructService132.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8270256B258400A1A598 /* MyStructService132.swift */; };
+		489C8339256B258600A1A598 /* MyStructService184.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489C8271256B258400A1A598 /* MyStructService184.swift */; };
 		48AB4E21256ABCAE009481AF /* ModelsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; };
 /* End PBXBuildFile section */
 
@@ -440,6 +840,406 @@
 		488B313D24BA3071004905AA /* PostsPaginatorFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPaginatorFake.swift; sourceTree = "<group>"; };
 		488B316124BA4A46004905AA /* PostsSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSplitViewController.swift; sourceTree = "<group>"; };
 		488B316524BA656C004905AA /* Thread+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thread+Extensions.swift"; sourceTree = "<group>"; };
+		489C7FED256B23CF00A1A598 /* MyStruct153.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct153.swift; sourceTree = "<group>"; };
+		489C7FEE256B23CF00A1A598 /* MyStruct147.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct147.swift; sourceTree = "<group>"; };
+		489C7FEF256B23D000A1A598 /* MyStruct162.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct162.swift; sourceTree = "<group>"; };
+		489C7FF0256B23D000A1A598 /* MyStruct48.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct48.swift; sourceTree = "<group>"; };
+		489C7FF1256B23D000A1A598 /* MyStruct75.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct75.swift; sourceTree = "<group>"; };
+		489C7FF2256B23D000A1A598 /* MyStruct15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct15.swift; sourceTree = "<group>"; };
+		489C7FF3256B23D000A1A598 /* MyStruct7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct7.swift; sourceTree = "<group>"; };
+		489C7FF4256B23D000A1A598 /* MyStruct171.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct171.swift; sourceTree = "<group>"; };
+		489C7FF5256B23D100A1A598 /* MyStruct160.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct160.swift; sourceTree = "<group>"; };
+		489C7FF6256B23D100A1A598 /* MyStruct55.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct55.swift; sourceTree = "<group>"; };
+		489C7FF7256B23D100A1A598 /* MyStruct168.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct168.swift; sourceTree = "<group>"; };
+		489C7FF8256B23D100A1A598 /* MyStruct1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct1.swift; sourceTree = "<group>"; };
+		489C7FF9256B23D200A1A598 /* MyStruct60.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct60.swift; sourceTree = "<group>"; };
+		489C7FFA256B23D200A1A598 /* MyStruct158.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct158.swift; sourceTree = "<group>"; };
+		489C7FFB256B23D200A1A598 /* MyStruct59.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct59.swift; sourceTree = "<group>"; };
+		489C7FFC256B23D200A1A598 /* MyStruct56.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct56.swift; sourceTree = "<group>"; };
+		489C7FFD256B23D200A1A598 /* MyStruct186.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct186.swift; sourceTree = "<group>"; };
+		489C7FFE256B23D200A1A598 /* MyStruct159.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct159.swift; sourceTree = "<group>"; };
+		489C7FFF256B23D300A1A598 /* MyStruct110.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct110.swift; sourceTree = "<group>"; };
+		489C8000256B23D300A1A598 /* MyStruct13.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct13.swift; sourceTree = "<group>"; };
+		489C8001256B23D300A1A598 /* MyStruct182.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct182.swift; sourceTree = "<group>"; };
+		489C8002256B23D300A1A598 /* MyStruct69.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct69.swift; sourceTree = "<group>"; };
+		489C8003256B23D300A1A598 /* MyStruct188.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct188.swift; sourceTree = "<group>"; };
+		489C8004256B23D300A1A598 /* MyStruct140.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct140.swift; sourceTree = "<group>"; };
+		489C8005256B23D400A1A598 /* MyStruct138.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct138.swift; sourceTree = "<group>"; };
+		489C8006256B23D400A1A598 /* MyStruct143.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct143.swift; sourceTree = "<group>"; };
+		489C8007256B23D400A1A598 /* MyStruct6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct6.swift; sourceTree = "<group>"; };
+		489C8008256B23D400A1A598 /* MyStruct113.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct113.swift; sourceTree = "<group>"; };
+		489C8009256B23D400A1A598 /* MyStruct49.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct49.swift; sourceTree = "<group>"; };
+		489C800A256B23D500A1A598 /* MyStruct107.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct107.swift; sourceTree = "<group>"; };
+		489C800B256B23D500A1A598 /* MyStruct124.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct124.swift; sourceTree = "<group>"; };
+		489C800C256B23D500A1A598 /* MyStruct54.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct54.swift; sourceTree = "<group>"; };
+		489C800D256B23D500A1A598 /* MyStruct193.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct193.swift; sourceTree = "<group>"; };
+		489C800E256B23D500A1A598 /* MyStruct3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct3.swift; sourceTree = "<group>"; };
+		489C800F256B23D500A1A598 /* MyStruct101.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct101.swift; sourceTree = "<group>"; };
+		489C8010256B23D500A1A598 /* MyStruct172.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct172.swift; sourceTree = "<group>"; };
+		489C8011256B23D600A1A598 /* MyStruct9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct9.swift; sourceTree = "<group>"; };
+		489C8012256B23D600A1A598 /* MyStruct152.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct152.swift; sourceTree = "<group>"; };
+		489C8013256B23D600A1A598 /* MyStruct88.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct88.swift; sourceTree = "<group>"; };
+		489C8014256B23D600A1A598 /* MyStruct72.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct72.swift; sourceTree = "<group>"; };
+		489C8015256B23D600A1A598 /* MyStruct179.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct179.swift; sourceTree = "<group>"; };
+		489C8016256B23D600A1A598 /* MyStruct70.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct70.swift; sourceTree = "<group>"; };
+		489C8017256B23D600A1A598 /* MyStruct43.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct43.swift; sourceTree = "<group>"; };
+		489C8018256B23D700A1A598 /* MyStruct170.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct170.swift; sourceTree = "<group>"; };
+		489C8019256B23D700A1A598 /* MyStruct8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct8.swift; sourceTree = "<group>"; };
+		489C801A256B23D700A1A598 /* MyStruct131.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct131.swift; sourceTree = "<group>"; };
+		489C801B256B23D700A1A598 /* MyStruct79.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct79.swift; sourceTree = "<group>"; };
+		489C801C256B23D700A1A598 /* MyStruct189.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct189.swift; sourceTree = "<group>"; };
+		489C801D256B23D700A1A598 /* MyStruct32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct32.swift; sourceTree = "<group>"; };
+		489C801E256B23D800A1A598 /* MyStruct183.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct183.swift; sourceTree = "<group>"; };
+		489C801F256B23D800A1A598 /* MyStruct42.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct42.swift; sourceTree = "<group>"; };
+		489C8020256B23D800A1A598 /* MyStruct135.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct135.swift; sourceTree = "<group>"; };
+		489C8021256B23D800A1A598 /* MyStruct65.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct65.swift; sourceTree = "<group>"; };
+		489C8022256B23D800A1A598 /* MyStruct41.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct41.swift; sourceTree = "<group>"; };
+		489C8023256B23D800A1A598 /* MyStruct134.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct134.swift; sourceTree = "<group>"; };
+		489C8024256B23D900A1A598 /* MyStruct16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct16.swift; sourceTree = "<group>"; };
+		489C8025256B23D900A1A598 /* MyStruct157.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct157.swift; sourceTree = "<group>"; };
+		489C8026256B23D900A1A598 /* MyStruct87.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct87.swift; sourceTree = "<group>"; };
+		489C8027256B23D900A1A598 /* MyStruct51.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct51.swift; sourceTree = "<group>"; };
+		489C8028256B23D900A1A598 /* MyStruct118.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct118.swift; sourceTree = "<group>"; };
+		489C8029256B23D900A1A598 /* MyStruct29.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct29.swift; sourceTree = "<group>"; };
+		489C802A256B23D900A1A598 /* MyStruct116.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct116.swift; sourceTree = "<group>"; };
+		489C802B256B23D900A1A598 /* MyStruct93.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct93.swift; sourceTree = "<group>"; };
+		489C802C256B23DA00A1A598 /* MyStruct89.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct89.swift; sourceTree = "<group>"; };
+		489C802D256B23DA00A1A598 /* MyStruct165.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct165.swift; sourceTree = "<group>"; };
+		489C802E256B23DA00A1A598 /* MyStruct33.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct33.swift; sourceTree = "<group>"; };
+		489C802F256B23DA00A1A598 /* MyStruct11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct11.swift; sourceTree = "<group>"; };
+		489C8030256B23DA00A1A598 /* MyStruct164.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct164.swift; sourceTree = "<group>"; };
+		489C8031256B23DA00A1A598 /* MyStruct167.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct167.swift; sourceTree = "<group>"; };
+		489C8032256B23DA00A1A598 /* MyStruct31.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct31.swift; sourceTree = "<group>"; };
+		489C8033256B23DB00A1A598 /* MyStruct61.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct61.swift; sourceTree = "<group>"; };
+		489C8034256B23DB00A1A598 /* MyStruct35.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct35.swift; sourceTree = "<group>"; };
+		489C8035256B23DB00A1A598 /* MyStruct106.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct106.swift; sourceTree = "<group>"; };
+		489C8036256B23DB00A1A598 /* MyStruct117.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct117.swift; sourceTree = "<group>"; };
+		489C8037256B23DB00A1A598 /* MyStruct90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct90.swift; sourceTree = "<group>"; };
+		489C8038256B23DB00A1A598 /* MyStruct151.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct151.swift; sourceTree = "<group>"; };
+		489C8039256B23DB00A1A598 /* MyStruct45.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct45.swift; sourceTree = "<group>"; };
+		489C803A256B23DC00A1A598 /* MyStruct137.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct137.swift; sourceTree = "<group>"; };
+		489C803B256B23DC00A1A598 /* MyStruct63.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct63.swift; sourceTree = "<group>"; };
+		489C803C256B23DC00A1A598 /* MyStruct86.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct86.swift; sourceTree = "<group>"; };
+		489C803D256B23DC00A1A598 /* MyStruct150.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct150.swift; sourceTree = "<group>"; };
+		489C803E256B23DC00A1A598 /* MyStruct187.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct187.swift; sourceTree = "<group>"; };
+		489C803F256B23DC00A1A598 /* MyStruct28.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct28.swift; sourceTree = "<group>"; };
+		489C8040256B23DC00A1A598 /* MyStruct192.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct192.swift; sourceTree = "<group>"; };
+		489C8041256B23DD00A1A598 /* MyStruct36.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct36.swift; sourceTree = "<group>"; };
+		489C8042256B23DD00A1A598 /* MyStruct139.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct139.swift; sourceTree = "<group>"; };
+		489C8043256B23DD00A1A598 /* MyStruct125.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct125.swift; sourceTree = "<group>"; };
+		489C8044256B23DD00A1A598 /* MyStruct126.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct126.swift; sourceTree = "<group>"; };
+		489C8045256B23DD00A1A598 /* MyStruct83.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct83.swift; sourceTree = "<group>"; };
+		489C8046256B23DD00A1A598 /* MyStruct127.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct127.swift; sourceTree = "<group>"; };
+		489C8047256B23DD00A1A598 /* MyStruct136.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct136.swift; sourceTree = "<group>"; };
+		489C8048256B23DE00A1A598 /* MyStruct12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct12.swift; sourceTree = "<group>"; };
+		489C8049256B23DE00A1A598 /* MyStruct119.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct119.swift; sourceTree = "<group>"; };
+		489C804A256B23DE00A1A598 /* MyStruct142.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct142.swift; sourceTree = "<group>"; };
+		489C804B256B23DE00A1A598 /* MyStruct148.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct148.swift; sourceTree = "<group>"; };
+		489C804C256B23DE00A1A598 /* MyStruct197.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct197.swift; sourceTree = "<group>"; };
+		489C804D256B23DE00A1A598 /* MyStruct74.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct74.swift; sourceTree = "<group>"; };
+		489C804E256B23DE00A1A598 /* MyStruct97.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct97.swift; sourceTree = "<group>"; };
+		489C804F256B23DF00A1A598 /* MyStruct109.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct109.swift; sourceTree = "<group>"; };
+		489C8050256B23DF00A1A598 /* MyStruct37.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct37.swift; sourceTree = "<group>"; };
+		489C8051256B23DF00A1A598 /* MyStruct161.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct161.swift; sourceTree = "<group>"; };
+		489C8052256B23DF00A1A598 /* MyStruct76.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct76.swift; sourceTree = "<group>"; };
+		489C8053256B23DF00A1A598 /* MyStruct174.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct174.swift; sourceTree = "<group>"; };
+		489C8054256B23DF00A1A598 /* MyStruct82.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct82.swift; sourceTree = "<group>"; };
+		489C8055256B23DF00A1A598 /* MyStruct17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct17.swift; sourceTree = "<group>"; };
+		489C8056256B23E000A1A598 /* MyStruct166.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct166.swift; sourceTree = "<group>"; };
+		489C8057256B23E000A1A598 /* MyStruct155.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct155.swift; sourceTree = "<group>"; };
+		489C8058256B23E000A1A598 /* MyStruct104.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct104.swift; sourceTree = "<group>"; };
+		489C8059256B23E000A1A598 /* MyStruct130.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct130.swift; sourceTree = "<group>"; };
+		489C805A256B23E000A1A598 /* MyStruct23.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct23.swift; sourceTree = "<group>"; };
+		489C805B256B23E000A1A598 /* MyStruct191.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct191.swift; sourceTree = "<group>"; };
+		489C805C256B23E100A1A598 /* MyStruct85.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct85.swift; sourceTree = "<group>"; };
+		489C805D256B23E100A1A598 /* MyStruct19.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct19.swift; sourceTree = "<group>"; };
+		489C805E256B23E100A1A598 /* MyStruct180.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct180.swift; sourceTree = "<group>"; };
+		489C805F256B23E100A1A598 /* MyStruct112.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct112.swift; sourceTree = "<group>"; };
+		489C8060256B23E100A1A598 /* MyStruct176.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct176.swift; sourceTree = "<group>"; };
+		489C8061256B23E100A1A598 /* MyStruct185.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct185.swift; sourceTree = "<group>"; };
+		489C8062256B23E100A1A598 /* MyStruct4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct4.swift; sourceTree = "<group>"; };
+		489C8063256B23E200A1A598 /* MyStruct190.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct190.swift; sourceTree = "<group>"; };
+		489C8064256B23E200A1A598 /* MyStruct21.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct21.swift; sourceTree = "<group>"; };
+		489C8065256B23E200A1A598 /* MyStruct77.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct77.swift; sourceTree = "<group>"; };
+		489C8066256B23E200A1A598 /* MyStruct39.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct39.swift; sourceTree = "<group>"; };
+		489C8067256B23E200A1A598 /* MyStruct62.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct62.swift; sourceTree = "<group>"; };
+		489C8068256B23E200A1A598 /* MyStruct81.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct81.swift; sourceTree = "<group>"; };
+		489C8069256B23E200A1A598 /* MyStruct26.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct26.swift; sourceTree = "<group>"; };
+		489C806A256B23E300A1A598 /* MyStruct18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct18.swift; sourceTree = "<group>"; };
+		489C806B256B23E300A1A598 /* MyStruct177.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct177.swift; sourceTree = "<group>"; };
+		489C806C256B23E300A1A598 /* MyStruct30.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct30.swift; sourceTree = "<group>"; };
+		489C806D256B23E300A1A598 /* MyStruct178.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct178.swift; sourceTree = "<group>"; };
+		489C806E256B23E300A1A598 /* MyStruct111.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct111.swift; sourceTree = "<group>"; };
+		489C806F256B23E300A1A598 /* MyStruct105.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct105.swift; sourceTree = "<group>"; };
+		489C8070256B23E300A1A598 /* MyStruct121.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct121.swift; sourceTree = "<group>"; };
+		489C8071256B23E300A1A598 /* MyStruct78.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct78.swift; sourceTree = "<group>"; };
+		489C8072256B23E400A1A598 /* MyStruct0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct0.swift; sourceTree = "<group>"; };
+		489C8073256B23E400A1A598 /* MyStruct98.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct98.swift; sourceTree = "<group>"; };
+		489C8074256B23E400A1A598 /* MyStruct156.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct156.swift; sourceTree = "<group>"; };
+		489C8075256B23E400A1A598 /* MyStruct199.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct199.swift; sourceTree = "<group>"; };
+		489C8076256B23E400A1A598 /* MyStruct96.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct96.swift; sourceTree = "<group>"; };
+		489C8077256B23E400A1A598 /* MyStruct94.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct94.swift; sourceTree = "<group>"; };
+		489C8078256B23E400A1A598 /* MyStruct14.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct14.swift; sourceTree = "<group>"; };
+		489C8079256B23E500A1A598 /* MyStruct58.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct58.swift; sourceTree = "<group>"; };
+		489C807A256B23E500A1A598 /* MyStruct47.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct47.swift; sourceTree = "<group>"; };
+		489C807B256B23E500A1A598 /* MyStruct194.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct194.swift; sourceTree = "<group>"; };
+		489C807C256B23E500A1A598 /* MyStruct108.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct108.swift; sourceTree = "<group>"; };
+		489C807D256B23E500A1A598 /* MyStruct184.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct184.swift; sourceTree = "<group>"; };
+		489C807E256B23E500A1A598 /* MyStruct122.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct122.swift; sourceTree = "<group>"; };
+		489C807F256B23E500A1A598 /* MyStruct175.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct175.swift; sourceTree = "<group>"; };
+		489C8080256B23E500A1A598 /* MyStruct99.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct99.swift; sourceTree = "<group>"; };
+		489C8081256B23E600A1A598 /* MyStruct100.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct100.swift; sourceTree = "<group>"; };
+		489C8082256B23E600A1A598 /* MyStruct53.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct53.swift; sourceTree = "<group>"; };
+		489C8083256B23E600A1A598 /* MyStruct67.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct67.swift; sourceTree = "<group>"; };
+		489C8084256B23E600A1A598 /* MyStruct34.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct34.swift; sourceTree = "<group>"; };
+		489C8085256B23E600A1A598 /* MyStruct141.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct141.swift; sourceTree = "<group>"; };
+		489C8086256B23E600A1A598 /* MyStruct128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct128.swift; sourceTree = "<group>"; };
+		489C8087256B23E700A1A598 /* MyStruct92.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct92.swift; sourceTree = "<group>"; };
+		489C8088256B23E700A1A598 /* MyStruct27.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct27.swift; sourceTree = "<group>"; };
+		489C8089256B23E700A1A598 /* MyStruct163.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct163.swift; sourceTree = "<group>"; };
+		489C808A256B23E700A1A598 /* MyStruct169.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct169.swift; sourceTree = "<group>"; };
+		489C808B256B23E700A1A598 /* MyStruct154.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct154.swift; sourceTree = "<group>"; };
+		489C808C256B23E700A1A598 /* MyStruct103.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct103.swift; sourceTree = "<group>"; };
+		489C808D256B23E800A1A598 /* MyStruct80.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct80.swift; sourceTree = "<group>"; };
+		489C808E256B23E800A1A598 /* MyStruct173.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct173.swift; sourceTree = "<group>"; };
+		489C808F256B23E800A1A598 /* MyStruct66.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct66.swift; sourceTree = "<group>"; };
+		489C8090256B23E800A1A598 /* MyStruct91.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct91.swift; sourceTree = "<group>"; };
+		489C8091256B23E800A1A598 /* MyStruct24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct24.swift; sourceTree = "<group>"; };
+		489C8092256B23E800A1A598 /* MyStruct120.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct120.swift; sourceTree = "<group>"; };
+		489C8093256B23E800A1A598 /* MyStruct38.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct38.swift; sourceTree = "<group>"; };
+		489C8094256B23E900A1A598 /* MyStruct57.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct57.swift; sourceTree = "<group>"; };
+		489C8095256B23E900A1A598 /* MyStruct145.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct145.swift; sourceTree = "<group>"; };
+		489C8096256B23E900A1A598 /* MyStruct44.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct44.swift; sourceTree = "<group>"; };
+		489C8097256B23E900A1A598 /* MyStruct149.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct149.swift; sourceTree = "<group>"; };
+		489C8098256B23E900A1A598 /* MyStruct146.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct146.swift; sourceTree = "<group>"; };
+		489C8099256B23E900A1A598 /* MyStruct144.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct144.swift; sourceTree = "<group>"; };
+		489C809A256B23E900A1A598 /* MyStruct25.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct25.swift; sourceTree = "<group>"; };
+		489C809B256B23E900A1A598 /* MyStruct20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct20.swift; sourceTree = "<group>"; };
+		489C809C256B23EA00A1A598 /* MyStruct129.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct129.swift; sourceTree = "<group>"; };
+		489C809D256B23EA00A1A598 /* MyStruct40.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct40.swift; sourceTree = "<group>"; };
+		489C809E256B23EA00A1A598 /* MyStruct22.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct22.swift; sourceTree = "<group>"; };
+		489C809F256B23EA00A1A598 /* MyStruct46.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct46.swift; sourceTree = "<group>"; };
+		489C80A0256B23EA00A1A598 /* MyStruct132.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct132.swift; sourceTree = "<group>"; };
+		489C80A1256B23EA00A1A598 /* MyStruct114.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct114.swift; sourceTree = "<group>"; };
+		489C80A2256B23EB00A1A598 /* MyStruct95.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct95.swift; sourceTree = "<group>"; };
+		489C80A3256B23EB00A1A598 /* MyStruct198.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct198.swift; sourceTree = "<group>"; };
+		489C80A4256B23EB00A1A598 /* MyStruct84.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct84.swift; sourceTree = "<group>"; };
+		489C80A5256B23EB00A1A598 /* MyStruct73.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct73.swift; sourceTree = "<group>"; };
+		489C80A6256B23EB00A1A598 /* MyStruct102.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct102.swift; sourceTree = "<group>"; };
+		489C80A7256B23EB00A1A598 /* MyStruct195.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct195.swift; sourceTree = "<group>"; };
+		489C80A8256B23EB00A1A598 /* MyStruct64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct64.swift; sourceTree = "<group>"; };
+		489C80A9256B23EC00A1A598 /* MyStruct5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct5.swift; sourceTree = "<group>"; };
+		489C80AA256B23EC00A1A598 /* MyStruct68.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct68.swift; sourceTree = "<group>"; };
+		489C80AB256B23EC00A1A598 /* MyStruct115.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct115.swift; sourceTree = "<group>"; };
+		489C80AC256B23EC00A1A598 /* MyStruct52.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct52.swift; sourceTree = "<group>"; };
+		489C80AD256B23EC00A1A598 /* MyStruct2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct2.swift; sourceTree = "<group>"; };
+		489C80AE256B23EC00A1A598 /* MyStruct50.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct50.swift; sourceTree = "<group>"; };
+		489C80AF256B23ED00A1A598 /* MyStruct196.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct196.swift; sourceTree = "<group>"; };
+		489C80B0256B23ED00A1A598 /* MyStruct133.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct133.swift; sourceTree = "<group>"; };
+		489C80B1256B23ED00A1A598 /* MyStruct71.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct71.swift; sourceTree = "<group>"; };
+		489C80B2256B23ED00A1A598 /* MyStruct123.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct123.swift; sourceTree = "<group>"; };
+		489C80B3256B23ED00A1A598 /* MyStruct181.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct181.swift; sourceTree = "<group>"; };
+		489C80B4256B23ED00A1A598 /* MyStruct10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStruct10.swift; sourceTree = "<group>"; };
+		489C81AA256B254000A1A598 /* MyStructService89.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService89.swift; sourceTree = "<group>"; };
+		489C81AB256B254100A1A598 /* MyStructService33.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService33.swift; sourceTree = "<group>"; };
+		489C81AC256B254100A1A598 /* MyStructService22.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService22.swift; sourceTree = "<group>"; };
+		489C81AD256B254100A1A598 /* MyStructService100.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService100.swift; sourceTree = "<group>"; };
+		489C81AE256B254200A1A598 /* MyStructService180.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService180.swift; sourceTree = "<group>"; };
+		489C81AF256B254200A1A598 /* MyStructService52.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService52.swift; sourceTree = "<group>"; };
+		489C81B0256B254200A1A598 /* MyStructService123.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService123.swift; sourceTree = "<group>"; };
+		489C81B1256B254300A1A598 /* MyStructService194.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService194.swift; sourceTree = "<group>"; };
+		489C81B2256B254300A1A598 /* MyStructService143.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService143.swift; sourceTree = "<group>"; };
+		489C81B3256B254300A1A598 /* MyStructService198.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService198.swift; sourceTree = "<group>"; };
+		489C81B4256B254400A1A598 /* MyStructService121.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService121.swift; sourceTree = "<group>"; };
+		489C81B5256B254400A1A598 /* MyStructService59.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService59.swift; sourceTree = "<group>"; };
+		489C81B6256B254400A1A598 /* MyStructService125.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService125.swift; sourceTree = "<group>"; };
+		489C81B7256B254500A1A598 /* MyStructService124.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService124.swift; sourceTree = "<group>"; };
+		489C81B8256B254500A1A598 /* MyStructService137.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService137.swift; sourceTree = "<group>"; };
+		489C81B9256B254500A1A598 /* MyStructService110.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService110.swift; sourceTree = "<group>"; };
+		489C81BA256B254600A1A598 /* MyStructService161.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService161.swift; sourceTree = "<group>"; };
+		489C81BB256B254600A1A598 /* MyStructService70.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService70.swift; sourceTree = "<group>"; };
+		489C81BC256B254600A1A598 /* MyStructService118.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService118.swift; sourceTree = "<group>"; };
+		489C81BD256B254700A1A598 /* MyStructService111.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService111.swift; sourceTree = "<group>"; };
+		489C81BE256B254700A1A598 /* MyStructService14.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService14.swift; sourceTree = "<group>"; };
+		489C81BF256B254700A1A598 /* MyStructService25.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService25.swift; sourceTree = "<group>"; };
+		489C81C0256B254800A1A598 /* MyStructService92.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService92.swift; sourceTree = "<group>"; };
+		489C81C1256B254800A1A598 /* MyStructService41.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService41.swift; sourceTree = "<group>"; };
+		489C81C2256B254800A1A598 /* MyStructService145.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService145.swift; sourceTree = "<group>"; };
+		489C81C3256B254900A1A598 /* MyStructService107.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService107.swift; sourceTree = "<group>"; };
+		489C81C4256B254900A1A598 /* MyStructService62.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService62.swift; sourceTree = "<group>"; };
+		489C81C5256B254A00A1A598 /* MyStructService108.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService108.swift; sourceTree = "<group>"; };
+		489C81C6256B254A00A1A598 /* MyStructService166.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService166.swift; sourceTree = "<group>"; };
+		489C81C7256B254A00A1A598 /* MyStructService78.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService78.swift; sourceTree = "<group>"; };
+		489C81C8256B254B00A1A598 /* MyStructService128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService128.swift; sourceTree = "<group>"; };
+		489C81C9256B254B00A1A598 /* MyStructService80.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService80.swift; sourceTree = "<group>"; };
+		489C81CA256B254C00A1A598 /* MyStructService148.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService148.swift; sourceTree = "<group>"; };
+		489C81CB256B254C00A1A598 /* MyStructService57.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService57.swift; sourceTree = "<group>"; };
+		489C81CC256B254C00A1A598 /* MyStructService65.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService65.swift; sourceTree = "<group>"; };
+		489C81CD256B254D00A1A598 /* MyStructService49.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService49.swift; sourceTree = "<group>"; };
+		489C81CE256B254D00A1A598 /* MyStructService77.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService77.swift; sourceTree = "<group>"; };
+		489C81CF256B254D00A1A598 /* MyStructService0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService0.swift; sourceTree = "<group>"; };
+		489C81D0256B254E00A1A598 /* MyStructService29.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService29.swift; sourceTree = "<group>"; };
+		489C81D1256B254E00A1A598 /* MyStructService23.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService23.swift; sourceTree = "<group>"; };
+		489C81D2256B254F00A1A598 /* MyStructService26.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService26.swift; sourceTree = "<group>"; };
+		489C81D3256B254F00A1A598 /* MyStructService191.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService191.swift; sourceTree = "<group>"; };
+		489C81D4256B254F00A1A598 /* MyStructService74.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService74.swift; sourceTree = "<group>"; };
+		489C81D5256B255000A1A598 /* MyStructService139.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService139.swift; sourceTree = "<group>"; };
+		489C81D6256B255000A1A598 /* MyStructService101.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService101.swift; sourceTree = "<group>"; };
+		489C81D7256B255000A1A598 /* MyStructService76.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService76.swift; sourceTree = "<group>"; };
+		489C81D8256B255100A1A598 /* MyStructService186.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService186.swift; sourceTree = "<group>"; };
+		489C81D9256B255100A1A598 /* MyStructService69.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService69.swift; sourceTree = "<group>"; };
+		489C81DA256B255100A1A598 /* MyStructService197.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService197.swift; sourceTree = "<group>"; };
+		489C81DB256B255200A1A598 /* MyStructService66.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService66.swift; sourceTree = "<group>"; };
+		489C81DC256B255200A1A598 /* MyStructService113.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService113.swift; sourceTree = "<group>"; };
+		489C81DD256B255200A1A598 /* MyStructService169.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService169.swift; sourceTree = "<group>"; };
+		489C81DE256B255300A1A598 /* MyStructService179.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService179.swift; sourceTree = "<group>"; };
+		489C81DF256B255300A1A598 /* MyStructService173.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService173.swift; sourceTree = "<group>"; };
+		489C81E0256B255300A1A598 /* MyStructService144.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService144.swift; sourceTree = "<group>"; };
+		489C81E1256B255400A1A598 /* MyStructService189.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService189.swift; sourceTree = "<group>"; };
+		489C81E2256B255400A1A598 /* MyStructService102.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService102.swift; sourceTree = "<group>"; };
+		489C81E3256B255400A1A598 /* MyStructService19.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService19.swift; sourceTree = "<group>"; };
+		489C81E4256B255400A1A598 /* MyStructService165.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService165.swift; sourceTree = "<group>"; };
+		489C81E5256B255500A1A598 /* MyStructService162.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService162.swift; sourceTree = "<group>"; };
+		489C81E6256B255500A1A598 /* MyStructService55.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService55.swift; sourceTree = "<group>"; };
+		489C81E7256B255500A1A598 /* MyStructService127.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService127.swift; sourceTree = "<group>"; };
+		489C81E8256B255600A1A598 /* MyStructService73.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService73.swift; sourceTree = "<group>"; };
+		489C81E9256B255600A1A598 /* MyStructService12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService12.swift; sourceTree = "<group>"; };
+		489C81EA256B255700A1A598 /* MyStructService35.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService35.swift; sourceTree = "<group>"; };
+		489C81EB256B255700A1A598 /* MyStructService85.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService85.swift; sourceTree = "<group>"; };
+		489C81EC256B255700A1A598 /* MyStructService117.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService117.swift; sourceTree = "<group>"; };
+		489C81ED256B255700A1A598 /* MyStructService158.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService158.swift; sourceTree = "<group>"; };
+		489C81EE256B255800A1A598 /* MyStructService190.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService190.swift; sourceTree = "<group>"; };
+		489C81EF256B255800A1A598 /* MyStructService27.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService27.swift; sourceTree = "<group>"; };
+		489C81F0256B255800A1A598 /* MyStructService185.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService185.swift; sourceTree = "<group>"; };
+		489C81F1256B255900A1A598 /* MyStructService195.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService195.swift; sourceTree = "<group>"; };
+		489C81F2256B255900A1A598 /* MyStructService58.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService58.swift; sourceTree = "<group>"; };
+		489C81F3256B255900A1A598 /* MyStructService170.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService170.swift; sourceTree = "<group>"; };
+		489C81F4256B255A00A1A598 /* MyStructService54.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService54.swift; sourceTree = "<group>"; };
+		489C81F5256B255A00A1A598 /* MyStructService164.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService164.swift; sourceTree = "<group>"; };
+		489C81F6256B255A00A1A598 /* MyStructService20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService20.swift; sourceTree = "<group>"; };
+		489C81F7256B255B00A1A598 /* MyStructService87.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService87.swift; sourceTree = "<group>"; };
+		489C81F8256B255B00A1A598 /* MyStructService135.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService135.swift; sourceTree = "<group>"; };
+		489C81F9256B255B00A1A598 /* MyStructService36.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService36.swift; sourceTree = "<group>"; };
+		489C81FA256B255C00A1A598 /* MyStructService142.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService142.swift; sourceTree = "<group>"; };
+		489C81FB256B255C00A1A598 /* MyStructService160.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService160.swift; sourceTree = "<group>"; };
+		489C81FC256B255C00A1A598 /* MyStructService17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService17.swift; sourceTree = "<group>"; };
+		489C81FD256B255D00A1A598 /* MyStructService90.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService90.swift; sourceTree = "<group>"; };
+		489C81FE256B255D00A1A598 /* MyStructService28.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService28.swift; sourceTree = "<group>"; };
+		489C81FF256B255D00A1A598 /* MyStructService46.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService46.swift; sourceTree = "<group>"; };
+		489C8200256B255E00A1A598 /* MyStructService119.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService119.swift; sourceTree = "<group>"; };
+		489C8201256B255E00A1A598 /* MyStructService91.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService91.swift; sourceTree = "<group>"; };
+		489C8202256B255E00A1A598 /* MyStructService67.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService67.swift; sourceTree = "<group>"; };
+		489C8203256B255F00A1A598 /* MyStructService146.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService146.swift; sourceTree = "<group>"; };
+		489C8204256B255F00A1A598 /* MyStructService6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService6.swift; sourceTree = "<group>"; };
+		489C8205256B255F00A1A598 /* MyStructService53.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService53.swift; sourceTree = "<group>"; };
+		489C8206256B256000A1A598 /* MyStructService39.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService39.swift; sourceTree = "<group>"; };
+		489C8207256B256000A1A598 /* MyStructService9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService9.swift; sourceTree = "<group>"; };
+		489C8208256B256000A1A598 /* MyStructService81.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService81.swift; sourceTree = "<group>"; };
+		489C8209256B256100A1A598 /* MyStructService18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService18.swift; sourceTree = "<group>"; };
+		489C820A256B256100A1A598 /* MyStructService71.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService71.swift; sourceTree = "<group>"; };
+		489C820B256B256100A1A598 /* MyStructService8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService8.swift; sourceTree = "<group>"; };
+		489C820C256B256100A1A598 /* MyStructService156.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService156.swift; sourceTree = "<group>"; };
+		489C820D256B256200A1A598 /* MyStructService129.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService129.swift; sourceTree = "<group>"; };
+		489C820E256B256200A1A598 /* MyStructService192.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService192.swift; sourceTree = "<group>"; };
+		489C820F256B256200A1A598 /* MyStructService24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService24.swift; sourceTree = "<group>"; };
+		489C8210256B256300A1A598 /* MyStructService45.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService45.swift; sourceTree = "<group>"; };
+		489C8211256B256300A1A598 /* MyStructService21.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService21.swift; sourceTree = "<group>"; };
+		489C8212256B256300A1A598 /* MyStructService38.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService38.swift; sourceTree = "<group>"; };
+		489C8213256B256400A1A598 /* MyStructService114.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService114.swift; sourceTree = "<group>"; };
+		489C8214256B256400A1A598 /* MyStructService48.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService48.swift; sourceTree = "<group>"; };
+		489C8215256B256400A1A598 /* MyStructService50.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService50.swift; sourceTree = "<group>"; };
+		489C8216256B256500A1A598 /* MyStructService83.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService83.swift; sourceTree = "<group>"; };
+		489C8217256B256500A1A598 /* MyStructService51.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService51.swift; sourceTree = "<group>"; };
+		489C8218256B256500A1A598 /* MyStructService63.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService63.swift; sourceTree = "<group>"; };
+		489C8219256B256600A1A598 /* MyStructService134.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService134.swift; sourceTree = "<group>"; };
+		489C821A256B256600A1A598 /* MyStructService32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService32.swift; sourceTree = "<group>"; };
+		489C821B256B256600A1A598 /* MyStructService31.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService31.swift; sourceTree = "<group>"; };
+		489C821C256B256700A1A598 /* MyStructService75.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService75.swift; sourceTree = "<group>"; };
+		489C821D256B256700A1A598 /* MyStructService42.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService42.swift; sourceTree = "<group>"; };
+		489C821E256B256700A1A598 /* MyStructService68.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService68.swift; sourceTree = "<group>"; };
+		489C821F256B256800A1A598 /* MyStructService181.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService181.swift; sourceTree = "<group>"; };
+		489C8220256B256800A1A598 /* MyStructService2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService2.swift; sourceTree = "<group>"; };
+		489C8221256B256800A1A598 /* MyStructService149.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService149.swift; sourceTree = "<group>"; };
+		489C8222256B256900A1A598 /* MyStructService199.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService199.swift; sourceTree = "<group>"; };
+		489C8223256B256900A1A598 /* MyStructService98.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService98.swift; sourceTree = "<group>"; };
+		489C8224256B256900A1A598 /* MyStructService171.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService171.swift; sourceTree = "<group>"; };
+		489C8225256B256A00A1A598 /* MyStructService188.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService188.swift; sourceTree = "<group>"; };
+		489C8226256B256A00A1A598 /* MyStructService138.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService138.swift; sourceTree = "<group>"; };
+		489C8227256B256B00A1A598 /* MyStructService34.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService34.swift; sourceTree = "<group>"; };
+		489C8228256B256B00A1A598 /* MyStructService88.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService88.swift; sourceTree = "<group>"; };
+		489C8229256B256B00A1A598 /* MyStructService157.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService157.swift; sourceTree = "<group>"; };
+		489C822A256B256C00A1A598 /* MyStructService163.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService163.swift; sourceTree = "<group>"; };
+		489C822B256B256C00A1A598 /* MyStructService86.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService86.swift; sourceTree = "<group>"; };
+		489C822C256B256C00A1A598 /* MyStructService155.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService155.swift; sourceTree = "<group>"; };
+		489C822D256B256D00A1A598 /* MyStructService10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService10.swift; sourceTree = "<group>"; };
+		489C822E256B256D00A1A598 /* MyStructService1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService1.swift; sourceTree = "<group>"; };
+		489C822F256B256E00A1A598 /* MyStructService151.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService151.swift; sourceTree = "<group>"; };
+		489C8230256B256E00A1A598 /* MyStructService193.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService193.swift; sourceTree = "<group>"; };
+		489C8231256B256E00A1A598 /* MyStructService82.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService82.swift; sourceTree = "<group>"; };
+		489C8232256B256F00A1A598 /* MyStructService176.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService176.swift; sourceTree = "<group>"; };
+		489C8233256B256F00A1A598 /* MyStructService93.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService93.swift; sourceTree = "<group>"; };
+		489C8234256B256F00A1A598 /* MyStructService103.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService103.swift; sourceTree = "<group>"; };
+		489C8235256B257000A1A598 /* MyStructService178.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService178.swift; sourceTree = "<group>"; };
+		489C8236256B257000A1A598 /* MyStructService13.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService13.swift; sourceTree = "<group>"; };
+		489C8237256B257100A1A598 /* MyStructService30.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService30.swift; sourceTree = "<group>"; };
+		489C8238256B257100A1A598 /* MyStructService182.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService182.swift; sourceTree = "<group>"; };
+		489C8239256B257100A1A598 /* MyStructService136.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService136.swift; sourceTree = "<group>"; };
+		489C823A256B257100A1A598 /* MyStructService126.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService126.swift; sourceTree = "<group>"; };
+		489C823B256B257200A1A598 /* MyStructService99.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService99.swift; sourceTree = "<group>"; };
+		489C823C256B257200A1A598 /* MyStructService153.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService153.swift; sourceTree = "<group>"; };
+		489C823D256B257200A1A598 /* MyStructService130.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService130.swift; sourceTree = "<group>"; };
+		489C823E256B257300A1A598 /* MyStructService120.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService120.swift; sourceTree = "<group>"; };
+		489C823F256B257300A1A598 /* MyStructService172.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService172.swift; sourceTree = "<group>"; };
+		489C8240256B257300A1A598 /* MyStructService94.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService94.swift; sourceTree = "<group>"; };
+		489C8241256B257400A1A598 /* MyStructService196.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService196.swift; sourceTree = "<group>"; };
+		489C8242256B257400A1A598 /* MyStructService47.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService47.swift; sourceTree = "<group>"; };
+		489C8243256B257400A1A598 /* MyStructService140.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService140.swift; sourceTree = "<group>"; };
+		489C8244256B257500A1A598 /* MyStructService106.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService106.swift; sourceTree = "<group>"; };
+		489C8245256B257500A1A598 /* MyStructService167.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService167.swift; sourceTree = "<group>"; };
+		489C8246256B257500A1A598 /* MyStructService43.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService43.swift; sourceTree = "<group>"; };
+		489C8247256B257600A1A598 /* MyStructService183.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService183.swift; sourceTree = "<group>"; };
+		489C8248256B257600A1A598 /* MyStructService7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService7.swift; sourceTree = "<group>"; };
+		489C8249256B257600A1A598 /* MyStructService72.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService72.swift; sourceTree = "<group>"; };
+		489C824A256B257700A1A598 /* MyStructService131.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService131.swift; sourceTree = "<group>"; };
+		489C824B256B257700A1A598 /* MyStructService95.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService95.swift; sourceTree = "<group>"; };
+		489C824C256B257700A1A598 /* MyStructService104.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService104.swift; sourceTree = "<group>"; };
+		489C824D256B257800A1A598 /* MyStructService159.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService159.swift; sourceTree = "<group>"; };
+		489C824E256B257800A1A598 /* MyStructService3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService3.swift; sourceTree = "<group>"; };
+		489C824F256B257800A1A598 /* MyStructService175.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService175.swift; sourceTree = "<group>"; };
+		489C8250256B257900A1A598 /* MyStructService109.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService109.swift; sourceTree = "<group>"; };
+		489C8251256B257900A1A598 /* MyStructService105.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService105.swift; sourceTree = "<group>"; };
+		489C8252256B257900A1A598 /* MyStructService84.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService84.swift; sourceTree = "<group>"; };
+		489C8253256B257A00A1A598 /* MyStructService96.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService96.swift; sourceTree = "<group>"; };
+		489C8254256B257A00A1A598 /* MyStructService4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService4.swift; sourceTree = "<group>"; };
+		489C8255256B257A00A1A598 /* MyStructService56.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService56.swift; sourceTree = "<group>"; };
+		489C8256256B257B00A1A598 /* MyStructService147.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService147.swift; sourceTree = "<group>"; };
+		489C8257256B257B00A1A598 /* MyStructService61.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService61.swift; sourceTree = "<group>"; };
+		489C8258256B257C00A1A598 /* MyStructService168.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService168.swift; sourceTree = "<group>"; };
+		489C8259256B257C00A1A598 /* MyStructService44.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService44.swift; sourceTree = "<group>"; };
+		489C825A256B257C00A1A598 /* MyStructService122.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService122.swift; sourceTree = "<group>"; };
+		489C825B256B257D00A1A598 /* MyStructService64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService64.swift; sourceTree = "<group>"; };
+		489C825C256B257D00A1A598 /* MyStructService112.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService112.swift; sourceTree = "<group>"; };
+		489C825D256B257D00A1A598 /* MyStructService116.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService116.swift; sourceTree = "<group>"; };
+		489C825E256B257D00A1A598 /* MyStructService187.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService187.swift; sourceTree = "<group>"; };
+		489C825F256B257E00A1A598 /* MyStructService16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService16.swift; sourceTree = "<group>"; };
+		489C8260256B257E00A1A598 /* MyStructService174.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService174.swift; sourceTree = "<group>"; };
+		489C8261256B257F00A1A598 /* MyStructService150.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService150.swift; sourceTree = "<group>"; };
+		489C8262256B257F00A1A598 /* MyStructService133.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService133.swift; sourceTree = "<group>"; };
+		489C8263256B257F00A1A598 /* MyStructService11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService11.swift; sourceTree = "<group>"; };
+		489C8264256B258000A1A598 /* MyStructService177.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService177.swift; sourceTree = "<group>"; };
+		489C8265256B258000A1A598 /* MyStructService5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService5.swift; sourceTree = "<group>"; };
+		489C8266256B258000A1A598 /* MyStructService60.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService60.swift; sourceTree = "<group>"; };
+		489C8267256B258100A1A598 /* MyStructService15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService15.swift; sourceTree = "<group>"; };
+		489C8268256B258100A1A598 /* MyStructService97.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService97.swift; sourceTree = "<group>"; };
+		489C8269256B258100A1A598 /* MyStructService115.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService115.swift; sourceTree = "<group>"; };
+		489C826A256B258200A1A598 /* MyStructService40.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService40.swift; sourceTree = "<group>"; };
+		489C826B256B258200A1A598 /* MyStructService79.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService79.swift; sourceTree = "<group>"; };
+		489C826C256B258200A1A598 /* MyStructService141.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService141.swift; sourceTree = "<group>"; };
+		489C826D256B258300A1A598 /* MyStructService152.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService152.swift; sourceTree = "<group>"; };
+		489C826E256B258300A1A598 /* MyStructService37.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService37.swift; sourceTree = "<group>"; };
+		489C826F256B258400A1A598 /* MyStructService154.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService154.swift; sourceTree = "<group>"; };
+		489C8270256B258400A1A598 /* MyStructService132.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService132.swift; sourceTree = "<group>"; };
+		489C8271256B258400A1A598 /* MyStructService184.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStructService184.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -657,6 +1457,206 @@
 		488B2FA424B794FA004905AA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				489C8072256B23E400A1A598 /* MyStruct0.swift */,
+				489C7FF8256B23D100A1A598 /* MyStruct1.swift */,
+				489C80AD256B23EC00A1A598 /* MyStruct2.swift */,
+				489C800E256B23D500A1A598 /* MyStruct3.swift */,
+				489C8062256B23E100A1A598 /* MyStruct4.swift */,
+				489C80A9256B23EC00A1A598 /* MyStruct5.swift */,
+				489C8007256B23D400A1A598 /* MyStruct6.swift */,
+				489C7FF3256B23D000A1A598 /* MyStruct7.swift */,
+				489C8019256B23D700A1A598 /* MyStruct8.swift */,
+				489C8011256B23D600A1A598 /* MyStruct9.swift */,
+				489C80B4256B23ED00A1A598 /* MyStruct10.swift */,
+				489C802F256B23DA00A1A598 /* MyStruct11.swift */,
+				489C8048256B23DE00A1A598 /* MyStruct12.swift */,
+				489C8000256B23D300A1A598 /* MyStruct13.swift */,
+				489C8078256B23E400A1A598 /* MyStruct14.swift */,
+				489C7FF2256B23D000A1A598 /* MyStruct15.swift */,
+				489C8024256B23D900A1A598 /* MyStruct16.swift */,
+				489C8055256B23DF00A1A598 /* MyStruct17.swift */,
+				489C806A256B23E300A1A598 /* MyStruct18.swift */,
+				489C805D256B23E100A1A598 /* MyStruct19.swift */,
+				489C809B256B23E900A1A598 /* MyStruct20.swift */,
+				489C8064256B23E200A1A598 /* MyStruct21.swift */,
+				489C809E256B23EA00A1A598 /* MyStruct22.swift */,
+				489C805A256B23E000A1A598 /* MyStruct23.swift */,
+				489C8091256B23E800A1A598 /* MyStruct24.swift */,
+				489C809A256B23E900A1A598 /* MyStruct25.swift */,
+				489C8069256B23E200A1A598 /* MyStruct26.swift */,
+				489C8088256B23E700A1A598 /* MyStruct27.swift */,
+				489C803F256B23DC00A1A598 /* MyStruct28.swift */,
+				489C8029256B23D900A1A598 /* MyStruct29.swift */,
+				489C806C256B23E300A1A598 /* MyStruct30.swift */,
+				489C8032256B23DA00A1A598 /* MyStruct31.swift */,
+				489C801D256B23D700A1A598 /* MyStruct32.swift */,
+				489C802E256B23DA00A1A598 /* MyStruct33.swift */,
+				489C8084256B23E600A1A598 /* MyStruct34.swift */,
+				489C8034256B23DB00A1A598 /* MyStruct35.swift */,
+				489C8041256B23DD00A1A598 /* MyStruct36.swift */,
+				489C8050256B23DF00A1A598 /* MyStruct37.swift */,
+				489C8093256B23E800A1A598 /* MyStruct38.swift */,
+				489C8066256B23E200A1A598 /* MyStruct39.swift */,
+				489C809D256B23EA00A1A598 /* MyStruct40.swift */,
+				489C8022256B23D800A1A598 /* MyStruct41.swift */,
+				489C801F256B23D800A1A598 /* MyStruct42.swift */,
+				489C8017256B23D600A1A598 /* MyStruct43.swift */,
+				489C8096256B23E900A1A598 /* MyStruct44.swift */,
+				489C8039256B23DB00A1A598 /* MyStruct45.swift */,
+				489C809F256B23EA00A1A598 /* MyStruct46.swift */,
+				489C807A256B23E500A1A598 /* MyStruct47.swift */,
+				489C7FF0256B23D000A1A598 /* MyStruct48.swift */,
+				489C8009256B23D400A1A598 /* MyStruct49.swift */,
+				489C80AE256B23EC00A1A598 /* MyStruct50.swift */,
+				489C8027256B23D900A1A598 /* MyStruct51.swift */,
+				489C80AC256B23EC00A1A598 /* MyStruct52.swift */,
+				489C8082256B23E600A1A598 /* MyStruct53.swift */,
+				489C800C256B23D500A1A598 /* MyStruct54.swift */,
+				489C7FF6256B23D100A1A598 /* MyStruct55.swift */,
+				489C7FFC256B23D200A1A598 /* MyStruct56.swift */,
+				489C8094256B23E900A1A598 /* MyStruct57.swift */,
+				489C8079256B23E500A1A598 /* MyStruct58.swift */,
+				489C7FFB256B23D200A1A598 /* MyStruct59.swift */,
+				489C7FF9256B23D200A1A598 /* MyStruct60.swift */,
+				489C8033256B23DB00A1A598 /* MyStruct61.swift */,
+				489C8067256B23E200A1A598 /* MyStruct62.swift */,
+				489C803B256B23DC00A1A598 /* MyStruct63.swift */,
+				489C80A8256B23EB00A1A598 /* MyStruct64.swift */,
+				489C8021256B23D800A1A598 /* MyStruct65.swift */,
+				489C808F256B23E800A1A598 /* MyStruct66.swift */,
+				489C8083256B23E600A1A598 /* MyStruct67.swift */,
+				489C80AA256B23EC00A1A598 /* MyStruct68.swift */,
+				489C8002256B23D300A1A598 /* MyStruct69.swift */,
+				489C8016256B23D600A1A598 /* MyStruct70.swift */,
+				489C80B1256B23ED00A1A598 /* MyStruct71.swift */,
+				489C8014256B23D600A1A598 /* MyStruct72.swift */,
+				489C80A5256B23EB00A1A598 /* MyStruct73.swift */,
+				489C804D256B23DE00A1A598 /* MyStruct74.swift */,
+				489C7FF1256B23D000A1A598 /* MyStruct75.swift */,
+				489C8052256B23DF00A1A598 /* MyStruct76.swift */,
+				489C8065256B23E200A1A598 /* MyStruct77.swift */,
+				489C8071256B23E300A1A598 /* MyStruct78.swift */,
+				489C801B256B23D700A1A598 /* MyStruct79.swift */,
+				489C808D256B23E800A1A598 /* MyStruct80.swift */,
+				489C8068256B23E200A1A598 /* MyStruct81.swift */,
+				489C8054256B23DF00A1A598 /* MyStruct82.swift */,
+				489C8045256B23DD00A1A598 /* MyStruct83.swift */,
+				489C80A4256B23EB00A1A598 /* MyStruct84.swift */,
+				489C805C256B23E100A1A598 /* MyStruct85.swift */,
+				489C803C256B23DC00A1A598 /* MyStruct86.swift */,
+				489C8026256B23D900A1A598 /* MyStruct87.swift */,
+				489C8013256B23D600A1A598 /* MyStruct88.swift */,
+				489C802C256B23DA00A1A598 /* MyStruct89.swift */,
+				489C8037256B23DB00A1A598 /* MyStruct90.swift */,
+				489C8090256B23E800A1A598 /* MyStruct91.swift */,
+				489C8087256B23E700A1A598 /* MyStruct92.swift */,
+				489C802B256B23D900A1A598 /* MyStruct93.swift */,
+				489C8077256B23E400A1A598 /* MyStruct94.swift */,
+				489C80A2256B23EB00A1A598 /* MyStruct95.swift */,
+				489C8076256B23E400A1A598 /* MyStruct96.swift */,
+				489C804E256B23DE00A1A598 /* MyStruct97.swift */,
+				489C8073256B23E400A1A598 /* MyStruct98.swift */,
+				489C8080256B23E500A1A598 /* MyStruct99.swift */,
+				489C8081256B23E600A1A598 /* MyStruct100.swift */,
+				489C800F256B23D500A1A598 /* MyStruct101.swift */,
+				489C80A6256B23EB00A1A598 /* MyStruct102.swift */,
+				489C808C256B23E700A1A598 /* MyStruct103.swift */,
+				489C8058256B23E000A1A598 /* MyStruct104.swift */,
+				489C806F256B23E300A1A598 /* MyStruct105.swift */,
+				489C8035256B23DB00A1A598 /* MyStruct106.swift */,
+				489C800A256B23D500A1A598 /* MyStruct107.swift */,
+				489C807C256B23E500A1A598 /* MyStruct108.swift */,
+				489C804F256B23DF00A1A598 /* MyStruct109.swift */,
+				489C7FFF256B23D300A1A598 /* MyStruct110.swift */,
+				489C806E256B23E300A1A598 /* MyStruct111.swift */,
+				489C805F256B23E100A1A598 /* MyStruct112.swift */,
+				489C8008256B23D400A1A598 /* MyStruct113.swift */,
+				489C80A1256B23EA00A1A598 /* MyStruct114.swift */,
+				489C80AB256B23EC00A1A598 /* MyStruct115.swift */,
+				489C802A256B23D900A1A598 /* MyStruct116.swift */,
+				489C8036256B23DB00A1A598 /* MyStruct117.swift */,
+				489C8028256B23D900A1A598 /* MyStruct118.swift */,
+				489C8049256B23DE00A1A598 /* MyStruct119.swift */,
+				489C8092256B23E800A1A598 /* MyStruct120.swift */,
+				489C8070256B23E300A1A598 /* MyStruct121.swift */,
+				489C807E256B23E500A1A598 /* MyStruct122.swift */,
+				489C80B2256B23ED00A1A598 /* MyStruct123.swift */,
+				489C800B256B23D500A1A598 /* MyStruct124.swift */,
+				489C8043256B23DD00A1A598 /* MyStruct125.swift */,
+				489C8044256B23DD00A1A598 /* MyStruct126.swift */,
+				489C8046256B23DD00A1A598 /* MyStruct127.swift */,
+				489C8086256B23E600A1A598 /* MyStruct128.swift */,
+				489C809C256B23EA00A1A598 /* MyStruct129.swift */,
+				489C8059256B23E000A1A598 /* MyStruct130.swift */,
+				489C801A256B23D700A1A598 /* MyStruct131.swift */,
+				489C80A0256B23EA00A1A598 /* MyStruct132.swift */,
+				489C80B0256B23ED00A1A598 /* MyStruct133.swift */,
+				489C8023256B23D800A1A598 /* MyStruct134.swift */,
+				489C8020256B23D800A1A598 /* MyStruct135.swift */,
+				489C8047256B23DD00A1A598 /* MyStruct136.swift */,
+				489C803A256B23DC00A1A598 /* MyStruct137.swift */,
+				489C8005256B23D400A1A598 /* MyStruct138.swift */,
+				489C8042256B23DD00A1A598 /* MyStruct139.swift */,
+				489C8004256B23D300A1A598 /* MyStruct140.swift */,
+				489C8085256B23E600A1A598 /* MyStruct141.swift */,
+				489C804A256B23DE00A1A598 /* MyStruct142.swift */,
+				489C8006256B23D400A1A598 /* MyStruct143.swift */,
+				489C8099256B23E900A1A598 /* MyStruct144.swift */,
+				489C8095256B23E900A1A598 /* MyStruct145.swift */,
+				489C8098256B23E900A1A598 /* MyStruct146.swift */,
+				489C7FEE256B23CF00A1A598 /* MyStruct147.swift */,
+				489C804B256B23DE00A1A598 /* MyStruct148.swift */,
+				489C8097256B23E900A1A598 /* MyStruct149.swift */,
+				489C803D256B23DC00A1A598 /* MyStruct150.swift */,
+				489C8038256B23DB00A1A598 /* MyStruct151.swift */,
+				489C8012256B23D600A1A598 /* MyStruct152.swift */,
+				489C7FED256B23CF00A1A598 /* MyStruct153.swift */,
+				489C808B256B23E700A1A598 /* MyStruct154.swift */,
+				489C8057256B23E000A1A598 /* MyStruct155.swift */,
+				489C8074256B23E400A1A598 /* MyStruct156.swift */,
+				489C8025256B23D900A1A598 /* MyStruct157.swift */,
+				489C7FFA256B23D200A1A598 /* MyStruct158.swift */,
+				489C7FFE256B23D200A1A598 /* MyStruct159.swift */,
+				489C7FF5256B23D100A1A598 /* MyStruct160.swift */,
+				489C8051256B23DF00A1A598 /* MyStruct161.swift */,
+				489C7FEF256B23D000A1A598 /* MyStruct162.swift */,
+				489C8089256B23E700A1A598 /* MyStruct163.swift */,
+				489C8030256B23DA00A1A598 /* MyStruct164.swift */,
+				489C802D256B23DA00A1A598 /* MyStruct165.swift */,
+				489C8056256B23E000A1A598 /* MyStruct166.swift */,
+				489C8031256B23DA00A1A598 /* MyStruct167.swift */,
+				489C7FF7256B23D100A1A598 /* MyStruct168.swift */,
+				489C808A256B23E700A1A598 /* MyStruct169.swift */,
+				489C8018256B23D700A1A598 /* MyStruct170.swift */,
+				489C7FF4256B23D000A1A598 /* MyStruct171.swift */,
+				489C8010256B23D500A1A598 /* MyStruct172.swift */,
+				489C808E256B23E800A1A598 /* MyStruct173.swift */,
+				489C8053256B23DF00A1A598 /* MyStruct174.swift */,
+				489C807F256B23E500A1A598 /* MyStruct175.swift */,
+				489C8060256B23E100A1A598 /* MyStruct176.swift */,
+				489C806B256B23E300A1A598 /* MyStruct177.swift */,
+				489C806D256B23E300A1A598 /* MyStruct178.swift */,
+				489C8015256B23D600A1A598 /* MyStruct179.swift */,
+				489C805E256B23E100A1A598 /* MyStruct180.swift */,
+				489C80B3256B23ED00A1A598 /* MyStruct181.swift */,
+				489C8001256B23D300A1A598 /* MyStruct182.swift */,
+				489C801E256B23D800A1A598 /* MyStruct183.swift */,
+				489C807D256B23E500A1A598 /* MyStruct184.swift */,
+				489C8061256B23E100A1A598 /* MyStruct185.swift */,
+				489C7FFD256B23D200A1A598 /* MyStruct186.swift */,
+				489C803E256B23DC00A1A598 /* MyStruct187.swift */,
+				489C8003256B23D300A1A598 /* MyStruct188.swift */,
+				489C801C256B23D700A1A598 /* MyStruct189.swift */,
+				489C8063256B23E200A1A598 /* MyStruct190.swift */,
+				489C805B256B23E000A1A598 /* MyStruct191.swift */,
+				489C8040256B23DC00A1A598 /* MyStruct192.swift */,
+				489C800D256B23D500A1A598 /* MyStruct193.swift */,
+				489C807B256B23E500A1A598 /* MyStruct194.swift */,
+				489C80A7256B23EB00A1A598 /* MyStruct195.swift */,
+				489C80AF256B23ED00A1A598 /* MyStruct196.swift */,
+				489C804C256B23DE00A1A598 /* MyStruct197.swift */,
+				489C80A3256B23EB00A1A598 /* MyStruct198.swift */,
+				489C8075256B23E400A1A598 /* MyStruct199.swift */,
 				488B2FA524B794FA004905AA /* Models.h */,
 				488B2FA624B794FA004905AA /* Info.plist */,
 				488B2FDA24B79677004905AA /* Post.swift */,
@@ -700,6 +1700,206 @@
 		488B2FE224B79C6E004905AA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				489C81CF256B254D00A1A598 /* MyStructService0.swift */,
+				489C822E256B256D00A1A598 /* MyStructService1.swift */,
+				489C8220256B256800A1A598 /* MyStructService2.swift */,
+				489C824E256B257800A1A598 /* MyStructService3.swift */,
+				489C8254256B257A00A1A598 /* MyStructService4.swift */,
+				489C8265256B258000A1A598 /* MyStructService5.swift */,
+				489C8204256B255F00A1A598 /* MyStructService6.swift */,
+				489C8248256B257600A1A598 /* MyStructService7.swift */,
+				489C820B256B256100A1A598 /* MyStructService8.swift */,
+				489C8207256B256000A1A598 /* MyStructService9.swift */,
+				489C822D256B256D00A1A598 /* MyStructService10.swift */,
+				489C8263256B257F00A1A598 /* MyStructService11.swift */,
+				489C81E9256B255600A1A598 /* MyStructService12.swift */,
+				489C8236256B257000A1A598 /* MyStructService13.swift */,
+				489C81BE256B254700A1A598 /* MyStructService14.swift */,
+				489C8267256B258100A1A598 /* MyStructService15.swift */,
+				489C825F256B257E00A1A598 /* MyStructService16.swift */,
+				489C81FC256B255C00A1A598 /* MyStructService17.swift */,
+				489C8209256B256100A1A598 /* MyStructService18.swift */,
+				489C81E3256B255400A1A598 /* MyStructService19.swift */,
+				489C81F6256B255A00A1A598 /* MyStructService20.swift */,
+				489C8211256B256300A1A598 /* MyStructService21.swift */,
+				489C81AC256B254100A1A598 /* MyStructService22.swift */,
+				489C81D1256B254E00A1A598 /* MyStructService23.swift */,
+				489C820F256B256200A1A598 /* MyStructService24.swift */,
+				489C81BF256B254700A1A598 /* MyStructService25.swift */,
+				489C81D2256B254F00A1A598 /* MyStructService26.swift */,
+				489C81EF256B255800A1A598 /* MyStructService27.swift */,
+				489C81FE256B255D00A1A598 /* MyStructService28.swift */,
+				489C81D0256B254E00A1A598 /* MyStructService29.swift */,
+				489C8237256B257100A1A598 /* MyStructService30.swift */,
+				489C821B256B256600A1A598 /* MyStructService31.swift */,
+				489C821A256B256600A1A598 /* MyStructService32.swift */,
+				489C81AB256B254100A1A598 /* MyStructService33.swift */,
+				489C8227256B256B00A1A598 /* MyStructService34.swift */,
+				489C81EA256B255700A1A598 /* MyStructService35.swift */,
+				489C81F9256B255B00A1A598 /* MyStructService36.swift */,
+				489C826E256B258300A1A598 /* MyStructService37.swift */,
+				489C8212256B256300A1A598 /* MyStructService38.swift */,
+				489C8206256B256000A1A598 /* MyStructService39.swift */,
+				489C826A256B258200A1A598 /* MyStructService40.swift */,
+				489C81C1256B254800A1A598 /* MyStructService41.swift */,
+				489C821D256B256700A1A598 /* MyStructService42.swift */,
+				489C8246256B257500A1A598 /* MyStructService43.swift */,
+				489C8259256B257C00A1A598 /* MyStructService44.swift */,
+				489C8210256B256300A1A598 /* MyStructService45.swift */,
+				489C81FF256B255D00A1A598 /* MyStructService46.swift */,
+				489C8242256B257400A1A598 /* MyStructService47.swift */,
+				489C8214256B256400A1A598 /* MyStructService48.swift */,
+				489C81CD256B254D00A1A598 /* MyStructService49.swift */,
+				489C8215256B256400A1A598 /* MyStructService50.swift */,
+				489C8217256B256500A1A598 /* MyStructService51.swift */,
+				489C81AF256B254200A1A598 /* MyStructService52.swift */,
+				489C8205256B255F00A1A598 /* MyStructService53.swift */,
+				489C81F4256B255A00A1A598 /* MyStructService54.swift */,
+				489C81E6256B255500A1A598 /* MyStructService55.swift */,
+				489C8255256B257A00A1A598 /* MyStructService56.swift */,
+				489C81CB256B254C00A1A598 /* MyStructService57.swift */,
+				489C81F2256B255900A1A598 /* MyStructService58.swift */,
+				489C81B5256B254400A1A598 /* MyStructService59.swift */,
+				489C8266256B258000A1A598 /* MyStructService60.swift */,
+				489C8257256B257B00A1A598 /* MyStructService61.swift */,
+				489C81C4256B254900A1A598 /* MyStructService62.swift */,
+				489C8218256B256500A1A598 /* MyStructService63.swift */,
+				489C825B256B257D00A1A598 /* MyStructService64.swift */,
+				489C81CC256B254C00A1A598 /* MyStructService65.swift */,
+				489C81DB256B255200A1A598 /* MyStructService66.swift */,
+				489C8202256B255E00A1A598 /* MyStructService67.swift */,
+				489C821E256B256700A1A598 /* MyStructService68.swift */,
+				489C81D9256B255100A1A598 /* MyStructService69.swift */,
+				489C81BB256B254600A1A598 /* MyStructService70.swift */,
+				489C820A256B256100A1A598 /* MyStructService71.swift */,
+				489C8249256B257600A1A598 /* MyStructService72.swift */,
+				489C81E8256B255600A1A598 /* MyStructService73.swift */,
+				489C81D4256B254F00A1A598 /* MyStructService74.swift */,
+				489C821C256B256700A1A598 /* MyStructService75.swift */,
+				489C81D7256B255000A1A598 /* MyStructService76.swift */,
+				489C81CE256B254D00A1A598 /* MyStructService77.swift */,
+				489C81C7256B254A00A1A598 /* MyStructService78.swift */,
+				489C826B256B258200A1A598 /* MyStructService79.swift */,
+				489C81C9256B254B00A1A598 /* MyStructService80.swift */,
+				489C8208256B256000A1A598 /* MyStructService81.swift */,
+				489C8231256B256E00A1A598 /* MyStructService82.swift */,
+				489C8216256B256500A1A598 /* MyStructService83.swift */,
+				489C8252256B257900A1A598 /* MyStructService84.swift */,
+				489C81EB256B255700A1A598 /* MyStructService85.swift */,
+				489C822B256B256C00A1A598 /* MyStructService86.swift */,
+				489C81F7256B255B00A1A598 /* MyStructService87.swift */,
+				489C8228256B256B00A1A598 /* MyStructService88.swift */,
+				489C81AA256B254000A1A598 /* MyStructService89.swift */,
+				489C81FD256B255D00A1A598 /* MyStructService90.swift */,
+				489C8201256B255E00A1A598 /* MyStructService91.swift */,
+				489C81C0256B254800A1A598 /* MyStructService92.swift */,
+				489C8233256B256F00A1A598 /* MyStructService93.swift */,
+				489C8240256B257300A1A598 /* MyStructService94.swift */,
+				489C824B256B257700A1A598 /* MyStructService95.swift */,
+				489C8253256B257A00A1A598 /* MyStructService96.swift */,
+				489C8268256B258100A1A598 /* MyStructService97.swift */,
+				489C8223256B256900A1A598 /* MyStructService98.swift */,
+				489C823B256B257200A1A598 /* MyStructService99.swift */,
+				489C81AD256B254100A1A598 /* MyStructService100.swift */,
+				489C81D6256B255000A1A598 /* MyStructService101.swift */,
+				489C81E2256B255400A1A598 /* MyStructService102.swift */,
+				489C8234256B256F00A1A598 /* MyStructService103.swift */,
+				489C824C256B257700A1A598 /* MyStructService104.swift */,
+				489C8251256B257900A1A598 /* MyStructService105.swift */,
+				489C8244256B257500A1A598 /* MyStructService106.swift */,
+				489C81C3256B254900A1A598 /* MyStructService107.swift */,
+				489C81C5256B254A00A1A598 /* MyStructService108.swift */,
+				489C8250256B257900A1A598 /* MyStructService109.swift */,
+				489C81B9256B254500A1A598 /* MyStructService110.swift */,
+				489C81BD256B254700A1A598 /* MyStructService111.swift */,
+				489C825C256B257D00A1A598 /* MyStructService112.swift */,
+				489C81DC256B255200A1A598 /* MyStructService113.swift */,
+				489C8213256B256400A1A598 /* MyStructService114.swift */,
+				489C8269256B258100A1A598 /* MyStructService115.swift */,
+				489C825D256B257D00A1A598 /* MyStructService116.swift */,
+				489C81EC256B255700A1A598 /* MyStructService117.swift */,
+				489C81BC256B254600A1A598 /* MyStructService118.swift */,
+				489C8200256B255E00A1A598 /* MyStructService119.swift */,
+				489C823E256B257300A1A598 /* MyStructService120.swift */,
+				489C81B4256B254400A1A598 /* MyStructService121.swift */,
+				489C825A256B257C00A1A598 /* MyStructService122.swift */,
+				489C81B0256B254200A1A598 /* MyStructService123.swift */,
+				489C81B7256B254500A1A598 /* MyStructService124.swift */,
+				489C81B6256B254400A1A598 /* MyStructService125.swift */,
+				489C823A256B257100A1A598 /* MyStructService126.swift */,
+				489C81E7256B255500A1A598 /* MyStructService127.swift */,
+				489C81C8256B254B00A1A598 /* MyStructService128.swift */,
+				489C820D256B256200A1A598 /* MyStructService129.swift */,
+				489C823D256B257200A1A598 /* MyStructService130.swift */,
+				489C824A256B257700A1A598 /* MyStructService131.swift */,
+				489C8270256B258400A1A598 /* MyStructService132.swift */,
+				489C8262256B257F00A1A598 /* MyStructService133.swift */,
+				489C8219256B256600A1A598 /* MyStructService134.swift */,
+				489C81F8256B255B00A1A598 /* MyStructService135.swift */,
+				489C8239256B257100A1A598 /* MyStructService136.swift */,
+				489C81B8256B254500A1A598 /* MyStructService137.swift */,
+				489C8226256B256A00A1A598 /* MyStructService138.swift */,
+				489C81D5256B255000A1A598 /* MyStructService139.swift */,
+				489C8243256B257400A1A598 /* MyStructService140.swift */,
+				489C826C256B258200A1A598 /* MyStructService141.swift */,
+				489C81FA256B255C00A1A598 /* MyStructService142.swift */,
+				489C81B2256B254300A1A598 /* MyStructService143.swift */,
+				489C81E0256B255300A1A598 /* MyStructService144.swift */,
+				489C81C2256B254800A1A598 /* MyStructService145.swift */,
+				489C8203256B255F00A1A598 /* MyStructService146.swift */,
+				489C8256256B257B00A1A598 /* MyStructService147.swift */,
+				489C81CA256B254C00A1A598 /* MyStructService148.swift */,
+				489C8221256B256800A1A598 /* MyStructService149.swift */,
+				489C8261256B257F00A1A598 /* MyStructService150.swift */,
+				489C822F256B256E00A1A598 /* MyStructService151.swift */,
+				489C826D256B258300A1A598 /* MyStructService152.swift */,
+				489C823C256B257200A1A598 /* MyStructService153.swift */,
+				489C826F256B258400A1A598 /* MyStructService154.swift */,
+				489C822C256B256C00A1A598 /* MyStructService155.swift */,
+				489C820C256B256100A1A598 /* MyStructService156.swift */,
+				489C8229256B256B00A1A598 /* MyStructService157.swift */,
+				489C81ED256B255700A1A598 /* MyStructService158.swift */,
+				489C824D256B257800A1A598 /* MyStructService159.swift */,
+				489C81FB256B255C00A1A598 /* MyStructService160.swift */,
+				489C81BA256B254600A1A598 /* MyStructService161.swift */,
+				489C81E5256B255500A1A598 /* MyStructService162.swift */,
+				489C822A256B256C00A1A598 /* MyStructService163.swift */,
+				489C81F5256B255A00A1A598 /* MyStructService164.swift */,
+				489C81E4256B255400A1A598 /* MyStructService165.swift */,
+				489C81C6256B254A00A1A598 /* MyStructService166.swift */,
+				489C8245256B257500A1A598 /* MyStructService167.swift */,
+				489C8258256B257C00A1A598 /* MyStructService168.swift */,
+				489C81DD256B255200A1A598 /* MyStructService169.swift */,
+				489C81F3256B255900A1A598 /* MyStructService170.swift */,
+				489C8224256B256900A1A598 /* MyStructService171.swift */,
+				489C823F256B257300A1A598 /* MyStructService172.swift */,
+				489C81DF256B255300A1A598 /* MyStructService173.swift */,
+				489C8260256B257E00A1A598 /* MyStructService174.swift */,
+				489C824F256B257800A1A598 /* MyStructService175.swift */,
+				489C8232256B256F00A1A598 /* MyStructService176.swift */,
+				489C8264256B258000A1A598 /* MyStructService177.swift */,
+				489C8235256B257000A1A598 /* MyStructService178.swift */,
+				489C81DE256B255300A1A598 /* MyStructService179.swift */,
+				489C81AE256B254200A1A598 /* MyStructService180.swift */,
+				489C821F256B256800A1A598 /* MyStructService181.swift */,
+				489C8238256B257100A1A598 /* MyStructService182.swift */,
+				489C8247256B257600A1A598 /* MyStructService183.swift */,
+				489C8271256B258400A1A598 /* MyStructService184.swift */,
+				489C81F0256B255800A1A598 /* MyStructService185.swift */,
+				489C81D8256B255100A1A598 /* MyStructService186.swift */,
+				489C825E256B257D00A1A598 /* MyStructService187.swift */,
+				489C8225256B256A00A1A598 /* MyStructService188.swift */,
+				489C81E1256B255400A1A598 /* MyStructService189.swift */,
+				489C81EE256B255800A1A598 /* MyStructService190.swift */,
+				489C81D3256B254F00A1A598 /* MyStructService191.swift */,
+				489C820E256B256200A1A598 /* MyStructService192.swift */,
+				489C8230256B256E00A1A598 /* MyStructService193.swift */,
+				489C81B1256B254300A1A598 /* MyStructService194.swift */,
+				489C81F1256B255900A1A598 /* MyStructService195.swift */,
+				489C8241256B257400A1A598 /* MyStructService196.swift */,
+				489C81DA256B255100A1A598 /* MyStructService197.swift */,
+				489C81B3256B254300A1A598 /* MyStructService198.swift */,
+				489C8222256B256900A1A598 /* MyStructService199.swift */,
 				488B2FE324B79C6E004905AA /* Services.h */,
 				488B2FE424B79C6E004905AA /* Info.plist */,
 				488B300024B79D67004905AA /* PostsService.swift */,
@@ -1494,9 +2694,209 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489C8154256B23EE00A1A598 /* MyStruct103.swift in Sources */,
+				489C80E6256B23EE00A1A598 /* MyStruct183.swift in Sources */,
+				489C8116256B23EE00A1A598 /* MyStruct97.swift in Sources */,
+				489C810E256B23EE00A1A598 /* MyStruct127.swift in Sources */,
+				489C80C3256B23ED00A1A598 /* MyStruct59.swift in Sources */,
+				489C80D7256B23EE00A1A598 /* MyStruct101.swift in Sources */,
+				489C8152256B23EE00A1A598 /* MyStruct169.swift in Sources */,
+				489C80CA256B23ED00A1A598 /* MyStruct69.swift in Sources */,
+				489C814E256B23EE00A1A598 /* MyStruct128.swift in Sources */,
+				489C80E5256B23EE00A1A598 /* MyStruct32.swift in Sources */,
+				489C80D3256B23EE00A1A598 /* MyStruct124.swift in Sources */,
+				489C814C256B23EE00A1A598 /* MyStruct34.swift in Sources */,
+				489C80DD256B23EE00A1A598 /* MyStruct179.swift in Sources */,
+				489C812C256B23EE00A1A598 /* MyStruct21.swift in Sources */,
+				489C816A256B23EE00A1A598 /* MyStruct95.swift in Sources */,
+				489C80CE256B23EE00A1A598 /* MyStruct143.swift in Sources */,
+				489C8135256B23EE00A1A598 /* MyStruct178.swift in Sources */,
+				489C80D1256B23EE00A1A598 /* MyStruct49.swift in Sources */,
+				489C8117256B23EE00A1A598 /* MyStruct109.swift in Sources */,
+				489C810D256B23EE00A1A598 /* MyStruct83.swift in Sources */,
+				489C814B256B23EE00A1A598 /* MyStruct67.swift in Sources */,
+				489C80DF256B23EE00A1A598 /* MyStruct43.swift in Sources */,
+				489C8179256B23EF00A1A598 /* MyStruct71.swift in Sources */,
+				489C8120256B23EE00A1A598 /* MyStruct104.swift in Sources */,
+				489C8167256B23EE00A1A598 /* MyStruct46.swift in Sources */,
+				489C8133256B23EE00A1A598 /* MyStruct177.swift in Sources */,
+				489C80DE256B23EE00A1A598 /* MyStruct70.swift in Sources */,
+				489C80D4256B23EE00A1A598 /* MyStruct54.swift in Sources */,
+				489C80ED256B23EE00A1A598 /* MyStruct157.swift in Sources */,
+				489C8150256B23EE00A1A598 /* MyStruct27.swift in Sources */,
+				489C8139256B23EE00A1A598 /* MyStruct78.swift in Sources */,
+				489C8137256B23EE00A1A598 /* MyStruct105.swift in Sources */,
+				489C8164256B23EE00A1A598 /* MyStruct129.swift in Sources */,
+				489C8166256B23EE00A1A598 /* MyStruct22.swift in Sources */,
+				489C80B6256B23ED00A1A598 /* MyStruct147.swift in Sources */,
+				489C80EA256B23EE00A1A598 /* MyStruct41.swift in Sources */,
+				489C8115256B23EE00A1A598 /* MyStruct74.swift in Sources */,
+				489C80D8256B23EE00A1A598 /* MyStruct172.swift in Sources */,
+				489C8111256B23EE00A1A598 /* MyStruct119.swift in Sources */,
+				489C80C4256B23ED00A1A598 /* MyStruct56.swift in Sources */,
+				489C80F4256B23EE00A1A598 /* MyStruct89.swift in Sources */,
+				489C8106256B23EE00A1A598 /* MyStruct187.swift in Sources */,
+				489C80B5256B23ED00A1A598 /* MyStruct153.swift in Sources */,
+				489C80B9256B23ED00A1A598 /* MyStruct75.swift in Sources */,
+				489C80C0256B23ED00A1A598 /* MyStruct1.swift in Sources */,
+				489C815E256B23EE00A1A598 /* MyStruct44.swift in Sources */,
+				489C8142256B23EE00A1A598 /* MyStruct47.swift in Sources */,
+				489C8131256B23EE00A1A598 /* MyStruct26.swift in Sources */,
+				489C80BE256B23ED00A1A598 /* MyStruct55.swift in Sources */,
+				489C80C7256B23ED00A1A598 /* MyStruct110.swift in Sources */,
+				489C80CC256B23EE00A1A598 /* MyStruct140.swift in Sources */,
+				489C8143256B23EE00A1A598 /* MyStruct194.swift in Sources */,
+				489C8112256B23EE00A1A598 /* MyStruct142.swift in Sources */,
+				489C80B8256B23ED00A1A598 /* MyStruct48.swift in Sources */,
+				489C80E0256B23EE00A1A598 /* MyStruct170.swift in Sources */,
+				489C80E4256B23EE00A1A598 /* MyStruct189.swift in Sources */,
+				489C8175256B23EF00A1A598 /* MyStruct2.swift in Sources */,
+				489C8118256B23EE00A1A598 /* MyStruct37.swift in Sources */,
+				489C8151256B23EE00A1A598 /* MyStruct163.swift in Sources */,
+				489C8108256B23EE00A1A598 /* MyStruct192.swift in Sources */,
+				489C811A256B23EE00A1A598 /* MyStruct76.swift in Sources */,
+				489C80FB256B23EE00A1A598 /* MyStruct61.swift in Sources */,
+				489C816D256B23EE00A1A598 /* MyStruct73.swift in Sources */,
+				489C8172256B23EE00A1A598 /* MyStruct68.swift in Sources */,
+				489C811C256B23EE00A1A598 /* MyStruct82.swift in Sources */,
+				489C80BA256B23ED00A1A598 /* MyStruct15.swift in Sources */,
+				489C80BC256B23ED00A1A598 /* MyStruct171.swift in Sources */,
+				489C812F256B23EE00A1A598 /* MyStruct62.swift in Sources */,
+				489C813D256B23EE00A1A598 /* MyStruct199.swift in Sources */,
+				489C8159256B23EE00A1A598 /* MyStruct24.swift in Sources */,
+				489C816C256B23EE00A1A598 /* MyStruct84.swift in Sources */,
+				489C8104256B23EE00A1A598 /* MyStruct86.swift in Sources */,
+				489C8170256B23EE00A1A598 /* MyStruct64.swift in Sources */,
+				489C814A256B23EE00A1A598 /* MyStruct53.swift in Sources */,
+				489C815B256B23EE00A1A598 /* MyStruct38.swift in Sources */,
+				489C80E2256B23EE00A1A598 /* MyStruct131.swift in Sources */,
 				488B307424B8A67C004905AA /* PostsListCreator.swift in Sources */,
+				489C8145256B23EE00A1A598 /* MyStruct184.swift in Sources */,
+				489C80EE256B23EE00A1A598 /* MyStruct87.swift in Sources */,
+				489C813C256B23EE00A1A598 /* MyStruct156.swift in Sources */,
+				489C80E7256B23EE00A1A598 /* MyStruct42.swift in Sources */,
+				489C80CF256B23EE00A1A598 /* MyStruct6.swift in Sources */,
+				489C814F256B23EE00A1A598 /* MyStruct92.swift in Sources */,
+				489C80F1256B23EE00A1A598 /* MyStruct29.swift in Sources */,
+				489C8105256B23EE00A1A598 /* MyStruct150.swift in Sources */,
+				489C80C2256B23ED00A1A598 /* MyStruct158.swift in Sources */,
+				489C8123256B23EE00A1A598 /* MyStruct191.swift in Sources */,
+				489C8146256B23EE00A1A598 /* MyStruct122.swift in Sources */,
+				489C8103256B23EE00A1A598 /* MyStruct63.swift in Sources */,
+				489C813A256B23EE00A1A598 /* MyStruct0.swift in Sources */,
+				489C810A256B23EE00A1A598 /* MyStruct139.swift in Sources */,
+				489C8155256B23EE00A1A598 /* MyStruct80.swift in Sources */,
+				489C80F7256B23EE00A1A598 /* MyStruct11.swift in Sources */,
+				489C815F256B23EE00A1A598 /* MyStruct149.swift in Sources */,
+				489C816F256B23EE00A1A598 /* MyStruct195.swift in Sources */,
+				489C8110256B23EE00A1A598 /* MyStruct12.swift in Sources */,
+				489C812B256B23EE00A1A598 /* MyStruct190.swift in Sources */,
+				489C80D9256B23EE00A1A598 /* MyStruct9.swift in Sources */,
+				489C80BB256B23ED00A1A598 /* MyStruct7.swift in Sources */,
 				488B2FDB24B79677004905AA /* Post.swift in Sources */,
+				489C811D256B23EE00A1A598 /* MyStruct17.swift in Sources */,
+				489C80EB256B23EE00A1A598 /* MyStruct134.swift in Sources */,
+				489C80F8256B23EE00A1A598 /* MyStruct164.swift in Sources */,
+				489C80E8256B23EE00A1A598 /* MyStruct135.swift in Sources */,
+				489C80F6256B23EE00A1A598 /* MyStruct33.swift in Sources */,
+				489C80E1256B23EE00A1A598 /* MyStruct8.swift in Sources */,
+				489C8160256B23EE00A1A598 /* MyStruct146.swift in Sources */,
+				489C8174256B23EF00A1A598 /* MyStruct52.swift in Sources */,
+				489C815D256B23EE00A1A598 /* MyStruct145.swift in Sources */,
+				489C80BF256B23ED00A1A598 /* MyStruct168.swift in Sources */,
+				489C8177256B23EF00A1A598 /* MyStruct196.swift in Sources */,
+				489C8171256B23EE00A1A598 /* MyStruct5.swift in Sources */,
+				489C8102256B23EE00A1A598 /* MyStruct137.swift in Sources */,
+				489C80C1256B23ED00A1A598 /* MyStruct60.swift in Sources */,
+				489C80F0256B23EE00A1A598 /* MyStruct118.swift in Sources */,
+				489C80DA256B23EE00A1A598 /* MyStruct152.swift in Sources */,
+				489C8147256B23EE00A1A598 /* MyStruct175.swift in Sources */,
+				489C80C8256B23ED00A1A598 /* MyStruct13.swift in Sources */,
+				489C80EF256B23EE00A1A598 /* MyStruct51.swift in Sources */,
+				489C8124256B23EE00A1A598 /* MyStruct85.swift in Sources */,
+				489C8113256B23EE00A1A598 /* MyStruct148.swift in Sources */,
+				489C817B256B23EF00A1A598 /* MyStruct181.swift in Sources */,
+				489C8156256B23EE00A1A598 /* MyStruct173.swift in Sources */,
+				489C810F256B23EE00A1A598 /* MyStruct136.swift in Sources */,
+				489C812E256B23EE00A1A598 /* MyStruct39.swift in Sources */,
+				489C80FA256B23EE00A1A598 /* MyStruct31.swift in Sources */,
+				489C810C256B23EE00A1A598 /* MyStruct126.swift in Sources */,
+				489C80C9256B23ED00A1A598 /* MyStruct182.swift in Sources */,
+				489C8149256B23EE00A1A598 /* MyStruct100.swift in Sources */,
+				489C813B256B23EE00A1A598 /* MyStruct98.swift in Sources */,
+				489C80D0256B23EE00A1A598 /* MyStruct113.swift in Sources */,
+				489C80CB256B23ED00A1A598 /* MyStruct188.swift in Sources */,
+				489C80F3256B23EE00A1A598 /* MyStruct93.swift in Sources */,
+				489C813E256B23EE00A1A598 /* MyStruct96.swift in Sources */,
+				489C80D5256B23EE00A1A598 /* MyStruct193.swift in Sources */,
+				489C811E256B23EE00A1A598 /* MyStruct166.swift in Sources */,
+				489C80FD256B23EE00A1A598 /* MyStruct106.swift in Sources */,
+				489C8141256B23EE00A1A598 /* MyStruct58.swift in Sources */,
+				489C80D6256B23EE00A1A598 /* MyStruct3.swift in Sources */,
+				489C810B256B23EE00A1A598 /* MyStruct125.swift in Sources */,
+				489C811B256B23EE00A1A598 /* MyStruct174.swift in Sources */,
+				489C8162256B23EE00A1A598 /* MyStruct25.swift in Sources */,
+				489C812A256B23EE00A1A598 /* MyStruct4.swift in Sources */,
+				489C816E256B23EE00A1A598 /* MyStruct102.swift in Sources */,
+				489C8148256B23EE00A1A598 /* MyStruct99.swift in Sources */,
+				489C8157256B23EE00A1A598 /* MyStruct66.swift in Sources */,
+				489C80DC256B23EE00A1A598 /* MyStruct72.swift in Sources */,
+				489C80D2256B23EE00A1A598 /* MyStruct107.swift in Sources */,
+				489C80E3256B23EE00A1A598 /* MyStruct79.swift in Sources */,
+				489C8130256B23EE00A1A598 /* MyStruct81.swift in Sources */,
+				489C8100256B23EE00A1A598 /* MyStruct151.swift in Sources */,
+				489C80F2256B23EE00A1A598 /* MyStruct116.swift in Sources */,
+				489C8129256B23EE00A1A598 /* MyStruct185.swift in Sources */,
+				489C815A256B23EE00A1A598 /* MyStruct120.swift in Sources */,
+				489C8126256B23EE00A1A598 /* MyStruct180.swift in Sources */,
+				489C8121256B23EE00A1A598 /* MyStruct130.swift in Sources */,
+				489C815C256B23EE00A1A598 /* MyStruct57.swift in Sources */,
+				489C816B256B23EE00A1A598 /* MyStruct198.swift in Sources */,
+				489C8158256B23EE00A1A598 /* MyStruct91.swift in Sources */,
+				489C8127256B23EE00A1A598 /* MyStruct112.swift in Sources */,
+				489C8168256B23EE00A1A598 /* MyStruct132.swift in Sources */,
+				489C80F9256B23EE00A1A598 /* MyStruct167.swift in Sources */,
+				489C80FF256B23EE00A1A598 /* MyStruct90.swift in Sources */,
+				489C813F256B23EE00A1A598 /* MyStruct94.swift in Sources */,
+				489C8128256B23EE00A1A598 /* MyStruct176.swift in Sources */,
+				489C8107256B23EE00A1A598 /* MyStruct28.swift in Sources */,
+				489C812D256B23EE00A1A598 /* MyStruct77.swift in Sources */,
+				489C8153256B23EE00A1A598 /* MyStruct154.swift in Sources */,
+				489C8138256B23EE00A1A598 /* MyStruct121.swift in Sources */,
+				489C8134256B23EE00A1A598 /* MyStruct30.swift in Sources */,
+				489C8136256B23EE00A1A598 /* MyStruct111.swift in Sources */,
+				489C8169256B23EE00A1A598 /* MyStruct114.swift in Sources */,
+				489C8165256B23EE00A1A598 /* MyStruct40.swift in Sources */,
+				489C80B7256B23ED00A1A598 /* MyStruct162.swift in Sources */,
+				489C80F5256B23EE00A1A598 /* MyStruct165.swift in Sources */,
+				489C80E9256B23EE00A1A598 /* MyStruct65.swift in Sources */,
+				489C80FE256B23EE00A1A598 /* MyStruct117.swift in Sources */,
+				489C8122256B23EE00A1A598 /* MyStruct23.swift in Sources */,
+				489C80DB256B23EE00A1A598 /* MyStruct88.swift in Sources */,
+				489C80FC256B23EE00A1A598 /* MyStruct35.swift in Sources */,
+				489C80CD256B23EE00A1A598 /* MyStruct138.swift in Sources */,
+				489C8161256B23EE00A1A598 /* MyStruct144.swift in Sources */,
+				489C8119256B23EE00A1A598 /* MyStruct161.swift in Sources */,
+				489C8132256B23EE00A1A598 /* MyStruct18.swift in Sources */,
+				489C8140256B23EE00A1A598 /* MyStruct14.swift in Sources */,
+				489C8114256B23EE00A1A598 /* MyStruct197.swift in Sources */,
+				489C8176256B23EF00A1A598 /* MyStruct50.swift in Sources */,
+				489C811F256B23EE00A1A598 /* MyStruct155.swift in Sources */,
+				489C8125256B23EE00A1A598 /* MyStruct19.swift in Sources */,
+				489C80BD256B23ED00A1A598 /* MyStruct160.swift in Sources */,
+				489C8173256B23EE00A1A598 /* MyStruct115.swift in Sources */,
+				489C817A256B23EF00A1A598 /* MyStruct123.swift in Sources */,
+				489C80EC256B23EE00A1A598 /* MyStruct16.swift in Sources */,
+				489C80C6256B23ED00A1A598 /* MyStruct159.swift in Sources */,
+				489C80C5256B23ED00A1A598 /* MyStruct186.swift in Sources */,
+				489C8163256B23EE00A1A598 /* MyStruct20.swift in Sources */,
 				488B307924B8A738004905AA /* DecodableHelper.swift in Sources */,
+				489C8178256B23EF00A1A598 /* MyStruct133.swift in Sources */,
+				489C8101256B23EE00A1A598 /* MyStruct45.swift in Sources */,
+				489C814D256B23EE00A1A598 /* MyStruct141.swift in Sources */,
+				489C817C256B23EF00A1A598 /* MyStruct10.swift in Sources */,
+				489C8109256B23EE00A1A598 /* MyStruct36.swift in Sources */,
+				489C8144256B23EE00A1A598 /* MyStruct108.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1525,7 +2925,207 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489C8303256B258500A1A598 /* MyStructService99.swift in Sources */,
+				489C8325256B258500A1A598 /* MyStructService116.swift in Sources */,
+				489C8311256B258500A1A598 /* MyStructService72.swift in Sources */,
+				489C82CE256B258500A1A598 /* MyStructService39.swift in Sources */,
+				489C8323256B258500A1A598 /* MyStructService64.swift in Sources */,
+				489C82AF256B258500A1A598 /* MyStructService127.swift in Sources */,
+				489C82AD256B258500A1A598 /* MyStructService162.swift in Sources */,
+				489C8310256B258500A1A598 /* MyStructService7.swift in Sources */,
+				489C831A256B258500A1A598 /* MyStructService84.swift in Sources */,
+				489C831E256B258500A1A598 /* MyStructService147.swift in Sources */,
+				489C82A8256B258500A1A598 /* MyStructService144.swift in Sources */,
+				489C82EF256B258500A1A598 /* MyStructService34.swift in Sources */,
+				489C832A256B258500A1A598 /* MyStructService133.swift in Sources */,
+				489C82C9256B258500A1A598 /* MyStructService91.swift in Sources */,
+				489C8277256B258500A1A598 /* MyStructService52.swift in Sources */,
+				489C82F2256B258500A1A598 /* MyStructService163.swift in Sources */,
+				489C82B4256B258500A1A598 /* MyStructService117.swift in Sources */,
+				489C8320256B258500A1A598 /* MyStructService168.swift in Sources */,
+				489C82D8256B258500A1A598 /* MyStructService45.swift in Sources */,
+				489C8300256B258500A1A598 /* MyStructService182.swift in Sources */,
+				489C8337256B258600A1A598 /* MyStructService154.swift in Sources */,
+				489C82F9256B258500A1A598 /* MyStructService82.swift in Sources */,
+				489C828D256B258500A1A598 /* MyStructService108.swift in Sources */,
+				489C8329256B258500A1A598 /* MyStructService150.swift in Sources */,
+				489C82E9256B258500A1A598 /* MyStructService149.swift in Sources */,
+				489C82AC256B258500A1A598 /* MyStructService165.swift in Sources */,
+				489C82F3256B258500A1A598 /* MyStructService86.swift in Sources */,
+				489C82DC256B258500A1A598 /* MyStructService48.swift in Sources */,
+				489C82F5256B258500A1A598 /* MyStructService10.swift in Sources */,
+				489C8339256B258600A1A598 /* MyStructService184.swift in Sources */,
+				489C8289256B258500A1A598 /* MyStructService41.swift in Sources */,
+				489C829B256B258500A1A598 /* MyStructService191.swift in Sources */,
+				489C827A256B258500A1A598 /* MyStructService143.swift in Sources */,
+				489C82C8256B258500A1A598 /* MyStructService119.swift in Sources */,
+				489C8296256B258500A1A598 /* MyStructService77.swift in Sources */,
+				489C8316256B258500A1A598 /* MyStructService3.swift in Sources */,
+				489C8299256B258500A1A598 /* MyStructService23.swift in Sources */,
+				489C82E7256B258500A1A598 /* MyStructService181.swift in Sources */,
+				489C82B3256B258500A1A598 /* MyStructService85.swift in Sources */,
+				489C82A3256B258500A1A598 /* MyStructService66.swift in Sources */,
+				489C828F256B258500A1A598 /* MyStructService78.swift in Sources */,
+				489C8276256B258500A1A598 /* MyStructService180.swift in Sources */,
+				489C8321256B258500A1A598 /* MyStructService44.swift in Sources */,
+				489C82C2256B258500A1A598 /* MyStructService142.swift in Sources */,
+				489C82A1256B258500A1A598 /* MyStructService69.swift in Sources */,
+				489C827C256B258500A1A598 /* MyStructService121.swift in Sources */,
 				488B300124B79D67004905AA /* PostsService.swift in Sources */,
+				489C82C7256B258500A1A598 /* MyStructService46.swift in Sources */,
+				489C829F256B258500A1A598 /* MyStructService76.swift in Sources */,
+				489C82BF256B258500A1A598 /* MyStructService87.swift in Sources */,
+				489C82E6256B258500A1A598 /* MyStructService68.swift in Sources */,
+				489C82F1256B258500A1A598 /* MyStructService157.swift in Sources */,
+				489C82FA256B258500A1A598 /* MyStructService176.swift in Sources */,
+				489C8319256B258500A1A598 /* MyStructService105.swift in Sources */,
+				489C82EE256B258500A1A598 /* MyStructService138.swift in Sources */,
+				489C8273256B258500A1A598 /* MyStructService33.swift in Sources */,
+				489C82D9256B258500A1A598 /* MyStructService21.swift in Sources */,
+				489C82A2256B258500A1A598 /* MyStructService197.swift in Sources */,
+				489C82E5256B258500A1A598 /* MyStructService42.swift in Sources */,
+				489C82A6256B258500A1A598 /* MyStructService179.swift in Sources */,
+				489C82A4256B258500A1A598 /* MyStructService113.swift in Sources */,
+				489C831D256B258500A1A598 /* MyStructService56.swift in Sources */,
+				489C827F256B258500A1A598 /* MyStructService124.swift in Sources */,
+				489C8293256B258500A1A598 /* MyStructService57.swift in Sources */,
+				489C82C6256B258500A1A598 /* MyStructService28.swift in Sources */,
+				489C8331256B258600A1A598 /* MyStructService115.swift in Sources */,
+				489C8290256B258500A1A598 /* MyStructService128.swift in Sources */,
+				489C82DE256B258500A1A598 /* MyStructService83.swift in Sources */,
+				489C82E4256B258500A1A598 /* MyStructService75.swift in Sources */,
+				489C82AA256B258500A1A598 /* MyStructService102.swift in Sources */,
+				489C8336256B258600A1A598 /* MyStructService37.swift in Sources */,
+				489C82EC256B258500A1A598 /* MyStructService171.swift in Sources */,
+				489C832B256B258500A1A598 /* MyStructService11.swift in Sources */,
+				489C830A256B258500A1A598 /* MyStructService47.swift in Sources */,
+				489C82C3256B258500A1A598 /* MyStructService160.swift in Sources */,
+				489C8295256B258500A1A598 /* MyStructService49.swift in Sources */,
+				489C8326256B258500A1A598 /* MyStructService187.swift in Sources */,
+				489C82D5256B258500A1A598 /* MyStructService129.swift in Sources */,
+				489C8338256B258600A1A598 /* MyStructService132.swift in Sources */,
+				489C82BA256B258500A1A598 /* MyStructService58.swift in Sources */,
+				489C82DD256B258500A1A598 /* MyStructService50.swift in Sources */,
+				489C82B9256B258500A1A598 /* MyStructService195.swift in Sources */,
+				489C82B7256B258500A1A598 /* MyStructService27.swift in Sources */,
+				489C830D256B258500A1A598 /* MyStructService167.swift in Sources */,
+				489C8332256B258600A1A598 /* MyStructService40.swift in Sources */,
+				489C831C256B258500A1A598 /* MyStructService4.swift in Sources */,
+				489C830B256B258500A1A598 /* MyStructService140.swift in Sources */,
+				489C82CD256B258500A1A598 /* MyStructService53.swift in Sources */,
+				489C82BB256B258500A1A598 /* MyStructService170.swift in Sources */,
+				489C8315256B258500A1A598 /* MyStructService159.swift in Sources */,
+				489C830C256B258500A1A598 /* MyStructService106.swift in Sources */,
+				489C8279256B258500A1A598 /* MyStructService194.swift in Sources */,
+				489C8281256B258500A1A598 /* MyStructService110.swift in Sources */,
+				489C82D6256B258500A1A598 /* MyStructService192.swift in Sources */,
+				489C827D256B258500A1A598 /* MyStructService59.swift in Sources */,
+				489C82B2256B258500A1A598 /* MyStructService35.swift in Sources */,
+				489C82FF256B258500A1A598 /* MyStructService30.swift in Sources */,
+				489C8334256B258600A1A598 /* MyStructService141.swift in Sources */,
+				489C8275256B258500A1A598 /* MyStructService100.swift in Sources */,
+				489C82D4256B258500A1A598 /* MyStructService156.swift in Sources */,
+				489C82E0256B258500A1A598 /* MyStructService63.swift in Sources */,
+				489C832F256B258500A1A598 /* MyStructService15.swift in Sources */,
+				489C82BD256B258500A1A598 /* MyStructService164.swift in Sources */,
+				489C82FD256B258500A1A598 /* MyStructService178.swift in Sources */,
+				489C82D2256B258500A1A598 /* MyStructService71.swift in Sources */,
+				489C82C0256B258500A1A598 /* MyStructService135.swift in Sources */,
+				489C830E256B258500A1A598 /* MyStructService43.swift in Sources */,
+				489C8280256B258500A1A598 /* MyStructService137.swift in Sources */,
+				489C829E256B258500A1A598 /* MyStructService101.swift in Sources */,
+				489C828E256B258500A1A598 /* MyStructService166.swift in Sources */,
+				489C8328256B258500A1A598 /* MyStructService174.swift in Sources */,
+				489C82D3256B258500A1A598 /* MyStructService8.swift in Sources */,
+				489C82CF256B258500A1A598 /* MyStructService9.swift in Sources */,
+				489C82F8256B258500A1A598 /* MyStructService193.swift in Sources */,
+				489C82DB256B258500A1A598 /* MyStructService114.swift in Sources */,
+				489C8287256B258500A1A598 /* MyStructService25.swift in Sources */,
+				489C8312256B258500A1A598 /* MyStructService131.swift in Sources */,
+				489C82E1256B258500A1A598 /* MyStructService134.swift in Sources */,
+				489C832D256B258500A1A598 /* MyStructService5.swift in Sources */,
+				489C827B256B258500A1A598 /* MyStructService198.swift in Sources */,
+				489C8301256B258500A1A598 /* MyStructService136.swift in Sources */,
+				489C82D0256B258500A1A598 /* MyStructService81.swift in Sources */,
+				489C832E256B258500A1A598 /* MyStructService60.swift in Sources */,
+				489C828A256B258500A1A598 /* MyStructService145.swift in Sources */,
+				489C829C256B258500A1A598 /* MyStructService74.swift in Sources */,
+				489C82D1256B258500A1A598 /* MyStructService18.swift in Sources */,
+				489C8314256B258500A1A598 /* MyStructService104.swift in Sources */,
+				489C82E3256B258500A1A598 /* MyStructService31.swift in Sources */,
+				489C829A256B258500A1A598 /* MyStructService26.swift in Sources */,
+				489C82B1256B258500A1A598 /* MyStructService12.swift in Sources */,
+				489C82BE256B258500A1A598 /* MyStructService20.swift in Sources */,
+				489C82ED256B258500A1A598 /* MyStructService188.swift in Sources */,
+				489C830F256B258500A1A598 /* MyStructService183.swift in Sources */,
+				489C8294256B258500A1A598 /* MyStructService65.swift in Sources */,
+				489C82D7256B258500A1A598 /* MyStructService24.swift in Sources */,
+				489C8308256B258500A1A598 /* MyStructService94.swift in Sources */,
+				489C831B256B258500A1A598 /* MyStructService96.swift in Sources */,
+				489C82A0256B258500A1A598 /* MyStructService186.swift in Sources */,
+				489C8309256B258500A1A598 /* MyStructService196.swift in Sources */,
+				489C8278256B258500A1A598 /* MyStructService123.swift in Sources */,
+				489C82B5256B258500A1A598 /* MyStructService158.swift in Sources */,
+				489C82B6256B258500A1A598 /* MyStructService190.swift in Sources */,
+				489C82E2256B258500A1A598 /* MyStructService32.swift in Sources */,
+				489C8322256B258500A1A598 /* MyStructService122.swift in Sources */,
+				489C828B256B258500A1A598 /* MyStructService107.swift in Sources */,
+				489C82FB256B258500A1A598 /* MyStructService93.swift in Sources */,
+				489C82CC256B258500A1A598 /* MyStructService6.swift in Sources */,
+				489C8313256B258500A1A598 /* MyStructService95.swift in Sources */,
+				489C82EA256B258500A1A598 /* MyStructService199.swift in Sources */,
+				489C82F4256B258500A1A598 /* MyStructService155.swift in Sources */,
+				489C828C256B258500A1A598 /* MyStructService62.swift in Sources */,
+				489C82CB256B258500A1A598 /* MyStructService146.swift in Sources */,
+				489C832C256B258500A1A598 /* MyStructService177.swift in Sources */,
+				489C82F7256B258500A1A598 /* MyStructService151.swift in Sources */,
+				489C8274256B258500A1A598 /* MyStructService22.swift in Sources */,
+				489C82C5256B258500A1A598 /* MyStructService90.swift in Sources */,
+				489C8318256B258500A1A598 /* MyStructService109.swift in Sources */,
+				489C82DA256B258500A1A598 /* MyStructService38.swift in Sources */,
+				489C8291256B258500A1A598 /* MyStructService80.swift in Sources */,
+				489C8286256B258500A1A598 /* MyStructService14.swift in Sources */,
+				489C8292256B258500A1A598 /* MyStructService148.swift in Sources */,
+				489C8288256B258500A1A598 /* MyStructService92.swift in Sources */,
+				489C82A9256B258500A1A598 /* MyStructService189.swift in Sources */,
+				489C82FE256B258500A1A598 /* MyStructService13.swift in Sources */,
+				489C8272256B258500A1A598 /* MyStructService89.swift in Sources */,
+				489C8298256B258500A1A598 /* MyStructService29.swift in Sources */,
+				489C8317256B258500A1A598 /* MyStructService175.swift in Sources */,
+				489C8327256B258500A1A598 /* MyStructService16.swift in Sources */,
+				489C8305256B258500A1A598 /* MyStructService130.swift in Sources */,
+				489C8283256B258500A1A598 /* MyStructService70.swift in Sources */,
+				489C82DF256B258500A1A598 /* MyStructService51.swift in Sources */,
+				489C831F256B258500A1A598 /* MyStructService61.swift in Sources */,
+				489C82FC256B258500A1A598 /* MyStructService103.swift in Sources */,
+				489C82AE256B258500A1A598 /* MyStructService55.swift in Sources */,
+				489C82B8256B258500A1A598 /* MyStructService185.swift in Sources */,
+				489C829D256B258500A1A598 /* MyStructService139.swift in Sources */,
+				489C82AB256B258500A1A598 /* MyStructService19.swift in Sources */,
+				489C8333256B258600A1A598 /* MyStructService79.swift in Sources */,
+				489C82B0256B258500A1A598 /* MyStructService73.swift in Sources */,
+				489C82EB256B258500A1A598 /* MyStructService98.swift in Sources */,
+				489C8284256B258500A1A598 /* MyStructService118.swift in Sources */,
+				489C8335256B258600A1A598 /* MyStructService152.swift in Sources */,
+				489C82A7256B258500A1A598 /* MyStructService173.swift in Sources */,
+				489C827E256B258500A1A598 /* MyStructService125.swift in Sources */,
+				489C82BC256B258500A1A598 /* MyStructService54.swift in Sources */,
+				489C82C4256B258500A1A598 /* MyStructService17.swift in Sources */,
+				489C8302256B258500A1A598 /* MyStructService126.swift in Sources */,
+				489C8285256B258500A1A598 /* MyStructService111.swift in Sources */,
+				489C82F6256B258500A1A598 /* MyStructService1.swift in Sources */,
+				489C8307256B258500A1A598 /* MyStructService172.swift in Sources */,
+				489C8304256B258500A1A598 /* MyStructService153.swift in Sources */,
+				489C8324256B258500A1A598 /* MyStructService112.swift in Sources */,
+				489C8306256B258500A1A598 /* MyStructService120.swift in Sources */,
+				489C8297256B258500A1A598 /* MyStructService0.swift in Sources */,
+				489C8282256B258500A1A598 /* MyStructService161.swift in Sources */,
+				489C82C1256B258500A1A598 /* MyStructService36.swift in Sources */,
+				489C82A5256B258500A1A598 /* MyStructService169.swift in Sources */,
+				489C82CA256B258500A1A598 /* MyStructService67.swift in Sources */,
+				489C82F0256B258500A1A598 /* MyStructService88.swift in Sources */,
+				489C8330256B258500A1A598 /* MyStructService97.swift in Sources */,
+				489C82E8256B258500A1A598 /* MyStructService2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
