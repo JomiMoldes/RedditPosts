@@ -88,10 +88,7 @@
 		488B30D724B912A3004905AA /* PostsBrowserFeatureInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B30B224B9105E004905AA /* PostsBrowserFeatureInterfaces.framework */; };
 		488B30DD24B913ED004905AA /* PostsBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B30DC24B913ED004905AA /* PostsBrowserView.swift */; };
 		488B30F724B916CD004905AA /* Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 488B30E724B916CD004905AA /* Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		488B30FA24B916CD004905AA /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B30E524B916CC004905AA /* Extensions.framework */; };
-		488B30FB24B916CD004905AA /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488B30E524B916CC004905AA /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		488B310224B916DA004905AA /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B30DE24B9163A004905AA /* UIView+Extensions.swift */; };
-		488B310324B916E3004905AA /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B30E524B916CC004905AA /* Extensions.framework */; };
 		488B310924B91C46004905AA /* PostViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B310824B91C46004905AA /* PostViewCellViewModel.swift */; };
 		488B310B24B91D10004905AA /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B310A24B91D10004905AA /* PostViewCell.swift */; };
 		488B310C24B9229C004905AA /* ModelsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; };
@@ -277,20 +274,6 @@
 			remoteGlobalIDString = 488B30B124B9105E004905AA;
 			remoteInfo = PostsBrowserFeatureInterfaces;
 		};
-		488B30F824B916CD004905AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 488B30E424B916CC004905AA;
-			remoteInfo = Extensions;
-		};
-		488B310524B916E4004905AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 488B30E424B916CC004905AA;
-			remoteInfo = Extensions;
-		};
 		488B310E24B9229C004905AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
@@ -344,7 +327,6 @@
 			files = (
 				488B30C824B9105F004905AA /* PostsBrowserFeatureInterfaces.framework in Embed Frameworks */,
 				488B2FFA24B79C78004905AA /* ServicesInterfaces.framework in Embed Frameworks */,
-				488B30FB24B916CD004905AA /* Extensions.framework in Embed Frameworks */,
 				488B303324B7C5C4004905AA /* Utils.framework in Embed Frameworks */,
 				488B2FCE24B7950F004905AA /* ModelsInterfaces.framework in Embed Frameworks */,
 				488B30A624B9104E004905AA /* PostsBrowserFeature.framework in Embed Frameworks */,
@@ -467,7 +449,6 @@
 			files = (
 				488B30C724B9105F004905AA /* PostsBrowserFeatureInterfaces.framework in Frameworks */,
 				488B2FF924B79C78004905AA /* ServicesInterfaces.framework in Frameworks */,
-				488B30FA24B916CD004905AA /* Extensions.framework in Frameworks */,
 				488B303224B7C5C4004905AA /* Utils.framework in Frameworks */,
 				488B2FCD24B7950F004905AA /* ModelsInterfaces.framework in Frameworks */,
 				488B30A524B9104E004905AA /* PostsBrowserFeature.framework in Frameworks */,
@@ -561,7 +542,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				488B310324B916E3004905AA /* Extensions.framework in Frameworks */,
 				488B30D724B912A3004905AA /* PostsBrowserFeatureInterfaces.framework in Frameworks */,
 				488B311024B9229C004905AA /* UtilsInterfaces.framework in Frameworks */,
 				488B310C24B9229C004905AA /* ModelsInterfaces.framework in Frameworks */,
@@ -974,7 +954,6 @@
 				488B305324B7C5F5004905AA /* PBXTargetDependency */,
 				488B30A424B9104E004905AA /* PBXTargetDependency */,
 				488B30C624B9105F004905AA /* PBXTargetDependency */,
-				488B30F924B916CD004905AA /* PBXTargetDependency */,
 			);
 			name = RedditPosts;
 			productName = RedditPosts;
@@ -1184,7 +1163,6 @@
 			);
 			dependencies = (
 				488B30DA24B912A3004905AA /* PBXTargetDependency */,
-				488B310624B916E4004905AA /* PBXTargetDependency */,
 				488B310F24B9229C004905AA /* PBXTargetDependency */,
 				488B311324B9229D004905AA /* PBXTargetDependency */,
 			);
@@ -1779,16 +1757,6 @@
 			isa = PBXTargetDependency;
 			target = 488B30B124B9105E004905AA /* PostsBrowserFeatureInterfaces */;
 			targetProxy = 488B30D924B912A3004905AA /* PBXContainerItemProxy */;
-		};
-		488B30F924B916CD004905AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 488B30E424B916CC004905AA /* Extensions */;
-			targetProxy = 488B30F824B916CD004905AA /* PBXContainerItemProxy */;
-		};
-		488B310624B916E4004905AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 488B30E424B916CC004905AA /* Extensions */;
-			targetProxy = 488B310524B916E4004905AA /* PBXContainerItemProxy */;
 		};
 		488B310F24B9229C004905AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

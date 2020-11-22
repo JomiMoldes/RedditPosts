@@ -11,7 +11,7 @@ import UIKit
 import ModelsInterfaces
 import UtilsInterfaces
 import PostsBrowserFeatureInterfaces
-import Extensions
+//import Extensions
 
 public class PostsSplitViewController: UIViewController {
     
