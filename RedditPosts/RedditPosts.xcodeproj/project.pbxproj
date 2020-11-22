@@ -97,8 +97,6 @@
 		488B310C24B9229C004905AA /* ModelsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; };
 		488B311024B9229C004905AA /* UtilsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B303F24B7C5F5004905AA /* UtilsInterfaces.framework */; };
 		488B312024BA2717004905AA /* TestingResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 488B311E24BA2717004905AA /* TestingResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		488B312324BA2717004905AA /* TestingResources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B311C24BA2717004905AA /* TestingResources.framework */; };
-		488B312424BA2717004905AA /* TestingResources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488B311C24BA2717004905AA /* TestingResources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		488B312C24BA2724004905AA /* ModelsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; };
 		488B313224BA274C004905AA /* PostFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313124BA274C004905AA /* PostFake.swift */; };
 		488B313624BA284A004905AA /* PostServiceFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313524BA284A004905AA /* PostServiceFake.swift */; };
@@ -107,6 +105,7 @@
 		488B313E24BA3071004905AA /* PostsPaginatorFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B313D24BA3071004905AA /* PostsPaginatorFake.swift */; };
 		488B316224BA4A46004905AA /* PostsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B316124BA4A46004905AA /* PostsSplitViewController.swift */; };
 		488B316624BA656C004905AA /* Thread+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488B316524BA656C004905AA /* Thread+Extensions.swift */; };
+		48AB4E21256ABCAE009481AF /* ModelsInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488B2FC624B7950F004905AA /* ModelsInterfaces.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -306,13 +305,6 @@
 			remoteGlobalIDString = 488B303E24B7C5F5004905AA;
 			remoteInfo = UtilsInterfaces;
 		};
-		488B312124BA2717004905AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 488B311B24BA2717004905AA;
-			remoteInfo = TestingResources;
-		};
 		488B312E24BA2724004905AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
@@ -334,6 +326,13 @@
 			remoteGlobalIDString = 488B311B24BA2717004905AA;
 			remoteInfo = TestingResources;
 		};
+		48AB4E23256ABCAE009481AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 488B2F7124B761CF004905AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488B2FC524B7950F004905AA;
+			remoteInfo = ModelsInterfaces;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -346,7 +345,6 @@
 				488B30C824B9105F004905AA /* PostsBrowserFeatureInterfaces.framework in Embed Frameworks */,
 				488B2FFA24B79C78004905AA /* ServicesInterfaces.framework in Embed Frameworks */,
 				488B30FB24B916CD004905AA /* Extensions.framework in Embed Frameworks */,
-				488B312424BA2717004905AA /* TestingResources.framework in Embed Frameworks */,
 				488B303324B7C5C4004905AA /* Utils.framework in Embed Frameworks */,
 				488B2FCE24B7950F004905AA /* ModelsInterfaces.framework in Embed Frameworks */,
 				488B30A624B9104E004905AA /* PostsBrowserFeature.framework in Embed Frameworks */,
@@ -470,7 +468,6 @@
 				488B30C724B9105F004905AA /* PostsBrowserFeatureInterfaces.framework in Frameworks */,
 				488B2FF924B79C78004905AA /* ServicesInterfaces.framework in Frameworks */,
 				488B30FA24B916CD004905AA /* Extensions.framework in Frameworks */,
-				488B312324BA2717004905AA /* TestingResources.framework in Frameworks */,
 				488B303224B7C5C4004905AA /* Utils.framework in Frameworks */,
 				488B2FCD24B7950F004905AA /* ModelsInterfaces.framework in Frameworks */,
 				488B30A524B9104E004905AA /* PostsBrowserFeature.framework in Frameworks */,
@@ -583,6 +580,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48AB4E21256ABCAE009481AF /* ModelsInterfaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -977,7 +975,6 @@
 				488B30A424B9104E004905AA /* PBXTargetDependency */,
 				488B30C624B9105F004905AA /* PBXTargetDependency */,
 				488B30F924B916CD004905AA /* PBXTargetDependency */,
-				488B312224BA2717004905AA /* PBXTargetDependency */,
 			);
 			name = RedditPosts;
 			productName = RedditPosts;
@@ -1228,6 +1225,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				48AB4E24256ABCAE009481AF /* PBXTargetDependency */,
 			);
 			name = PostsBrowserFeatureInterfaces;
 			productName = PostsBrowserFeatureInterfaces;
@@ -1802,11 +1800,6 @@
 			target = 488B303E24B7C5F5004905AA /* UtilsInterfaces */;
 			targetProxy = 488B311224B9229D004905AA /* PBXContainerItemProxy */;
 		};
-		488B312224BA2717004905AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 488B311B24BA2717004905AA /* TestingResources */;
-			targetProxy = 488B312124BA2717004905AA /* PBXContainerItemProxy */;
-		};
 		488B312F24BA2724004905AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 488B2FC524B7950F004905AA /* ModelsInterfaces */;
@@ -1821,6 +1814,11 @@
 			isa = PBXTargetDependency;
 			target = 488B311B24BA2717004905AA /* TestingResources */;
 			targetProxy = 488B313724BA294F004905AA /* PBXContainerItemProxy */;
+		};
+		48AB4E24256ABCAE009481AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 488B2FC524B7950F004905AA /* ModelsInterfaces */;
+			targetProxy = 48AB4E23256ABCAE009481AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
