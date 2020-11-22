@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ModelsInterfaces
 
 public class PostsListCreator: PostsListCreatorProtocol {
     

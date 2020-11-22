@@ -8,8 +8,8 @@
 
 import Foundation
 import UIKit
-import ModelsInterfaces
-import UtilsInterfaces
+import Models
+import Utils
 import PostsBrowserFeatureInterfaces
 //import Extensions
 

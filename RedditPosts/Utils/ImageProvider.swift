@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UtilsInterfaces
 import UIKit
 
 public class ImageProvider: ImageProviderProtocol {

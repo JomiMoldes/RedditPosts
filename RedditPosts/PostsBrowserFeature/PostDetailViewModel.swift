@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import ModelsInterfaces
+import Models
 import PostsBrowserFeatureInterfaces
-import UtilsInterfaces
+import Utils
 import UIKit
 
 public class PostDetailViewModel: PostDetailViewModelProtocol {

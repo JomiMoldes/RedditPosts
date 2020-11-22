@@ -8,8 +8,8 @@
 
 import Foundation
 import PostsBrowserFeatureInterfaces
-import UtilsInterfaces
-import ModelsInterfaces
+import Utils
+import Models
 
 public class PostsSplitViewModel: PostsSplitViewModelProtocol {
     

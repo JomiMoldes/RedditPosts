@@ -7,8 +7,7 @@
 //
 
 import Foundation
-import ServicesInterfaces
-import ModelsInterfaces
+import Models
 
 public class PostsService: PostServiceProtocol {
     

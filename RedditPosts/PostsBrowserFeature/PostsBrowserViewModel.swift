@@ -8,8 +8,8 @@
 
 import Foundation
 import PostsBrowserFeatureInterfaces
-import ModelsInterfaces
-import UtilsInterfaces
+import Models
+import Utils
 
 public class PostsBrowserViewModel: PostsBrowserViewModelProtocol {
     

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import PostsBrowserFeatureInterfaces
 //import Extensions
-import ModelsInterfaces
+import Models
 
 public class PostsBrowserViewController: UIViewController {
     

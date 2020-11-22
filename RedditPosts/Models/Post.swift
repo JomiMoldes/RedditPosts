@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ModelsInterfaces
 
 public struct Post: PostProtocol {
     public var id: String

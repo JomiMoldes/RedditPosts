@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import ModelsInterfaces
+import Models
 import UIKit
 
 public protocol PostsBrowserViewModelProtocol {

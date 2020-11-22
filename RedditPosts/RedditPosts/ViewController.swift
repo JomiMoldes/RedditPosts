@@ -9,10 +9,7 @@
 import UIKit
 import PostsBrowserFeature
 import PostsBrowserFeatureInterfaces
-import ServicesInterfaces
-import ModelsInterfaces
 import Services
-import UtilsInterfaces
 import Utils
 import Models
 

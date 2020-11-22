@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import UtilsInterfaces
-import ModelsInterfaces
-import ServicesInterfaces
+import Models
+import Services
 
 public class PostsPaginator: PostsPaginatorProtocol {
     
